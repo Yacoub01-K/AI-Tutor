@@ -1,0 +1,5497 @@
+[
+    {
+        "title": "Shortest Subarray With OR at Least K I",
+        "url": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/",
+        "total_acs": 20899,
+        "total_submitted": 53671,
+        "is_new_question": false
+    },
+    {
+        "title": "Harshad Number",
+        "url": "https://leetcode.com/problems/harshad-number/",
+        "total_acs": 31367,
+        "total_submitted": 38054,
+        "is_new_question": false
+    },
+    {
+        "title": "Winner of the Linked List Game",
+        "url": "https://leetcode.com/problems/winner-of-the-linked-list-game/",
+        "total_acs": 7247,
+        "total_submitted": 8787,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Sum of Encrypted Integers",
+        "url": "https://leetcode.com/problems/find-the-sum-of-encrypted-integers/",
+        "total_acs": 33328,
+        "total_submitted": 45688,
+        "is_new_question": false
+    },
+    {
+        "title": "Find All Unique Email Domains",
+        "url": "https://leetcode.com/problems/find-all-unique-email-domains/",
+        "total_acs": 710,
+        "total_submitted": 1131,
+        "is_new_question": false
+    },
+    {
+        "title": "Linked List Frequency",
+        "url": "https://leetcode.com/problems/linked-list-frequency/",
+        "total_acs": 7816,
+        "total_submitted": 8937,
+        "is_new_question": false
+    },
+    {
+        "title": "Existence of a Substring in a String and Its Reverse",
+        "url": "https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/",
+        "total_acs": 36176,
+        "total_submitted": 55013,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Length Substring With Two Occurrences",
+        "url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/",
+        "total_acs": 29666,
+        "total_submitted": 46948,
+        "is_new_question": false
+    },
+    {
+        "title": "Distribute Elements Into Two Arrays I",
+        "url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-i/",
+        "total_acs": 35721,
+        "total_submitted": 50122,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Numbers With Unique Digits II",
+        "url": "https://leetcode.com/problems/count-numbers-with-unique-digits-ii/",
+        "total_acs": 1893,
+        "total_submitted": 2178,
+        "is_new_question": false
+    },
+    {
+        "title": "Apple Redistribution into Boxes",
+        "url": "https://leetcode.com/problems/apple-redistribution-into-boxes/",
+        "total_acs": 37749,
+        "total_submitted": 57815,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Operations to Exceed Threshold Value I",
+        "url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-i/",
+        "total_acs": 40489,
+        "total_submitted": 47825,
+        "is_new_question": false
+    },
+    {
+        "title": "Modify the Matrix",
+        "url": "https://leetcode.com/problems/modify-the-matrix/",
+        "total_acs": 33005,
+        "total_submitted": 48800,
+        "is_new_question": false
+    },
+    {
+        "title": "Split the Array",
+        "url": "https://leetcode.com/problems/split-the-array/",
+        "total_acs": 38732,
+        "total_submitted": 67822,
+        "is_new_question": false
+    },
+    {
+        "title": "Type of Triangle",
+        "url": "https://leetcode.com/problems/type-of-triangle/",
+        "total_acs": 35733,
+        "total_submitted": 93269,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Operations With the Same Score I",
+        "url": "https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-i/",
+        "total_acs": 29141,
+        "total_submitted": 57078,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Changing Keys",
+        "url": "https://leetcode.com/problems/number-of-changing-keys/",
+        "total_acs": 38858,
+        "total_submitted": 48561,
+        "is_new_question": false
+    },
+    {
+        "title": "Ant on the Boundary",
+        "url": "https://leetcode.com/problems/ant-on-the-boundary/",
+        "total_acs": 38558,
+        "total_submitted": 51464,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Prefix and Suffix Pairs I",
+        "url": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-i/",
+        "total_acs": 31036,
+        "total_submitted": 48614,
+        "is_new_question": false
+    },
+    {
+        "title": "Loan Types",
+        "url": "https://leetcode.com/problems/loan-types/",
+        "total_acs": 1330,
+        "total_submitted": 2153,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Expensive Cities",
+        "url": "https://leetcode.com/problems/find-expensive-cities/",
+        "total_acs": 1256,
+        "total_submitted": 1586,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Compressed Mean",
+        "url": "https://leetcode.com/problems/calculate-compressed-mean/",
+        "total_acs": 1187,
+        "total_submitted": 1376,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Number of Pushes to Type Word I",
+        "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
+        "total_acs": 29552,
+        "total_submitted": 46843,
+        "is_new_question": false
+    },
+    {
+        "title": "Divide an Array Into Subarrays With Minimum Cost I",
+        "url": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/",
+        "total_acs": 28919,
+        "total_submitted": 44442,
+        "is_new_question": false
+    },
+    {
+        "title": "Classifying Triangles by Lengths",
+        "url": "https://leetcode.com/problems/classifying-triangles-by-lengths/",
+        "total_acs": 678,
+        "total_submitted": 1333,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Candidates for Data Scientist Position",
+        "url": "https://leetcode.com/problems/find-candidates-for-data-scientist-position/",
+        "total_acs": 987,
+        "total_submitted": 1366,
+        "is_new_question": false
+    },
+    {
+        "title": "Count the Number of Incremovable Subarrays I",
+        "url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-i/",
+        "total_acs": 16942,
+        "total_submitted": 33822,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Area of Longest Diagonal Rectangle",
+        "url": "https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/",
+        "total_acs": 30522,
+        "total_submitted": 86480,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Bitwise OR Has Trailing Zeros",
+        "url": "https://leetcode.com/problems/check-if-bitwise-or-has-trailing-zeros/",
+        "total_acs": 28449,
+        "total_submitted": 40910,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Elements With Maximum Frequency",
+        "url": "https://leetcode.com/problems/count-elements-with-maximum-frequency/",
+        "total_acs": 187613,
+        "total_submitted": 236179,
+        "is_new_question": false
+    },
+    {
+        "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+        "url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+        "total_acs": 24693,
+        "total_submitted": 78618,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Missing and Repeated Values",
+        "url": "https://leetcode.com/problems/find-missing-and-repeated-values/",
+        "total_acs": 37622,
+        "total_submitted": 50314,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Number Game",
+        "url": "https://leetcode.com/problems/minimum-number-game/",
+        "total_acs": 56340,
+        "total_submitted": 65793,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Peaks",
+        "url": "https://leetcode.com/problems/find-the-peaks/",
+        "total_acs": 37813,
+        "total_submitted": 50470,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Tested Devices After Test Operations",
+        "url": "https://leetcode.com/problems/count-tested-devices-after-test-operations/",
+        "total_acs": 33642,
+        "total_submitted": 41591,
+        "is_new_question": false
+    },
+    {
+        "title": "Matrix Similarity After Cyclic Shifts",
+        "url": "https://leetcode.com/problems/matrix-similarity-after-cyclic-shifts/",
+        "total_acs": 20261,
+        "total_submitted": 35305,
+        "is_new_question": false
+    },
+    {
+        "title": "Make Three Strings Equal",
+        "url": "https://leetcode.com/problems/make-three-strings-equal/",
+        "total_acs": 24496,
+        "total_submitted": 58152,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Common Elements Between Two Arrays",
+        "url": "https://leetcode.com/problems/find-common-elements-between-two-arrays/",
+        "total_acs": 42287,
+        "total_submitted": 51304,
+        "is_new_question": false
+    },
+    {
+        "title": "Distribute Candies Among Children I",
+        "url": "https://leetcode.com/problems/distribute-candies-among-children-i/",
+        "total_acs": 21490,
+        "total_submitted": 28797,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Words Containing Character",
+        "url": "https://leetcode.com/problems/find-words-containing-character/",
+        "total_acs": 90545,
+        "total_submitted": 102775,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Strong Pair XOR I",
+        "url": "https://leetcode.com/problems/maximum-strong-pair-xor-i/",
+        "total_acs": 29436,
+        "total_submitted": 38943,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Champion I",
+        "url": "https://leetcode.com/problems/find-champion-i/",
+        "total_acs": 32223,
+        "total_submitted": 44314,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the K-or of an Array",
+        "url": "https://leetcode.com/problems/find-the-k-or-of-an-array/",
+        "total_acs": 22699,
+        "total_submitted": 30450,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Sum of Mountain Triplets I",
+        "url": "https://leetcode.com/problems/minimum-sum-of-mountain-triplets-i/",
+        "total_acs": 30938,
+        "total_submitted": 48217,
+        "is_new_question": false
+    },
+    {
+        "title": "Divisible and Non-divisible Sums Difference",
+        "url": "https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/",
+        "total_acs": 64952,
+        "total_submitted": 73576,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Indices With Index and Value Difference I",
+        "url": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-i/",
+        "total_acs": 35443,
+        "total_submitted": 57029,
+        "is_new_question": false
+    },
+    {
+        "title": "Last Visited Integers",
+        "url": "https://leetcode.com/problems/last-visited-integers/",
+        "total_acs": 24203,
+        "total_submitted": 36979,
+        "is_new_question": false
+    },
+    {
+        "title": "Subarrays Distinct Element Sum of Squares I",
+        "url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-i/",
+        "total_acs": 28282,
+        "total_submitted": 34264,
+        "is_new_question": false
+    },
+    {
+        "title": "Highest Salaries Difference",
+        "url": "https://leetcode.com/problems/highest-salaries-difference/",
+        "total_acs": 2117,
+        "total_submitted": 2893,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Value of an Ordered Triplet I",
+        "url": "https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-i/",
+        "total_acs": 34609,
+        "total_submitted": 76827,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Unequal Adjacent Groups Subsequence I",
+        "url": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/",
+        "total_acs": 21843,
+        "total_submitted": 33923,
+        "is_new_question": false
+    },
+    {
+        "title": "Total Traveled Distance",
+        "url": "https://leetcode.com/problems/total-traveled-distance/",
+        "total_acs": 1967,
+        "total_submitted": 2692,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Values at Indices With K Set Bits",
+        "url": "https://leetcode.com/problems/sum-of-values-at-indices-with-k-set-bits/",
+        "total_acs": 58437,
+        "total_submitted": 67750,
+        "is_new_question": false
+    },
+    {
+        "title": "Get the Size of a DataFrame",
+        "url": "https://leetcode.com/problems/get-the-size-of-a-dataframe/",
+        "total_acs": 46678,
+        "total_submitted": 55252,
+        "is_new_question": false
+    },
+    {
+        "title": "Drop Missing Data",
+        "url": "https://leetcode.com/problems/drop-missing-data/",
+        "total_acs": 29911,
+        "total_submitted": 46754,
+        "is_new_question": false
+    },
+    {
+        "title": "Select Data",
+        "url": "https://leetcode.com/problems/select-data/",
+        "total_acs": 38667,
+        "total_submitted": 49639,
+        "is_new_question": false
+    },
+    {
+        "title": "Reshape Data: Melt",
+        "url": "https://leetcode.com/problems/reshape-data-melt/",
+        "total_acs": 21650,
+        "total_submitted": 25614,
+        "is_new_question": false
+    },
+    {
+        "title": "Reshape Data: Pivot",
+        "url": "https://leetcode.com/problems/reshape-data-pivot/",
+        "total_acs": 22779,
+        "total_submitted": 28432,
+        "is_new_question": false
+    },
+    {
+        "title": "Drop Duplicate Rows",
+        "url": "https://leetcode.com/problems/drop-duplicate-rows/",
+        "total_acs": 32057,
+        "total_submitted": 38038,
+        "is_new_question": false
+    },
+    {
+        "title": "Fill Missing Data",
+        "url": "https://leetcode.com/problems/fill-missing-data/",
+        "total_acs": 26298,
+        "total_submitted": 36845,
+        "is_new_question": false
+    },
+    {
+        "title": "Change Data Type",
+        "url": "https://leetcode.com/problems/change-data-type/",
+        "total_acs": 27440,
+        "total_submitted": 31710,
+        "is_new_question": false
+    },
+    {
+        "title": "Rename Columns",
+        "url": "https://leetcode.com/problems/rename-columns/",
+        "total_acs": 28274,
+        "total_submitted": 33441,
+        "is_new_question": false
+    },
+    {
+        "title": "Modify Columns",
+        "url": "https://leetcode.com/problems/modify-columns/",
+        "total_acs": 32944,
+        "total_submitted": 36233,
+        "is_new_question": false
+    },
+    {
+        "title": "Create a New Column",
+        "url": "https://leetcode.com/problems/create-a-new-column/",
+        "total_acs": 36430,
+        "total_submitted": 40647,
+        "is_new_question": false
+    },
+    {
+        "title": "Display the First Three Rows",
+        "url": "https://leetcode.com/problems/display-the-first-three-rows/",
+        "total_acs": 49937,
+        "total_submitted": 54029,
+        "is_new_question": false
+    },
+    {
+        "title": "Reshape Data: Concatenate",
+        "url": "https://leetcode.com/problems/reshape-data-concatenate/",
+        "total_acs": 27532,
+        "total_submitted": 30595,
+        "is_new_question": false
+    },
+    {
+        "title": "Method Chaining",
+        "url": "https://leetcode.com/problems/method-chaining/",
+        "total_acs": 22745,
+        "total_submitted": 30649,
+        "is_new_question": false
+    },
+    {
+        "title": "Create a DataFrame from List",
+        "url": "https://leetcode.com/problems/create-a-dataframe-from-list/",
+        "total_acs": 60662,
+        "total_submitted": 74959,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Odd Binary Number",
+        "url": "https://leetcode.com/problems/maximum-odd-binary-number/",
+        "total_acs": 185124,
+        "total_submitted": 222620,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Right Shifts to Sort the Array",
+        "url": "https://leetcode.com/problems/minimum-right-shifts-to-sort-the-array/",
+        "total_acs": 31313,
+        "total_submitted": 54427,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Operations to Collect Elements",
+        "url": "https://leetcode.com/problems/minimum-operations-to-collect-elements/",
+        "total_acs": 32557,
+        "total_submitted": 54756,
+        "is_new_question": false
+    },
+    {
+        "title": "Points That Intersect With Cars",
+        "url": "https://leetcode.com/problems/points-that-intersect-with-cars/",
+        "total_acs": 42321,
+        "total_submitted": 56580,
+        "is_new_question": false
+    },
+    {
+        "title": "Furthest Point From Origin",
+        "url": "https://leetcode.com/problems/furthest-point-from-origin/",
+        "total_acs": 44286,
+        "total_submitted": 69074,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Strings Can be Made Equal With Operations I",
+        "url": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/",
+        "total_acs": 35613,
+        "total_submitted": 76200,
+        "is_new_question": false
+    },
+    {
+        "title": "  Count Symmetric Integers",
+        "url": "https://leetcode.com/problems/count-symmetric-integers/",
+        "total_acs": 41370,
+        "total_submitted": 55819,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if a String Is an Acronym of Words",
+        "url": "https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/",
+        "total_acs": 77808,
+        "total_submitted": 93940,
+        "is_new_question": false
+    },
+    {
+        "title": "Account Balance After Rounded Purchase",
+        "url": "https://leetcode.com/problems/account-balance-after-rounded-purchase/",
+        "total_acs": 39410,
+        "total_submitted": 75854,
+        "is_new_question": false
+    },
+    {
+        "title": "Inversion of Object",
+        "url": "https://leetcode.com/problems/inversion-of-object/",
+        "total_acs": 608,
+        "total_submitted": 1005,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Pairs Whose Sum is Less than Target",
+        "url": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/",
+        "total_acs": 116065,
+        "total_submitted": 133287,
+        "is_new_question": false
+    },
+    {
+        "title": "Delay the Resolution of Each Promise",
+        "url": "https://leetcode.com/problems/delay-the-resolution-of-each-promise/",
+        "total_acs": 511,
+        "total_submitted": 808,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Prototype ForEach",
+        "url": "https://leetcode.com/problems/array-prototype-foreach/",
+        "total_acs": 704,
+        "total_submitted": 794,
+        "is_new_question": false
+    },
+    {
+        "title": "Max Pair Sum in an Array",
+        "url": "https://leetcode.com/problems/max-pair-sum-in-an-array/",
+        "total_acs": 42052,
+        "total_submitted": 73119,
+        "is_new_question": false
+    },
+    {
+        "title": "Factorial Generator",
+        "url": "https://leetcode.com/problems/factorial-generator/",
+        "total_acs": 718,
+        "total_submitted": 839,
+        "is_new_question": false
+    },
+    {
+        "title": "Partial Function with Placeholders",
+        "url": "https://leetcode.com/problems/partial-function-with-placeholders/",
+        "total_acs": 808,
+        "total_submitted": 874,
+        "is_new_question": false
+    },
+    {
+        "title": "Repeat String",
+        "url": "https://leetcode.com/problems/repeat-string/",
+        "total_acs": 1751,
+        "total_submitted": 1884,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Array is Good",
+        "url": "https://leetcode.com/problems/check-if-array-is-good/",
+        "total_acs": 45392,
+        "total_submitted": 91696,
+        "is_new_question": false
+    },
+    {
+        "title": "Faulty Keyboard",
+        "url": "https://leetcode.com/problems/faulty-keyboard/",
+        "total_acs": 66148,
+        "total_submitted": 79680,
+        "is_new_question": false
+    },
+    {
+        "title": "Split Strings by Separator",
+        "url": "https://leetcode.com/problems/split-strings-by-separator/",
+        "total_acs": 48170,
+        "total_submitted": 65657,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Employees Who Met the Target",
+        "url": "https://leetcode.com/problems/number-of-employees-who-met-the-target/",
+        "total_acs": 131019,
+        "total_submitted": 149642,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Houses in a Circular Street",
+        "url": "https://leetcode.com/problems/count-houses-in-a-circular-street/",
+        "total_acs": 1771,
+        "total_submitted": 2092,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Alternating Subarray",
+        "url": "https://leetcode.com/problems/longest-alternating-subarray/",
+        "total_acs": 22742,
+        "total_submitted": 67496,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Even Odd Subarray With Threshold",
+        "url": "https://leetcode.com/problems/longest-even-odd-subarray-with-threshold/",
+        "total_acs": 32368,
+        "total_submitted": 110625,
+        "is_new_question": false
+    },
+    {
+        "title": "Is Object Empty",
+        "url": "https://leetcode.com/problems/is-object-empty/",
+        "total_acs": 44120,
+        "total_submitted": 56069,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculator with Method Chaining",
+        "url": "https://leetcode.com/problems/calculator-with-method-chaining/",
+        "total_acs": 19230,
+        "total_submitted": 26009,
+        "is_new_question": false
+    },
+    {
+        "title": "Interval Cancellation",
+        "url": "https://leetcode.com/problems/interval-cancellation/",
+        "total_acs": 27442,
+        "total_submitted": 35349,
+        "is_new_question": false
+    },
+    {
+        "title": "Create Object from Two Arrays",
+        "url": "https://leetcode.com/problems/create-object-from-two-arrays/",
+        "total_acs": 799,
+        "total_submitted": 1243,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort By",
+        "url": "https://leetcode.com/problems/sort-by/",
+        "total_acs": 27826,
+        "total_submitted": 34027,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Two Promises",
+        "url": "https://leetcode.com/problems/add-two-promises/",
+        "total_acs": 64447,
+        "total_submitted": 71051,
+        "is_new_question": false
+    },
+    {
+        "title": "Total Distance Traveled",
+        "url": "https://leetcode.com/problems/total-distance-traveled/",
+        "total_acs": 39661,
+        "total_submitted": 102132,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Maximum Number of String Pairs",
+        "url": "https://leetcode.com/problems/find-maximum-number-of-string-pairs/",
+        "total_acs": 55463,
+        "total_submitted": 68538,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Squares of Special Elements ",
+        "url": "https://leetcode.com/problems/sum-of-squares-of-special-elements/",
+        "total_acs": 57991,
+        "total_submitted": 72269,
+        "is_new_question": false
+    },
+    {
+        "title": "Extract Kth Character From The Rope Tree",
+        "url": "https://leetcode.com/problems/extract-kth-character-from-the-rope-tree/",
+        "total_acs": 2240,
+        "total_submitted": 3013,
+        "is_new_question": false
+    },
+    {
+        "title": "Bikes Last Time Used ",
+        "url": "https://leetcode.com/problems/bikes-last-time-used/",
+        "total_acs": 2768,
+        "total_submitted": 3438,
+        "is_new_question": false
+    },
+    {
+        "title": "Neither Minimum nor Maximum",
+        "url": "https://leetcode.com/problems/neither-minimum-nor-maximum/",
+        "total_acs": 81676,
+        "total_submitted": 106644,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Beautiful Pairs",
+        "url": "https://leetcode.com/problems/number-of-beautiful-pairs/",
+        "total_acs": 31840,
+        "total_submitted": 64229,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Artist Occurrences On Spotify Ranking List",
+        "url": "https://leetcode.com/problems/count-artist-occurrences-on-spotify-ranking-list/",
+        "total_acs": 2590,
+        "total_submitted": 3675,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Latest Salaries",
+        "url": "https://leetcode.com/problems/find-latest-salaries/",
+        "total_acs": 2817,
+        "total_submitted": 4065,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimize String Length",
+        "url": "https://leetcode.com/problems/minimize-string-length/",
+        "total_acs": 48707,
+        "total_submitted": 64762,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if The Number is Fascinating",
+        "url": "https://leetcode.com/problems/check-if-the-number-is-fascinating/",
+        "total_acs": 40765,
+        "total_submitted": 78802,
+        "is_new_question": false
+    },
+    {
+        "title": "Next Day",
+        "url": "https://leetcode.com/problems/next-day/",
+        "total_acs": 759,
+        "total_submitted": 873,
+        "is_new_question": false
+    },
+    {
+        "title": "Timeout Cancellation",
+        "url": "https://leetcode.com/problems/timeout-cancellation/",
+        "total_acs": 33876,
+        "total_submitted": 38470,
+        "is_new_question": false
+    },
+    {
+        "title": "Return Length of Arguments Passed",
+        "url": "https://leetcode.com/problems/return-length-of-arguments-passed/",
+        "total_acs": 107416,
+        "total_submitted": 114455,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Trailing Zeros From a String",
+        "url": "https://leetcode.com/problems/remove-trailing-zeros-from-a-string/",
+        "total_acs": 57134,
+        "total_submitted": 72941,
+        "is_new_question": false
+    },
+    {
+        "title": "Lexicographically Smallest Palindrome",
+        "url": "https://leetcode.com/problems/lexicographically-smallest-palindrome/",
+        "total_acs": 44979,
+        "total_submitted": 55381,
+        "is_new_question": false
+    },
+    {
+        "title": "To Be Or Not To Be",
+        "url": "https://leetcode.com/problems/to-be-or-not-to-be/",
+        "total_acs": 123998,
+        "total_submitted": 200247,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Maximum Achievable Number",
+        "url": "https://leetcode.com/problems/find-the-maximum-achievable-number/",
+        "total_acs": 77726,
+        "total_submitted": 86707,
+        "is_new_question": false
+    },
+    {
+        "title": "Create Hello World Function",
+        "url": "https://leetcode.com/problems/create-hello-world-function/",
+        "total_acs": 321070,
+        "total_submitted": 395572,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Wrapper",
+        "url": "https://leetcode.com/problems/array-wrapper/",
+        "total_acs": 29895,
+        "total_submitted": 34067,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum String Length After Removing Substrings",
+        "url": "https://leetcode.com/problems/minimum-string-length-after-removing-substrings/",
+        "total_acs": 44096,
+        "total_submitted": 63895,
+        "is_new_question": false
+    },
+    {
+        "title": "Chunk Array",
+        "url": "https://leetcode.com/problems/chunk-array/",
+        "total_acs": 46441,
+        "total_submitted": 56039,
+        "is_new_question": false
+    },
+    {
+        "title": "Allow One Function Call",
+        "url": "https://leetcode.com/problems/allow-one-function-call/",
+        "total_acs": 79091,
+        "total_submitted": 92110,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Losers of the Circular Game",
+        "url": "https://leetcode.com/problems/find-the-losers-of-the-circular-game/",
+        "total_acs": 25758,
+        "total_submitted": 53038,
+        "is_new_question": false
+    },
+    {
+        "title": "Counter II",
+        "url": "https://leetcode.com/problems/counter-ii/",
+        "total_acs": 150017,
+        "total_submitted": 188527,
+        "is_new_question": false
+    },
+    {
+        "title": "Semi-Ordered Permutation",
+        "url": "https://leetcode.com/problems/semi-ordered-permutation/",
+        "total_acs": 29540,
+        "total_submitted": 46670,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Distinct Difference Array",
+        "url": "https://leetcode.com/problems/find-the-distinct-difference-array/",
+        "total_acs": 34743,
+        "total_submitted": 45096,
+        "is_new_question": false
+    },
+    {
+        "title": "Generate Fibonacci Sequence",
+        "url": "https://leetcode.com/problems/generate-fibonacci-sequence/",
+        "total_acs": 23730,
+        "total_submitted": 28672,
+        "is_new_question": false
+    },
+    {
+        "title": "Infinite Method Object",
+        "url": "https://leetcode.com/problems/infinite-method-object/",
+        "total_acs": 1000,
+        "total_submitted": 1081,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Upper Bound",
+        "url": "https://leetcode.com/problems/array-upper-bound/",
+        "total_acs": 1062,
+        "total_submitted": 1306,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Sum With Exactly K Elements ",
+        "url": "https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/",
+        "total_acs": 62634,
+        "total_submitted": 76580,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Reduce Transformation",
+        "url": "https://leetcode.com/problems/array-reduce-transformation/",
+        "total_acs": 119508,
+        "total_submitted": 142434,
+        "is_new_question": false
+    },
+    {
+        "title": "Buy Two Chocolates",
+        "url": "https://leetcode.com/problems/buy-two-chocolates/",
+        "total_acs": 168110,
+        "total_submitted": 241349,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum Multiples",
+        "url": "https://leetcode.com/problems/sum-multiples/",
+        "total_acs": 94248,
+        "total_submitted": 110739,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Delayed Arrival Time",
+        "url": "https://leetcode.com/problems/calculate-delayed-arrival-time/",
+        "total_acs": 50317,
+        "total_submitted": 64034,
+        "is_new_question": false
+    },
+    {
+        "title": "Apply Transform Over Each Element in Array",
+        "url": "https://leetcode.com/problems/apply-transform-over-each-element-in-array/",
+        "total_acs": 139682,
+        "total_submitted": 163440,
+        "is_new_question": false
+    },
+    {
+        "title": "Filter Elements from Array",
+        "url": "https://leetcode.com/problems/filter-elements-from-array/",
+        "total_acs": 127391,
+        "total_submitted": 151414,
+        "is_new_question": false
+    },
+    {
+        "title": "Function Composition",
+        "url": "https://leetcode.com/problems/function-composition/",
+        "total_acs": 101453,
+        "total_submitted": 118562,
+        "is_new_question": false
+    },
+    {
+        "title": "Row With Maximum Ones",
+        "url": "https://leetcode.com/problems/row-with-maximum-ones/",
+        "total_acs": 52992,
+        "total_submitted": 70197,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Prototype Last",
+        "url": "https://leetcode.com/problems/array-prototype-last/",
+        "total_acs": 112518,
+        "total_submitted": 155065,
+        "is_new_question": false
+    },
+    {
+        "title": "Sleep",
+        "url": "https://leetcode.com/problems/sleep/",
+        "total_acs": 108524,
+        "total_submitted": 125875,
+        "is_new_question": false
+    },
+    {
+        "title": "Counter",
+        "url": "https://leetcode.com/problems/counter/",
+        "total_acs": 295327,
+        "total_submitted": 367587,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Senior Citizens",
+        "url": "https://leetcode.com/problems/number-of-senior-citizens/",
+        "total_acs": 52426,
+        "total_submitted": 68789,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Longest Balanced Substring of a Binary String",
+        "url": "https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/",
+        "total_acs": 29197,
+        "total_submitted": 63569,
+        "is_new_question": false
+    },
+    {
+        "title": "Prime In Diagonal",
+        "url": "https://leetcode.com/problems/prime-in-diagonal/",
+        "total_acs": 39404,
+        "total_submitted": 117467,
+        "is_new_question": false
+    },
+    {
+        "title": "K Items With the Maximum Sum",
+        "url": "https://leetcode.com/problems/k-items-with-the-maximum-sum/",
+        "total_acs": 36699,
+        "total_submitted": 59837,
+        "is_new_question": false
+    },
+    {
+        "title": "Left and Right Sum Differences",
+        "url": "https://leetcode.com/problems/left-and-right-sum-differences/",
+        "total_acs": 119197,
+        "total_submitted": 138506,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Two 2D Arrays by Summing Values",
+        "url": "https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/",
+        "total_acs": 39068,
+        "total_submitted": 53280,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Difference by Remapping a Digit",
+        "url": "https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/",
+        "total_acs": 23739,
+        "total_submitted": 39870,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Array Concatenation Value",
+        "url": "https://leetcode.com/problems/find-the-array-concatenation-value/",
+        "total_acs": 45251,
+        "total_submitted": 65076,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Maximum Divisibility Score",
+        "url": "https://leetcode.com/problems/find-the-maximum-divisibility-score/",
+        "total_acs": 28938,
+        "total_submitted": 59459,
+        "is_new_question": false
+    },
+    {
+        "title": "Take Gifts From the Richest Pile",
+        "url": "https://leetcode.com/problems/take-gifts-from-the-richest-pile/",
+        "total_acs": 43369,
+        "total_submitted": 65343,
+        "is_new_question": false
+    },
+    {
+        "title": "Determine the Winner of a Bowling Game",
+        "url": "https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/",
+        "total_acs": 32067,
+        "total_submitted": 93911,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Distinct Numbers on Board",
+        "url": "https://leetcode.com/problems/count-distinct-numbers-on-board/",
+        "total_acs": 38777,
+        "total_submitted": 64615,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Width of Columns of a Grid",
+        "url": "https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/",
+        "total_acs": 25350,
+        "total_submitted": 38013,
+        "is_new_question": false
+    },
+    {
+        "title": "Form Smallest Number From Two Digit Arrays",
+        "url": "https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/",
+        "total_acs": 34304,
+        "total_submitted": 63951,
+        "is_new_question": false
+    },
+    {
+        "title": "Distribute Money to Maximum Children",
+        "url": "https://leetcode.com/problems/distribute-money-to-maximum-children/",
+        "total_acs": 27123,
+        "total_submitted": 141761,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Even and Odd Bits",
+        "url": "https://leetcode.com/problems/number-of-even-and-odd-bits/",
+        "total_acs": 41188,
+        "total_submitted": 56924,
+        "is_new_question": false
+    },
+    {
+        "title": "Count the Number of Vowel Strings in Range",
+        "url": "https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/",
+        "total_acs": 54696,
+        "total_submitted": 73911,
+        "is_new_question": false
+    },
+    {
+        "title": "Split With Minimum Sum",
+        "url": "https://leetcode.com/problems/split-with-minimum-sum/",
+        "total_acs": 32230,
+        "total_submitted": 46085,
+        "is_new_question": false
+    },
+    {
+        "title": "Pass the Pillow",
+        "url": "https://leetcode.com/problems/pass-the-pillow/",
+        "total_acs": 33981,
+        "total_submitted": 74340,
+        "is_new_question": false
+    },
+    {
+        "title": "Concatenate the Name and the Profession",
+        "url": "https://leetcode.com/problems/concatenate-the-name-and-the-profession/",
+        "total_acs": 3644,
+        "total_submitted": 4972,
+        "is_new_question": false
+    },
+    {
+        "title": "Separate the Digits in an Array",
+        "url": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+        "total_acs": 64681,
+        "total_submitted": 81956,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Common Value",
+        "url": "https://leetcode.com/problems/minimum-common-value/",
+        "total_acs": 217343,
+        "total_submitted": 365411,
+        "is_new_question": false
+    },
+    {
+        "title": "Alternating Digit Sum",
+        "url": "https://leetcode.com/problems/alternating-digit-sum/",
+        "total_acs": 55879,
+        "total_submitted": 81770,
+        "is_new_question": false
+    },
+    {
+        "title": "Difference Between Element Sum and Digit Sum of an Array",
+        "url": "https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/",
+        "total_acs": 112371,
+        "total_submitted": 133661,
+        "is_new_question": false
+    },
+    {
+        "title": "Form a Chemical Bond",
+        "url": "https://leetcode.com/problems/form-a-chemical-bond/",
+        "total_acs": 3833,
+        "total_submitted": 5200,
+        "is_new_question": false
+    },
+    {
+        "title": "Categorize Box According to Criteria",
+        "url": "https://leetcode.com/problems/categorize-box-according-to-criteria/",
+        "total_acs": 30977,
+        "total_submitted": 88034,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Count of Positive Integer and Negative Integer",
+        "url": "https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/",
+        "total_acs": 95651,
+        "total_submitted": 134438,
+        "is_new_question": false
+    },
+    {
+        "title": "Count the Digits That Divide a Number",
+        "url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/",
+        "total_acs": 74954,
+        "total_submitted": 89118,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Enemy Forts That Can Be Captured",
+        "url": "https://leetcode.com/problems/maximum-enemy-forts-that-can-be-captured/",
+        "total_acs": 22019,
+        "total_submitted": 57950,
+        "is_new_question": false
+    },
+    {
+        "title": "Shortest Distance to Target String in a Circular Array",
+        "url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
+        "total_acs": 27610,
+        "total_submitted": 56681,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Pairs Of Similar Strings",
+        "url": "https://leetcode.com/problems/count-pairs-of-similar-strings/",
+        "total_acs": 40317,
+        "total_submitted": 58218,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Value of a String in an Array",
+        "url": "https://leetcode.com/problems/maximum-value-of-a-string-in-an-array/",
+        "total_acs": 40404,
+        "total_submitted": 56161,
+        "is_new_question": false
+    },
+    {
+        "title": "Delete Greatest Value in Each Row",
+        "url": "https://leetcode.com/problems/delete-greatest-value-in-each-row/",
+        "total_acs": 54102,
+        "total_submitted": 69540,
+        "is_new_question": false
+    },
+    {
+        "title": "Circular Sentence",
+        "url": "https://leetcode.com/problems/circular-sentence/",
+        "total_acs": 37453,
+        "total_submitted": 59553,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Cuts to Divide a Circle",
+        "url": "https://leetcode.com/problems/minimum-cuts-to-divide-a-circle/",
+        "total_acs": 31250,
+        "total_submitted": 58923,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Pivot Integer",
+        "url": "https://leetcode.com/problems/find-the-pivot-integer/",
+        "total_acs": 213908,
+        "total_submitted": 254523,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Unequal Triplets in Array",
+        "url": "https://leetcode.com/problems/number-of-unequal-triplets-in-array/",
+        "total_acs": 39292,
+        "total_submitted": 55300,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Distinct Averages",
+        "url": "https://leetcode.com/problems/number-of-distinct-averages/",
+        "total_acs": 39899,
+        "total_submitted": 69036,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert the Temperature",
+        "url": "https://leetcode.com/problems/convert-the-temperature/",
+        "total_acs": 160578,
+        "total_submitted": 180198,
+        "is_new_question": false
+    },
+    {
+        "title": "Apply Operations to an Array",
+        "url": "https://leetcode.com/problems/apply-operations-to-an-array/",
+        "total_acs": 57258,
+        "total_submitted": 85130,
+        "is_new_question": false
+    },
+    {
+        "title": "Odd String Difference",
+        "url": "https://leetcode.com/problems/odd-string-difference/",
+        "total_acs": 27790,
+        "total_submitted": 47188,
+        "is_new_question": false
+    },
+    {
+        "title": "Average Value of Even Numbers That Are Divisible by Three",
+        "url": "https://leetcode.com/problems/average-value-of-even-numbers-that-are-divisible-by-three/",
+        "total_acs": 52712,
+        "total_submitted": 87805,
+        "is_new_question": false
+    },
+    {
+        "title": "Determine if Two Events Have Conflict",
+        "url": "https://leetcode.com/problems/determine-if-two-events-have-conflict/",
+        "total_acs": 41489,
+        "total_submitted": 81831,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Letter To Equalize Frequency",
+        "url": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/",
+        "total_acs": 41632,
+        "total_submitted": 241102,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Valid Clock Times",
+        "url": "https://leetcode.com/problems/number-of-valid-clock-times/",
+        "total_acs": 28656,
+        "total_submitted": 62162,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Positive Integer That Exists With Its Negative",
+        "url": "https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative/",
+        "total_acs": 60057,
+        "total_submitted": 88046,
+        "is_new_question": false
+    },
+    {
+        "title": "The Employee That Worked on the Longest Task",
+        "url": "https://leetcode.com/problems/the-employee-that-worked-on-the-longest-task/",
+        "total_acs": 33380,
+        "total_submitted": 67094,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort the Olympic Table",
+        "url": "https://leetcode.com/problems/sort-the-olympic-table/",
+        "total_acs": 5521,
+        "total_submitted": 7026,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Common Factors",
+        "url": "https://leetcode.com/problems/number-of-common-factors/",
+        "total_acs": 78667,
+        "total_submitted": 99728,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort the People",
+        "url": "https://leetcode.com/problems/sort-the-people/",
+        "total_acs": 129165,
+        "total_submitted": 161571,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Days Spent Together",
+        "url": "https://leetcode.com/problems/count-days-spent-together/",
+        "total_acs": 21758,
+        "total_submitted": 48699,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Unique Subjects Taught by Each Teacher",
+        "url": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/",
+        "total_acs": 128285,
+        "total_submitted": 146664,
+        "is_new_question": false
+    },
+    {
+        "title": "Smallest Even Multiple",
+        "url": "https://leetcode.com/problems/smallest-even-multiple/",
+        "total_acs": 154853,
+        "total_submitted": 176889,
+        "is_new_question": false
+    },
+    {
+        "title": "Most Frequent Even Element",
+        "url": "https://leetcode.com/problems/most-frequent-even-element/",
+        "total_acs": 75495,
+        "total_submitted": 150083,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Subarrays With Equal Sum",
+        "url": "https://leetcode.com/problems/find-subarrays-with-equal-sum/",
+        "total_acs": 47420,
+        "total_submitted": 73043,
+        "is_new_question": false
+    },
+    {
+        "title": "Check Distances Between Same Letters",
+        "url": "https://leetcode.com/problems/check-distances-between-same-letters/",
+        "total_acs": 46292,
+        "total_submitted": 65841,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Subsequence With Limited Sum",
+        "url": "https://leetcode.com/problems/longest-subsequence-with-limited-sum/",
+        "total_acs": 104768,
+        "total_submitted": 146271,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+        "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+        "total_acs": 49562,
+        "total_submitted": 84809,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Hours of Training to Win a Competition",
+        "url": "https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/",
+        "total_acs": 30654,
+        "total_submitted": 74759,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Local Values in a Matrix",
+        "url": "https://leetcode.com/problems/largest-local-values-in-a-matrix/",
+        "total_acs": 50566,
+        "total_submitted": 60902,
+        "is_new_question": false
+    },
+    {
+        "title": "All the Matches of the League",
+        "url": "https://leetcode.com/problems/all-the-matches-of-the-league/",
+        "total_acs": 7238,
+        "total_submitted": 8295,
+        "is_new_question": false
+    },
+    {
+        "title": "Product Sales Analysis V",
+        "url": "https://leetcode.com/problems/product-sales-analysis-v/",
+        "total_acs": 6565,
+        "total_submitted": 9473,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Similar Items",
+        "url": "https://leetcode.com/problems/merge-similar-items/",
+        "total_acs": 53715,
+        "total_submitted": 71193,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Arithmetic Triplets",
+        "url": "https://leetcode.com/problems/number-of-arithmetic-triplets/",
+        "total_acs": 115126,
+        "total_submitted": 137396,
+        "is_new_question": false
+    },
+    {
+        "title": "Make Array Zero by Subtracting Equal Amounts",
+        "url": "https://leetcode.com/problems/make-array-zero-by-subtracting-equal-amounts/",
+        "total_acs": 102500,
+        "total_submitted": 141946,
+        "is_new_question": false
+    },
+    {
+        "title": "Best Poker Hand",
+        "url": "https://leetcode.com/problems/best-poker-hand/",
+        "total_acs": 39311,
+        "total_submitted": 65114,
+        "is_new_question": false
+    },
+    {
+        "title": "First Letter to Appear Twice",
+        "url": "https://leetcode.com/problems/first-letter-to-appear-twice/",
+        "total_acs": 109289,
+        "total_submitted": 148673,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Pairs in Array",
+        "url": "https://leetcode.com/problems/maximum-number-of-pairs-in-array/",
+        "total_acs": 64812,
+        "total_submitted": 86085,
+        "is_new_question": false
+    },
+    {
+        "title": "Evaluate Boolean Binary Tree",
+        "url": "https://leetcode.com/problems/evaluate-boolean-binary-tree/",
+        "total_acs": 68419,
+        "total_submitted": 88001,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Amount of Time to Fill Cups",
+        "url": "https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/",
+        "total_acs": 45207,
+        "total_submitted": 78743,
+        "is_new_question": false
+    },
+    {
+        "title": "Decode the Message",
+        "url": "https://leetcode.com/problems/decode-the-message/",
+        "total_acs": 90815,
+        "total_submitted": 108229,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Asterisks",
+        "url": "https://leetcode.com/problems/count-asterisks/",
+        "total_acs": 66041,
+        "total_submitted": 80446,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Matrix Is X-Matrix",
+        "url": "https://leetcode.com/problems/check-if-matrix-is-x-matrix/",
+        "total_acs": 50047,
+        "total_submitted": 76659,
+        "is_new_question": false
+    },
+    {
+        "title": "Strong Password Checker II",
+        "url": "https://leetcode.com/problems/strong-password-checker-ii/",
+        "total_acs": 39416,
+        "total_submitted": 71894,
+        "is_new_question": false
+    },
+    {
+        "title": "Min Max Game",
+        "url": "https://leetcode.com/problems/min-max-game/",
+        "total_acs": 45894,
+        "total_submitted": 72879,
+        "is_new_question": false
+    },
+    {
+        "title": "Root Equals Sum of Children",
+        "url": "https://leetcode.com/problems/root-equals-sum-of-children/",
+        "total_acs": 208145,
+        "total_submitted": 247559,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Two Integers",
+        "url": "https://leetcode.com/problems/add-two-integers/",
+        "total_acs": 467731,
+        "total_submitted": 533918,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Number Has Equal Digit Count and Digit Value",
+        "url": "https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/",
+        "total_acs": 53838,
+        "total_submitted": 74551,
+        "is_new_question": false
+    },
+    {
+        "title": "Rearrange Characters to Make Target String",
+        "url": "https://leetcode.com/problems/rearrange-characters-to-make-target-string/",
+        "total_acs": 38958,
+        "total_submitted": 66286,
+        "is_new_question": false
+    },
+    {
+        "title": "The Users That Are Eligible for Discount",
+        "url": "https://leetcode.com/problems/the-users-that-are-eligible-for-discount/",
+        "total_acs": 4973,
+        "total_submitted": 10001,
+        "is_new_question": false
+    },
+    {
+        "title": "Percentage of Letter in String",
+        "url": "https://leetcode.com/problems/percentage-of-letter-in-string/",
+        "total_acs": 68852,
+        "total_submitted": 93098,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Digit Sum of a String",
+        "url": "https://leetcode.com/problems/calculate-digit-sum-of-a-string/",
+        "total_acs": 37540,
+        "total_submitted": 57047,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Closest Number to Zero",
+        "url": "https://leetcode.com/problems/find-closest-number-to-zero/",
+        "total_acs": 54634,
+        "total_submitted": 122171,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest 3-Same-Digit Number in String",
+        "url": "https://leetcode.com/problems/largest-3-same-digit-number-in-string/",
+        "total_acs": 139560,
+        "total_submitted": 201942,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Number of Operations to Convert Time",
+        "url": "https://leetcode.com/problems/minimum-number-of-operations-to-convert-time/",
+        "total_acs": 40027,
+        "total_submitted": 61519,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Prefixes of a Given String",
+        "url": "https://leetcode.com/problems/count-prefixes-of-a-given-string/",
+        "total_acs": 57757,
+        "total_submitted": 79689,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Digit From Number to Maximize Result",
+        "url": "https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/",
+        "total_acs": 75109,
+        "total_submitted": 167165,
+        "is_new_question": false
+    },
+    {
+        "title": "The Number of Users That Are Eligible for Discount",
+        "url": "https://leetcode.com/problems/the-number-of-users-that-are-eligible-for-discount/",
+        "total_acs": 5774,
+        "total_submitted": 11573,
+        "is_new_question": false
+    },
+    {
+        "title": "Intersection of Multiple Arrays",
+        "url": "https://leetcode.com/problems/intersection-of-multiple-arrays/",
+        "total_acs": 73552,
+        "total_submitted": 108166,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Number After Digit Swaps by Parity",
+        "url": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/",
+        "total_acs": 41212,
+        "total_submitted": 67234,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Bit Flips to Convert Number",
+        "url": "https://leetcode.com/problems/minimum-bit-flips-to-convert-number/",
+        "total_acs": 71378,
+        "total_submitted": 85413,
+        "is_new_question": false
+    },
+    {
+        "title": "Find All K-Distant Indices in an Array",
+        "url": "https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/",
+        "total_acs": 37940,
+        "total_submitted": 57906,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Hills and Valleys in an Array",
+        "url": "https://leetcode.com/problems/count-hills-and-valleys-in-an-array/",
+        "total_acs": 44275,
+        "total_submitted": 73973,
+        "is_new_question": false
+    },
+    {
+        "title": "Most Frequent Number Following Key In an Array",
+        "url": "https://leetcode.com/problems/most-frequent-number-following-key-in-an-array/",
+        "total_acs": 34107,
+        "total_submitted": 57859,
+        "is_new_question": false
+    },
+    {
+        "title": "Divide Array Into Equal Pairs",
+        "url": "https://leetcode.com/problems/divide-array-into-equal-pairs/",
+        "total_acs": 75400,
+        "total_submitted": 102733,
+        "is_new_question": false
+    },
+    {
+        "title": "Cells in a Range on an Excel Sheet",
+        "url": "https://leetcode.com/problems/cells-in-a-range-on-an-excel-sheet/",
+        "total_acs": 66501,
+        "total_submitted": 79212,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Integers With Even Digit Sum",
+        "url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/",
+        "total_acs": 57258,
+        "total_submitted": 85862,
+        "is_new_question": false
+    },
+    {
+        "title": "Counting Words With a Given Prefix",
+        "url": "https://leetcode.com/problems/counting-words-with-a-given-prefix/",
+        "total_acs": 89056,
+        "total_submitted": 114432,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Operations to Obtain Zero",
+        "url": "https://leetcode.com/problems/count-operations-to-obtain-zero/",
+        "total_acs": 69476,
+        "total_submitted": 93447,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort Even and Odd Indices Independently",
+        "url": "https://leetcode.com/problems/sort-even-and-odd-indices-independently/",
+        "total_acs": 58216,
+        "total_submitted": 92761,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Equal and Divisible Pairs in an Array",
+        "url": "https://leetcode.com/problems/count-equal-and-divisible-pairs-in-an-array/",
+        "total_acs": 72384,
+        "total_submitted": 91145,
+        "is_new_question": false
+    },
+    {
+        "title": "Keep Multiplying Found Values by Two",
+        "url": "https://leetcode.com/problems/keep-multiplying-found-values-by-two/",
+        "total_acs": 88291,
+        "total_submitted": 123783,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Elements With Strictly Smaller and Greater Elements ",
+        "url": "https://leetcode.com/problems/count-elements-with-strictly-smaller-and-greater-elements/",
+        "total_acs": 55295,
+        "total_submitted": 93113,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Sum of Four Digit Number After Splitting Digits",
+        "url": "https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/",
+        "total_acs": 121873,
+        "total_submitted": 141546,
+        "is_new_question": false
+    },
+    {
+        "title": "Divide a String Into Groups of Size k",
+        "url": "https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/",
+        "total_acs": 44982,
+        "total_submitted": 67772,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Every Row and Column Contains All Numbers",
+        "url": "https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/",
+        "total_acs": 69266,
+        "total_submitted": 133959,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Cost of Buying Candies With Discount",
+        "url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/",
+        "total_acs": 47066,
+        "total_submitted": 77149,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if All A's Appears Before All B's",
+        "url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
+        "total_acs": 73262,
+        "total_submitted": 102691,
+        "is_new_question": false
+    },
+    {
+        "title": "A Number After a Double Reversal",
+        "url": "https://leetcode.com/problems/a-number-after-a-double-reversal/",
+        "total_acs": 82108,
+        "total_submitted": 103395,
+        "is_new_question": false
+    },
+    {
+        "title": "Capitalize the Title",
+        "url": "https://leetcode.com/problems/capitalize-the-title/",
+        "total_acs": 59375,
+        "total_submitted": 92946,
+        "is_new_question": false
+    },
+    {
+        "title": "Find First Palindromic String in the Array",
+        "url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+        "total_acs": 265537,
+        "total_submitted": 316508,
+        "is_new_question": false
+    },
+    {
+        "title": "Rings and Rods",
+        "url": "https://leetcode.com/problems/rings-and-rods/",
+        "total_acs": 70285,
+        "total_submitted": 87044,
+        "is_new_question": false
+    },
+    {
+        "title": "The Number of Rich Customers",
+        "url": "https://leetcode.com/problems/the-number-of-rich-customers/",
+        "total_acs": 21642,
+        "total_submitted": 27983,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Words Found in Sentences",
+        "url": "https://leetcode.com/problems/maximum-number-of-words-found-in-sentences/",
+        "total_acs": 271586,
+        "total_submitted": 314378,
+        "is_new_question": false
+    },
+    {
+        "title": "Finding 3-Digit Even Numbers",
+        "url": "https://leetcode.com/problems/finding-3-digit-even-numbers/",
+        "total_acs": 29640,
+        "total_submitted": 49654,
+        "is_new_question": false
+    },
+    {
+        "title": "The Winner University",
+        "url": "https://leetcode.com/problems/the-winner-university/",
+        "total_acs": 10392,
+        "total_submitted": 14202,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Target Indices After Sorting Array",
+        "url": "https://leetcode.com/problems/find-target-indices-after-sorting-array/",
+        "total_acs": 167594,
+        "total_submitted": 220154,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Subsequence of Length K With the Largest Sum",
+        "url": "https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/",
+        "total_acs": 47673,
+        "total_submitted": 109713,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Furthest Houses With Different Colors",
+        "url": "https://leetcode.com/problems/two-furthest-houses-with-different-colors/",
+        "total_acs": 51896,
+        "total_submitted": 78371,
+        "is_new_question": false
+    },
+    {
+        "title": "Time Needed to Buy Tickets",
+        "url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+        "total_acs": 60542,
+        "total_submitted": 95964,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Common Words With One Occurrence",
+        "url": "https://leetcode.com/problems/count-common-words-with-one-occurrence/",
+        "total_acs": 62869,
+        "total_submitted": 89687,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Vowel Substrings of a String",
+        "url": "https://leetcode.com/problems/count-vowel-substrings-of-a-string/",
+        "total_acs": 37994,
+        "total_submitted": 56445,
+        "is_new_question": false
+    },
+    {
+        "title": "Smallest Index With Equal Value",
+        "url": "https://leetcode.com/problems/smallest-index-with-equal-value/",
+        "total_acs": 59089,
+        "total_submitted": 81425,
+        "is_new_question": false
+    },
+    {
+        "title": "Check Whether Two Strings are Almost Equivalent",
+        "url": "https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/",
+        "total_acs": 51561,
+        "total_submitted": 80958,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Valid Words in a Sentence",
+        "url": "https://leetcode.com/problems/number-of-valid-words-in-a-sentence/",
+        "total_acs": 28035,
+        "total_submitted": 96806,
+        "is_new_question": false
+    },
+    {
+        "title": "Low-Quality Problems",
+        "url": "https://leetcode.com/problems/low-quality-problems/",
+        "total_acs": 11494,
+        "total_submitted": 13640,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Numbers Are Ascending in a Sentence",
+        "url": "https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/",
+        "total_acs": 54915,
+        "total_submitted": 79412,
+        "is_new_question": false
+    },
+    {
+        "title": "Kth Distinct String in an Array",
+        "url": "https://leetcode.com/problems/kth-distinct-string-in-an-array/",
+        "total_acs": 60205,
+        "total_submitted": 82947,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Out of Three",
+        "url": "https://leetcode.com/problems/two-out-of-three/",
+        "total_acs": 64771,
+        "total_submitted": 86561,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Moves to Convert String",
+        "url": "https://leetcode.com/problems/minimum-moves-to-convert-string/",
+        "total_acs": 34824,
+        "total_submitted": 63990,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Number of Moves to Seat Everyone",
+        "url": "https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/",
+        "total_acs": 66572,
+        "total_submitted": 81269,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Difference Between Increasing Elements",
+        "url": "https://leetcode.com/problems/maximum-difference-between-increasing-elements/",
+        "total_acs": 79101,
+        "total_submitted": 141290,
+        "is_new_question": false
+    },
+    {
+        "title": "Final Value of Variable After Performing Operations",
+        "url": "https://leetcode.com/problems/final-value-of-variable-after-performing-operations/",
+        "total_acs": 352455,
+        "total_submitted": 396502,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert 1D Array Into 2D Array",
+        "url": "https://leetcode.com/problems/convert-1d-array-into-2d-array/",
+        "total_acs": 79180,
+        "total_submitted": 129647,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Prefix of Word",
+        "url": "https://leetcode.com/problems/reverse-prefix-of-word/",
+        "total_acs": 101140,
+        "total_submitted": 125280,
+        "is_new_question": false
+    },
+    {
+        "title": "Employees Whose Manager Left the Company",
+        "url": "https://leetcode.com/problems/employees-whose-manager-left-the-company/",
+        "total_acs": 84462,
+        "total_submitted": 177496,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Special Quadruplets",
+        "url": "https://leetcode.com/problems/count-special-quadruplets/",
+        "total_acs": 39302,
+        "total_submitted": 64428,
+        "is_new_question": false
+    },
+    {
+        "title": "Find if Path Exists in Graph",
+        "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+        "total_acs": 315884,
+        "total_submitted": 612691,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Number of Pairs With Absolute Difference K",
+        "url": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/",
+        "total_acs": 141852,
+        "total_submitted": 169686,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Difference Between Highest and Lowest of K Scores",
+        "url": "https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/",
+        "total_acs": 70611,
+        "total_submitted": 125199,
+        "is_new_question": false
+    },
+    {
+        "title": "Employees With Missing Information",
+        "url": "https://leetcode.com/problems/employees-with-missing-information/",
+        "total_acs": 116548,
+        "total_submitted": 161679,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Greatest Common Divisor of Array",
+        "url": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/",
+        "total_acs": 124743,
+        "total_submitted": 160570,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Middle Index in Array",
+        "url": "https://leetcode.com/problems/find-the-middle-index-in-array/",
+        "total_acs": 89766,
+        "total_submitted": 133226,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Strings That Appear as Substrings in Word",
+        "url": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
+        "total_acs": 66028,
+        "total_submitted": 81909,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If String Is a Prefix of Array",
+        "url": "https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/",
+        "total_acs": 49343,
+        "total_submitted": 93388,
+        "is_new_question": false
+    },
+    {
+        "title": "Users That Actively Request Confirmation Messages",
+        "url": "https://leetcode.com/problems/users-that-actively-request-confirmation-messages/",
+        "total_acs": 10680,
+        "total_submitted": 18920,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Time to Type Word Using Special Typewriter",
+        "url": "https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/",
+        "total_acs": 41121,
+        "total_submitted": 54912,
+        "is_new_question": false
+    },
+    {
+        "title": "Three Divisors",
+        "url": "https://leetcode.com/problems/three-divisors/",
+        "total_acs": 64343,
+        "total_submitted": 106435,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Digits of String After Convert",
+        "url": "https://leetcode.com/problems/sum-of-digits-of-string-after-convert/",
+        "total_acs": 51041,
+        "total_submitted": 81924,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if String Is Decomposable Into Value-Equal Substrings",
+        "url": "https://leetcode.com/problems/check-if-string-is-decomposable-into-value-equal-substrings/",
+        "total_acs": 3602,
+        "total_submitted": 7115,
+        "is_new_question": false
+    },
+    {
+        "title": "Concatenation of Array",
+        "url": "https://leetcode.com/problems/concatenation-of-array/",
+        "total_acs": 703956,
+        "total_submitted": 784592,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if All Characters Have Equal Number of Occurrences",
+        "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+        "total_acs": 90618,
+        "total_submitted": 117298,
+        "is_new_question": false
+    },
+    {
+        "title": "Build Array from Permutation",
+        "url": "https://leetcode.com/problems/build-array-from-permutation/",
+        "total_acs": 491346,
+        "total_submitted": 548112,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Product Difference Between Two Pairs",
+        "url": "https://leetcode.com/problems/maximum-product-difference-between-two-pairs/",
+        "total_acs": 232468,
+        "total_submitted": 280621,
+        "is_new_question": false
+    },
+    {
+        "title": "The Latest Login in 2020",
+        "url": "https://leetcode.com/problems/the-latest-login-in-2020/",
+        "total_acs": 81647,
+        "total_submitted": 105897,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Square Sum Triples",
+        "url": "https://leetcode.com/problems/count-square-sum-triples/",
+        "total_acs": 43133,
+        "total_submitted": 63739,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Odd Number in String",
+        "url": "https://leetcode.com/problems/largest-odd-number-in-string/",
+        "total_acs": 231205,
+        "total_submitted": 365500,
+        "is_new_question": false
+    },
+    {
+        "title": "Redistribute Characters to Make All Strings Equal",
+        "url": "https://leetcode.com/problems/redistribute-characters-to-make-all-strings-equal/",
+        "total_acs": 133085,
+        "total_submitted": 196782,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Special Bonus",
+        "url": "https://leetcode.com/problems/calculate-special-bonus/",
+        "total_acs": 227917,
+        "total_submitted": 395339,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove One Element to Make the Array Strictly Increasing",
+        "url": "https://leetcode.com/problems/remove-one-element-to-make-the-array-strictly-increasing/",
+        "total_acs": 61794,
+        "total_submitted": 227098,
+        "is_new_question": false
+    },
+    {
+        "title": "Determine Whether Matrix Can Be Obtained By Rotation",
+        "url": "https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/",
+        "total_acs": 66144,
+        "total_submitted": 116772,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Word Equals Summation of Two Words",
+        "url": "https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/",
+        "total_acs": 63906,
+        "total_submitted": 86369,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if All the Integers in a Range Are Covered",
+        "url": "https://leetcode.com/problems/check-if-all-the-integers-in-a-range-are-covered/",
+        "total_acs": 41116,
+        "total_submitted": 82778,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Date Format",
+        "url": "https://leetcode.com/problems/convert-date-format/",
+        "total_acs": 12535,
+        "total_submitted": 14618,
+        "is_new_question": false
+    },
+    {
+        "title": "Longer Contiguous Segments of Ones than Zeros",
+        "url": "https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/",
+        "total_acs": 46253,
+        "total_submitted": 75971,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of All Subset XOR Totals",
+        "url": "https://leetcode.com/problems/sum-of-all-subset-xor-totals/",
+        "total_acs": 72547,
+        "total_submitted": 89338,
+        "is_new_question": false
+    },
+    {
+        "title": "Substrings of Size Three with Distinct Characters",
+        "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+        "total_acs": 114551,
+        "total_submitted": 156739,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Population Year",
+        "url": "https://leetcode.com/problems/maximum-population-year/",
+        "total_acs": 63881,
+        "total_submitted": 105947,
+        "is_new_question": false
+    },
+    {
+        "title": "Faulty Sensor",
+        "url": "https://leetcode.com/problems/faulty-sensor/",
+        "total_acs": 4306,
+        "total_submitted": 8620,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Distance to the Target Element",
+        "url": "https://leetcode.com/problems/minimum-distance-to-the-target-element/",
+        "total_acs": 42997,
+        "total_submitted": 78577,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Customers With Positive Revenue this Year",
+        "url": "https://leetcode.com/problems/find-customers-with-positive-revenue-this-year/",
+        "total_acs": 22303,
+        "total_submitted": 25343,
+        "is_new_question": false
+    },
+    {
+        "title": "Sorting the Sentence",
+        "url": "https://leetcode.com/problems/sorting-the-sentence/",
+        "total_acs": 157418,
+        "total_submitted": 189656,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Digits in Base K",
+        "url": "https://leetcode.com/problems/sum-of-digits-in-base-k/",
+        "total_acs": 51992,
+        "total_submitted": 67304,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if the Sentence Is Pangram",
+        "url": "https://leetcode.com/problems/check-if-the-sentence-is-pangram/",
+        "total_acs": 319086,
+        "total_submitted": 383884,
+        "is_new_question": false
+    },
+    {
+        "title": "Ad-Free Sessions",
+        "url": "https://leetcode.com/problems/ad-free-sessions/",
+        "total_acs": 15182,
+        "total_submitted": 26043,
+        "is_new_question": false
+    },
+    {
+        "title": "Replace All Digits with Characters",
+        "url": "https://leetcode.com/problems/replace-all-digits-with-characters/",
+        "total_acs": 82435,
+        "total_submitted": 101851,
+        "is_new_question": false
+    },
+    {
+        "title": "Sign of the Product of an Array",
+        "url": "https://leetcode.com/problems/sign-of-the-product-of-an-array/",
+        "total_acs": 327875,
+        "total_submitted": 502446,
+        "is_new_question": false
+    },
+    {
+        "title": "Rearrange Products Table",
+        "url": "https://leetcode.com/problems/rearrange-products-table/",
+        "total_acs": 122033,
+        "total_submitted": 143168,
+        "is_new_question": false
+    },
+    {
+        "title": "Truncate Sentence",
+        "url": "https://leetcode.com/problems/truncate-sentence/",
+        "total_acs": 156804,
+        "total_submitted": 185249,
+        "is_new_question": false
+    },
+    {
+        "title": "Primary Department for Each Employee",
+        "url": "https://leetcode.com/problems/primary-department-for-each-employee/",
+        "total_acs": 88453,
+        "total_submitted": 138402,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Operations to Make the Array Increasing",
+        "url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/",
+        "total_acs": 89414,
+        "total_submitted": 112938,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Different Integers in a String",
+        "url": "https://leetcode.com/problems/number-of-different-integers-in-a-string/",
+        "total_acs": 46013,
+        "total_submitted": 122168,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Ascending Subarray Sum",
+        "url": "https://leetcode.com/problems/maximum-ascending-subarray-sum/",
+        "total_acs": 53649,
+        "total_submitted": 86194,
+        "is_new_question": false
+    },
+    {
+        "title": "Product's Price for Each Store",
+        "url": "https://leetcode.com/problems/products-price-for-each-store/",
+        "total_acs": 19458,
+        "total_submitted": 23653,
+        "is_new_question": false
+    },
+    {
+        "title": "Determine Color of a Chessboard Square",
+        "url": "https://leetcode.com/problems/determine-color-of-a-chessboard-square/",
+        "total_acs": 77475,
+        "total_submitted": 98953,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Center of Star Graph",
+        "url": "https://leetcode.com/problems/find-center-of-star-graph/",
+        "total_acs": 181179,
+        "total_submitted": 216815,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if One String Swap Can Make Strings Equal",
+        "url": "https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/",
+        "total_acs": 103213,
+        "total_submitted": 226080,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Binary String Has at Most One Segment of Ones",
+        "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
+        "total_acs": 41374,
+        "total_submitted": 105392,
+        "is_new_question": false
+    },
+    {
+        "title": "Recyclable and Low Fat Products",
+        "url": "https://leetcode.com/problems/recyclable-and-low-fat-products/",
+        "total_acs": 872366,
+        "total_submitted": 977851,
+        "is_new_question": false
+    },
+    {
+        "title": "Second Largest Digit in a String",
+        "url": "https://leetcode.com/problems/second-largest-digit-in-a-string/",
+        "total_acs": 53858,
+        "total_submitted": 107531,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Items Matching a Rule",
+        "url": "https://leetcode.com/problems/count-items-matching-a-rule/",
+        "total_acs": 212349,
+        "total_submitted": 250530,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Strings Alternately",
+        "url": "https://leetcode.com/problems/merge-strings-alternately/",
+        "total_acs": 728772,
+        "total_submitted": 915128,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Total Time Spent by Each Employee",
+        "url": "https://leetcode.com/problems/find-total-time-spent-by-each-employee/",
+        "total_acs": 127096,
+        "total_submitted": 146185,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Nearest Point That Has the Same X or Y Coordinate",
+        "url": "https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/",
+        "total_acs": 112156,
+        "total_submitted": 164296,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Changes To Make Alternating Binary String",
+        "url": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
+        "total_acs": 140590,
+        "total_submitted": 220023,
+        "is_new_question": false
+    },
+    {
+        "title": "The Number of Employees Which Report to Each Employee",
+        "url": "https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee/",
+        "total_acs": 99221,
+        "total_submitted": 217584,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if Array Is Sorted and Rotated",
+        "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+        "total_acs": 194033,
+        "total_submitted": 380865,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Followers Count",
+        "url": "https://leetcode.com/problems/find-followers-count/",
+        "total_acs": 157587,
+        "total_submitted": 228687,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Nice Substring",
+        "url": "https://leetcode.com/problems/longest-nice-substring/",
+        "total_acs": 51730,
+        "total_submitted": 85506,
+        "is_new_question": false
+    },
+    {
+        "title": "Latest Time by Replacing Hidden Digits",
+        "url": "https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/",
+        "total_acs": 34685,
+        "total_submitted": 81328,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Unique Elements",
+        "url": "https://leetcode.com/problems/sum-of-unique-elements/",
+        "total_acs": 160505,
+        "total_submitted": 207352,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Subarray Length K",
+        "url": "https://leetcode.com/problems/largest-subarray-length-k/",
+        "total_acs": 8331,
+        "total_submitted": 12899,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Balls in a Box",
+        "url": "https://leetcode.com/problems/maximum-number-of-balls-in-a-box/",
+        "total_acs": 62032,
+        "total_submitted": 84613,
+        "is_new_question": false
+    },
+    {
+        "title": "Number Of Rectangles That Can Form The Largest Square",
+        "url": "https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/",
+        "total_acs": 67940,
+        "total_submitted": 86376,
+        "is_new_question": false
+    },
+    {
+        "title": "Decode XORed Array",
+        "url": "https://leetcode.com/problems/decode-xored-array/",
+        "total_acs": 146578,
+        "total_submitted": 170070,
+        "is_new_question": false
+    },
+    {
+        "title": "Daily Leads and Partners",
+        "url": "https://leetcode.com/problems/daily-leads-and-partners/",
+        "total_acs": 116609,
+        "total_submitted": 134773,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Highest Altitude",
+        "url": "https://leetcode.com/problems/find-the-highest-altitude/",
+        "total_acs": 352781,
+        "total_submitted": 425208,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Units on a Truck",
+        "url": "https://leetcode.com/problems/maximum-units-on-a-truck/",
+        "total_acs": 297458,
+        "total_submitted": 404196,
+        "is_new_question": false
+    },
+    {
+        "title": "Invalid Tweets",
+        "url": "https://leetcode.com/problems/invalid-tweets/",
+        "total_acs": 383687,
+        "total_submitted": 451096,
+        "is_new_question": false
+    },
+    {
+        "title": "Determine if String Halves Are Alike",
+        "url": "https://leetcode.com/problems/determine-if-string-halves-are-alike/",
+        "total_acs": 344637,
+        "total_submitted": 437863,
+        "is_new_question": false
+    },
+    {
+        "title": "Product's Worth Over Invoices",
+        "url": "https://leetcode.com/problems/products-worth-over-invoices/",
+        "total_acs": 16564,
+        "total_submitted": 43481,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Money in Leetcode Bank",
+        "url": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
+        "total_acs": 152960,
+        "total_submitted": 195396,
+        "is_new_question": false
+    },
+    {
+        "title": "Reformat Phone Number",
+        "url": "https://leetcode.com/problems/reformat-phone-number/",
+        "total_acs": 36791,
+        "total_submitted": 56257,
+        "is_new_question": false
+    },
+    {
+        "title": "Fix Names in a Table",
+        "url": "https://leetcode.com/problems/fix-names-in-a-table/",
+        "total_acs": 197902,
+        "total_submitted": 320070,
+        "is_new_question": false
+    },
+    {
+        "title": "Count of Matches in Tournament",
+        "url": "https://leetcode.com/problems/count-of-matches-in-tournament/",
+        "total_acs": 233360,
+        "total_submitted": 271822,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Students Unable to Eat Lunch",
+        "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+        "total_acs": 100182,
+        "total_submitted": 140967,
+        "is_new_question": false
+    },
+    {
+        "title": "Average Time of Process per Machine",
+        "url": "https://leetcode.com/problems/average-time-of-process-per-machine/",
+        "total_acs": 196611,
+        "total_submitted": 294316,
+        "is_new_question": false
+    },
+    {
+        "title": "Goal Parser Interpretation",
+        "url": "https://leetcode.com/problems/goal-parser-interpretation/",
+        "total_acs": 241067,
+        "total_submitted": 276752,
+        "is_new_question": false
+    },
+    {
+        "title": "Richest Customer Wealth",
+        "url": "https://leetcode.com/problems/richest-customer-wealth/",
+        "total_acs": 829064,
+        "total_submitted": 943861,
+        "is_new_question": false
+    },
+    {
+        "title": "Count the Number of Consistent Strings",
+        "url": "https://leetcode.com/problems/count-the-number-of-consistent-strings/",
+        "total_acs": 169953,
+        "total_submitted": 204891,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If Two String Arrays are Equivalent",
+        "url": "https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/",
+        "total_acs": 463881,
+        "total_submitted": 543728,
+        "is_new_question": false
+    },
+    {
+        "title": "Design an Ordered Stream",
+        "url": "https://leetcode.com/problems/design-an-ordered-stream/",
+        "total_acs": 84214,
+        "total_submitted": 99951,
+        "is_new_question": false
+    },
+    {
+        "title": "Percentage of Users Attended a Contest",
+        "url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
+        "total_acs": 137940,
+        "total_submitted": 249682,
+        "is_new_question": false
+    },
+    {
+        "title": "Get Maximum in Generated Array",
+        "url": "https://leetcode.com/problems/get-maximum-in-generated-array/",
+        "total_acs": 107332,
+        "total_submitted": 213114,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Repeating Substring",
+        "url": "https://leetcode.com/problems/maximum-repeating-substring/",
+        "total_acs": 45538,
+        "total_submitted": 117569,
+        "is_new_question": false
+    },
+    {
+        "title": "All Valid Triplets That Can Represent a Country",
+        "url": "https://leetcode.com/problems/all-valid-triplets-that-can-represent-a-country/",
+        "total_acs": 19261,
+        "total_submitted": 23323,
+        "is_new_question": false
+    },
+    {
+        "title": "Check Array Formation Through Concatenation",
+        "url": "https://leetcode.com/problems/check-array-formation-through-concatenation/",
+        "total_acs": 80964,
+        "total_submitted": 143415,
+        "is_new_question": false
+    },
+    {
+        "title": "Defuse the Bomb",
+        "url": "https://leetcode.com/problems/defuse-the-bomb/",
+        "total_acs": 41709,
+        "total_submitted": 64475,
+        "is_new_question": false
+    },
+    {
+        "title": "Slowest Key",
+        "url": "https://leetcode.com/problems/slowest-key/",
+        "total_acs": 98055,
+        "total_submitted": 166157,
+        "is_new_question": false
+    },
+    {
+        "title": "Sellers With No Sales",
+        "url": "https://leetcode.com/problems/sellers-with-no-sales/",
+        "total_acs": 31865,
+        "total_submitted": 58753,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Substring Between Two Equal Characters",
+        "url": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/",
+        "total_acs": 147666,
+        "total_submitted": 214820,
+        "is_new_question": false
+    },
+    {
+        "title": "Widest Vertical Area Between Two Points Containing No Points",
+        "url": "https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/",
+        "total_acs": 159043,
+        "total_submitted": 181183,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort Array by Increasing Frequency",
+        "url": "https://leetcode.com/problems/sort-array-by-increasing-frequency/",
+        "total_acs": 122320,
+        "total_submitted": 171448,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Nesting Depth of the Parentheses",
+        "url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+        "total_acs": 183316,
+        "total_submitted": 225105,
+        "is_new_question": false
+    },
+    {
+        "title": "Bank Account Summary II",
+        "url": "https://leetcode.com/problems/bank-account-summary-ii/",
+        "total_acs": 97250,
+        "total_submitted": 116472,
+        "is_new_question": false
+    },
+    {
+        "title": "Special Array With X Elements Greater Than or Equal X",
+        "url": "https://leetcode.com/problems/special-array-with-x-elements-greater-than-or-equal-x/",
+        "total_acs": 81505,
+        "total_submitted": 135633,
+        "is_new_question": false
+    },
+    {
+        "title": "Customer Who Visited but Did Not Make Any Transactions",
+        "url": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/",
+        "total_acs": 339716,
+        "total_submitted": 491817,
+        "is_new_question": false
+    },
+    {
+        "title": "Crawler Log Folder",
+        "url": "https://leetcode.com/problems/crawler-log-folder/",
+        "total_acs": 76935,
+        "total_submitted": 118334,
+        "is_new_question": false
+    },
+    {
+        "title": "Warehouse Manager",
+        "url": "https://leetcode.com/problems/warehouse-manager/",
+        "total_acs": 40584,
+        "total_submitted": 46269,
+        "is_new_question": false
+    },
+    {
+        "title": "Rearrange Spaces Between Words",
+        "url": "https://leetcode.com/problems/rearrange-spaces-between-words/",
+        "total_acs": 55306,
+        "total_submitted": 127681,
+        "is_new_question": false
+    },
+    {
+        "title": "Unique Orders and Customers Per Month",
+        "url": "https://leetcode.com/problems/unique-orders-and-customers-per-month/",
+        "total_acs": 21219,
+        "total_submitted": 25856,
+        "is_new_question": false
+    },
+    {
+        "title": "Design Parking System",
+        "url": "https://leetcode.com/problems/design-parking-system/",
+        "total_acs": 274481,
+        "total_submitted": 311920,
+        "is_new_question": false
+    },
+    {
+        "title": "Special Positions in a Binary Matrix",
+        "url": "https://leetcode.com/problems/special-positions-in-a-binary-matrix/",
+        "total_acs": 141776,
+        "total_submitted": 206290,
+        "is_new_question": false
+    },
+    {
+        "title": "Replace All ?'s to Avoid Consecutive Repeating Characters",
+        "url": "https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/",
+        "total_acs": 59217,
+        "total_submitted": 127192,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of All Odd Length Subarrays",
+        "url": "https://leetcode.com/problems/sum-of-all-odd-length-subarrays/",
+        "total_acs": 193136,
+        "total_submitted": 232569,
+        "is_new_question": false
+    },
+    {
+        "title": "Detect Pattern of Length M Repeated K or More Times",
+        "url": "https://leetcode.com/problems/detect-pattern-of-length-m-repeated-k-or-more-times/",
+        "total_acs": 33817,
+        "total_submitted": 78569,
+        "is_new_question": false
+    },
+    {
+        "title": "Fix Product Name Format",
+        "url": "https://leetcode.com/problems/fix-product-name-format/",
+        "total_acs": 19895,
+        "total_submitted": 33400,
+        "is_new_question": false
+    },
+    {
+        "title": "Most Visited Sector in  a Circular Track",
+        "url": "https://leetcode.com/problems/most-visited-sector-in-a-circular-track/",
+        "total_acs": 31178,
+        "total_submitted": 53122,
+        "is_new_question": false
+    },
+    {
+        "title": "Matrix Diagonal Sum",
+        "url": "https://leetcode.com/problems/matrix-diagonal-sum/",
+        "total_acs": 342335,
+        "total_submitted": 413024,
+        "is_new_question": false
+    },
+    {
+        "title": "Patients With a Condition",
+        "url": "https://leetcode.com/problems/patients-with-a-condition/",
+        "total_acs": 191892,
+        "total_submitted": 476810,
+        "is_new_question": false
+    },
+    {
+        "title": "Make The String Great",
+        "url": "https://leetcode.com/problems/make-the-string-great/",
+        "total_acs": 167343,
+        "total_submitted": 264971,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Users With Valid E-Mails",
+        "url": "https://leetcode.com/problems/find-users-with-valid-e-mails/",
+        "total_acs": 91644,
+        "total_submitted": 202952,
+        "is_new_question": false
+    },
+    {
+        "title": "Thousand Separator",
+        "url": "https://leetcode.com/problems/thousand-separator/",
+        "total_acs": 50682,
+        "total_submitted": 94355,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Good Triplets",
+        "url": "https://leetcode.com/problems/count-good-triplets/",
+        "total_acs": 116329,
+        "total_submitted": 143388,
+        "is_new_question": false
+    },
+    {
+        "title": "Customer Order Frequency",
+        "url": "https://leetcode.com/problems/customer-order-frequency/",
+        "total_acs": 40919,
+        "total_submitted": 59945,
+        "is_new_question": false
+    },
+    {
+        "title": "Shuffle String",
+        "url": "https://leetcode.com/problems/shuffle-string/",
+        "total_acs": 370805,
+        "total_submitted": 438232,
+        "is_new_question": false
+    },
+    {
+        "title": "Kth Missing Positive Number",
+        "url": "https://leetcode.com/problems/kth-missing-positive-number/",
+        "total_acs": 399113,
+        "total_submitted": 668331,
+        "is_new_question": false
+    },
+    {
+        "title": "Water Bottles",
+        "url": "https://leetcode.com/problems/water-bottles/",
+        "total_acs": 75682,
+        "total_submitted": 124418,
+        "is_new_question": false
+    },
+    {
+        "title": "Friendly Movies Streamed Last Month",
+        "url": "https://leetcode.com/problems/friendly-movies-streamed-last-month/",
+        "total_acs": 29982,
+        "total_submitted": 61182,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Good Pairs",
+        "url": "https://leetcode.com/problems/number-of-good-pairs/",
+        "total_acs": 730796,
+        "total_submitted": 821595,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Odd Numbers in an Interval Range",
+        "url": "https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/",
+        "total_acs": 332244,
+        "total_submitted": 666549,
+        "is_new_question": false
+    },
+    {
+        "title": "Can Make Arithmetic Progression From Sequence",
+        "url": "https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/",
+        "total_acs": 241786,
+        "total_submitted": 347385,
+        "is_new_question": false
+    },
+    {
+        "title": "Group Sold Products By The Date",
+        "url": "https://leetcode.com/problems/group-sold-products-by-the-date/",
+        "total_acs": 190492,
+        "total_submitted": 248477,
+        "is_new_question": false
+    },
+    {
+        "title": "Path Crossing",
+        "url": "https://leetcode.com/problems/path-crossing/",
+        "total_acs": 153022,
+        "total_submitted": 245311,
+        "is_new_question": false
+    },
+    {
+        "title": "Delete N Nodes After M Nodes of a Linked List",
+        "url": "https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/",
+        "total_acs": 30680,
+        "total_submitted": 41948,
+        "is_new_question": false
+    },
+    {
+        "title": "XOR Operation in an Array",
+        "url": "https://leetcode.com/problems/xor-operation-in-an-array/",
+        "total_acs": 187778,
+        "total_submitted": 219232,
+        "is_new_question": false
+    },
+    {
+        "title": "Find All The Lonely Nodes",
+        "url": "https://leetcode.com/problems/find-all-the-lonely-nodes/",
+        "total_acs": 48540,
+        "total_submitted": 58685,
+        "is_new_question": false
+    },
+    {
+        "title": "Running Sum of 1d Array",
+        "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+        "total_acs": 1772753,
+        "total_submitted": 2044803,
+        "is_new_question": false
+    },
+    {
+        "title": "Average Salary Excluding the Minimum and Maximum Salary",
+        "url": "https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/",
+        "total_acs": 335294,
+        "total_submitted": 528634,
+        "is_new_question": false
+    },
+    {
+        "title": "Shuffle the Array",
+        "url": "https://leetcode.com/problems/shuffle-the-array/",
+        "total_acs": 663977,
+        "total_submitted": 750958,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Product of Two Elements in an Array",
+        "url": "https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/",
+        "total_acs": 359865,
+        "total_submitted": 436302,
+        "is_new_question": false
+    },
+    {
+        "title": "Final Prices With a Special Discount in a Shop",
+        "url": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/",
+        "total_acs": 142556,
+        "total_submitted": 183972,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If a Word Occurs As a Prefix of Any Word in a Sentence",
+        "url": "https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/",
+        "total_acs": 76903,
+        "total_submitted": 119899,
+        "is_new_question": false
+    },
+    {
+        "title": "Create a Session Bar Chart",
+        "url": "https://leetcode.com/problems/create-a-session-bar-chart/",
+        "total_acs": 22582,
+        "total_submitted": 30000,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Students Doing Homework at a Given Time",
+        "url": "https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/",
+        "total_acs": 120245,
+        "total_submitted": 159089,
+        "is_new_question": false
+    },
+    {
+        "title": "Make Two Arrays Equal by Reversing Subarrays",
+        "url": "https://leetcode.com/problems/make-two-arrays-equal-by-reversing-subarrays/",
+        "total_acs": 124503,
+        "total_submitted": 173096,
+        "is_new_question": false
+    },
+    {
+        "title": "NPV Queries",
+        "url": "https://leetcode.com/problems/npv-queries/",
+        "total_acs": 26086,
+        "total_submitted": 31588,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If All 1's Are at Least Length K Places Away",
+        "url": "https://leetcode.com/problems/check-if-all-1s-are-at-least-length-k-places-away/",
+        "total_acs": 76533,
+        "total_submitted": 131838,
+        "is_new_question": false
+    },
+    {
+        "title": "Destination City",
+        "url": "https://leetcode.com/problems/destination-city/",
+        "total_acs": 253923,
+        "total_submitted": 318813,
+        "is_new_question": false
+    },
+    {
+        "title": "Consecutive Characters",
+        "url": "https://leetcode.com/problems/consecutive-characters/",
+        "total_acs": 161709,
+        "total_submitted": 267664,
+        "is_new_question": false
+    },
+    {
+        "title": "Top Travellers",
+        "url": "https://leetcode.com/problems/top-travellers/",
+        "total_acs": 114336,
+        "total_submitted": 197182,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Score After Splitting a String",
+        "url": "https://leetcode.com/problems/maximum-score-after-splitting-a-string/",
+        "total_acs": 155478,
+        "total_submitted": 249793,
+        "is_new_question": false
+    },
+    {
+        "title": "Reformat The String",
+        "url": "https://leetcode.com/problems/reformat-the-string/",
+        "total_acs": 56683,
+        "total_submitted": 107019,
+        "is_new_question": false
+    },
+    {
+        "title": "Kids With the Greatest Number of Candies",
+        "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/",
+        "total_acs": 822261,
+        "total_submitted": 941209,
+        "is_new_question": false
+    },
+    {
+        "title": "String Matching in an Array",
+        "url": "https://leetcode.com/problems/string-matching-in-an-array/",
+        "total_acs": 85491,
+        "total_submitted": 133850,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Subsequence in Non-Increasing Order",
+        "url": "https://leetcode.com/problems/minimum-subsequence-in-non-increasing-order/",
+        "total_acs": 71235,
+        "total_submitted": 98188,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Value to Get Positive Step by Step Sum",
+        "url": "https://leetcode.com/problems/minimum-value-to-get-positive-step-by-step-sum/",
+        "total_acs": 136675,
+        "total_submitted": 207613,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Lucky Integer in an Array",
+        "url": "https://leetcode.com/problems/find-lucky-integer-in-an-array/",
+        "total_acs": 119281,
+        "total_submitted": 178995,
+        "is_new_question": false
+    },
+    {
+        "title": "Replace Employee ID With The Unique Identifier",
+        "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
+        "total_acs": 352816,
+        "total_submitted": 426308,
+        "is_new_question": false
+    },
+    {
+        "title": "Create Target Array in the Given Order",
+        "url": "https://leetcode.com/problems/create-target-array-in-the-given-order/",
+        "total_acs": 240167,
+        "total_submitted": 279947,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Largest Group",
+        "url": "https://leetcode.com/problems/count-largest-group/",
+        "total_acs": 44600,
+        "total_submitted": 67099,
+        "is_new_question": false
+    },
+    {
+        "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+        "url": "https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/",
+        "total_acs": 222572,
+        "total_submitted": 259310,
+        "is_new_question": false
+    },
+    {
+        "title": "Lucky Numbers in a Matrix",
+        "url": "https://leetcode.com/problems/lucky-numbers-in-a-matrix/",
+        "total_acs": 103961,
+        "total_submitted": 145712,
+        "is_new_question": false
+    },
+    {
+        "title": "Generate a String With Characters That Have Odd Counts",
+        "url": "https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/",
+        "total_acs": 91600,
+        "total_submitted": 117816,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Distance Value Between Two Arrays",
+        "url": "https://leetcode.com/problems/find-the-distance-value-between-two-arrays/",
+        "total_acs": 99505,
+        "total_submitted": 146037,
+        "is_new_question": false
+    },
+    {
+        "title": "How Many Numbers Are Smaller Than the Current Number",
+        "url": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+        "total_acs": 542293,
+        "total_submitted": 625915,
+        "is_new_question": false
+    },
+    {
+        "title": "Students With Invalid Departments",
+        "url": "https://leetcode.com/problems/students-with-invalid-departments/",
+        "total_acs": 54402,
+        "total_submitted": 60695,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Negative Numbers in a Sorted Matrix",
+        "url": "https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/",
+        "total_acs": 403114,
+        "total_submitted": 521545,
+        "is_new_question": false
+    },
+    {
+        "title": "Increasing Decreasing String",
+        "url": "https://leetcode.com/problems/increasing-decreasing-string/",
+        "total_acs": 75261,
+        "total_submitted": 98554,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If N and Its Double Exist",
+        "url": "https://leetcode.com/problems/check-if-n-and-its-double-exist/",
+        "total_acs": 340058,
+        "total_submitted": 917575,
+        "is_new_question": false
+    },
+    {
+        "title": "The K Weakest Rows in a Matrix",
+        "url": "https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/",
+        "total_acs": 357854,
+        "total_submitted": 487304,
+        "is_new_question": false
+    },
+    {
+        "title": "List the Products Ordered in a Period",
+        "url": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/",
+        "total_acs": 97400,
+        "total_submitted": 138718,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort Integers by The Number of 1 Bits",
+        "url": "https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/",
+        "total_acs": 219982,
+        "total_submitted": 281323,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Palindromic Subsequences",
+        "url": "https://leetcode.com/problems/remove-palindromic-subsequences/",
+        "total_acs": 131377,
+        "total_submitted": 172104,
+        "is_new_question": false
+    },
+    {
+        "title": "Ads Performance",
+        "url": "https://leetcode.com/problems/ads-performance/",
+        "total_acs": 41430,
+        "total_submitted": 69581,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum 69 Number",
+        "url": "https://leetcode.com/problems/maximum-69-number/",
+        "total_acs": 255300,
+        "total_submitted": 310529,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Steps to Reduce a Number to Zero",
+        "url": "https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/",
+        "total_acs": 648685,
+        "total_submitted": 763100,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Integer to the Sum of Two No-Zero Integers",
+        "url": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/",
+        "total_acs": 45105,
+        "total_submitted": 83286,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Team Size",
+        "url": "https://leetcode.com/problems/find-the-team-size/",
+        "total_acs": 68503,
+        "total_submitted": 76565,
+        "is_new_question": false
+    },
+    {
+        "title": "Decrypt String from Alphabet to Integer Mapping",
+        "url": "https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/",
+        "total_acs": 121753,
+        "total_submitted": 152966,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the K-Beauty of a Number",
+        "url": "https://leetcode.com/problems/find-the-k-beauty-of-a-number/",
+        "total_acs": 54165,
+        "total_submitted": 91288,
+        "is_new_question": false
+    },
+    {
+        "title": "Find N Unique Integers Sum up to Zero",
+        "url": "https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/",
+        "total_acs": 213154,
+        "total_submitted": 279589,
+        "is_new_question": false
+    },
+    {
+        "title": "Weather Type in Each Country",
+        "url": "https://leetcode.com/problems/weather-type-in-each-country/",
+        "total_acs": 39004,
+        "total_submitted": 58516,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Numbers with Even Number of Digits",
+        "url": "https://leetcode.com/problems/find-numbers-with-even-number-of-digits/",
+        "total_acs": 657438,
+        "total_submitted": 851647,
+        "is_new_question": false
+    },
+    {
+        "title": "Check if an Array Is Consecutive",
+        "url": "https://leetcode.com/problems/check-if-an-array-is-consecutive/",
+        "total_acs": 5467,
+        "total_submitted": 8954,
+        "is_new_question": false
+    },
+    {
+        "title": "Students and Examinations",
+        "url": "https://leetcode.com/problems/students-and-examinations/",
+        "total_acs": 195290,
+        "total_submitted": 344773,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Binary Number in a Linked List to Integer",
+        "url": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/",
+        "total_acs": 459393,
+        "total_submitted": 566135,
+        "is_new_question": false
+    },
+    {
+        "title": "Traffic Light Controlled Intersection",
+        "url": "https://leetcode.com/problems/traffic-light-controlled-intersection/",
+        "total_acs": 13269,
+        "total_submitted": 18129,
+        "is_new_question": false
+    },
+    {
+        "title": "Subtract the Product and Sum of Digits of an Integer",
+        "url": "https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/",
+        "total_acs": 475618,
+        "total_submitted": 550164,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Winner on a Tic Tac Toe Game",
+        "url": "https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/",
+        "total_acs": 122669,
+        "total_submitted": 227448,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Time Visiting All Points",
+        "url": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
+        "total_acs": 226801,
+        "total_submitted": 274971,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Difference of Two Arrays",
+        "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
+        "total_acs": 298156,
+        "total_submitted": 379227,
+        "is_new_question": false
+    },
+    {
+        "title": "Counting Elements",
+        "url": "https://leetcode.com/problems/counting-elements/",
+        "total_acs": 121392,
+        "total_submitted": 201991,
+        "is_new_question": false
+    },
+    {
+        "title": "Average Selling Price",
+        "url": "https://leetcode.com/problems/average-selling-price/",
+        "total_acs": 188683,
+        "total_submitted": 447444,
+        "is_new_question": false
+    },
+    {
+        "title": "Shift 2D Grid",
+        "url": "https://leetcode.com/problems/shift-2d-grid/",
+        "total_acs": 104797,
+        "total_submitted": 155633,
+        "is_new_question": false
+    },
+    {
+        "title": "Calculate Amount Paid in Taxes",
+        "url": "https://leetcode.com/problems/calculate-amount-paid-in-taxes/",
+        "total_acs": 36276,
+        "total_submitted": 55705,
+        "is_new_question": false
+    },
+    {
+        "title": "Cells with Odd Values in a Matrix",
+        "url": "https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/",
+        "total_acs": 110687,
+        "total_submitted": 140806,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Comments per Post",
+        "url": "https://leetcode.com/problems/number-of-comments-per-post/",
+        "total_acs": 33981,
+        "total_submitted": 52021,
+        "is_new_question": false
+    },
+    {
+        "title": "Greatest English Letter in Upper and Lower Case",
+        "url": "https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/",
+        "total_acs": 50586,
+        "total_submitted": 72805,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Resultant Array After Removing Anagrams",
+        "url": "https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/",
+        "total_acs": 57266,
+        "total_submitted": 98741,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If It Is a Straight Line",
+        "url": "https://leetcode.com/problems/check-if-it-is-a-straight-line/",
+        "total_acs": 253066,
+        "total_submitted": 640097,
+        "is_new_question": false
+    },
+    {
+        "title": "Perform String Shifts",
+        "url": "https://leetcode.com/problems/perform-string-shifts/",
+        "total_acs": 79539,
+        "total_submitted": 145479,
+        "is_new_question": false
+    },
+    {
+        "title": "Split a String in Balanced Strings",
+        "url": "https://leetcode.com/problems/split-a-string-in-balanced-strings/",
+        "total_acs": 295126,
+        "total_submitted": 343498,
+        "is_new_question": false
+    },
+    {
+        "title": "Queries Quality and Percentage",
+        "url": "https://leetcode.com/problems/queries-quality-and-percentage/",
+        "total_acs": 143119,
+        "total_submitted": 284155,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Cost to Move Chips to The Same Position",
+        "url": "https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/",
+        "total_acs": 126738,
+        "total_submitted": 176717,
+        "is_new_question": false
+    },
+    {
+        "title": "Unique Number of Occurrences",
+        "url": "https://leetcode.com/problems/unique-number-of-occurrences/",
+        "total_acs": 585065,
+        "total_submitted": 759625,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Absolute Difference",
+        "url": "https://leetcode.com/problems/minimum-absolute-difference/",
+        "total_acs": 186597,
+        "total_submitted": 268477,
+        "is_new_question": false
+    },
+    {
+        "title": "Delete Characters to Make Fancy String",
+        "url": "https://leetcode.com/problems/delete-characters-to-make-fancy-string/",
+        "total_acs": 35152,
+        "total_submitted": 60912,
+        "is_new_question": false
+    },
+    {
+        "title": "Reformat Department Table",
+        "url": "https://leetcode.com/problems/reformat-department-table/",
+        "total_acs": 113298,
+        "total_submitted": 146154,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Balloons",
+        "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+        "total_acs": 195163,
+        "total_submitted": 326096,
+        "is_new_question": false
+    },
+    {
+        "title": "Three Consecutive Odds",
+        "url": "https://leetcode.com/problems/three-consecutive-odds/",
+        "total_acs": 83390,
+        "total_submitted": 132154,
+        "is_new_question": false
+    },
+    {
+        "title": "Immediate Food Delivery I",
+        "url": "https://leetcode.com/problems/immediate-food-delivery-i/",
+        "total_acs": 72682,
+        "total_submitted": 89819,
+        "is_new_question": false
+    },
+    {
+        "title": "Day of the Week",
+        "url": "https://leetcode.com/problems/day-of-the-week/",
+        "total_acs": 64266,
+        "total_submitted": 111894,
+        "is_new_question": false
+    },
+    {
+        "title": "Distance Between Bus Stops",
+        "url": "https://leetcode.com/problems/distance-between-bus-stops/",
+        "total_acs": 58823,
+        "total_submitted": 108847,
+        "is_new_question": false
+    },
+    {
+        "title": "Reformat Date",
+        "url": "https://leetcode.com/problems/reformat-date/",
+        "total_acs": 70648,
+        "total_submitted": 107836,
+        "is_new_question": false
+    },
+    {
+        "title": "Diet Plan Performance",
+        "url": "https://leetcode.com/problems/diet-plan-performance/",
+        "total_acs": 31868,
+        "total_submitted": 59758,
+        "is_new_question": false
+    },
+    {
+        "title": "Prime Arrangements",
+        "url": "https://leetcode.com/problems/prime-arrangements/",
+        "total_acs": 30222,
+        "total_submitted": 53121,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Days Between Two Dates",
+        "url": "https://leetcode.com/problems/number-of-days-between-two-dates/",
+        "total_acs": 49343,
+        "total_submitted": 99643,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Number of Words You Can Type",
+        "url": "https://leetcode.com/problems/maximum-number-of-words-you-can-type/",
+        "total_acs": 56518,
+        "total_submitted": 77525,
+        "is_new_question": false
+    },
+    {
+        "title": "Day of the Year",
+        "url": "https://leetcode.com/problems/day-of-the-year/",
+        "total_acs": 57102,
+        "total_submitted": 117375,
+        "is_new_question": false
+    },
+    {
+        "title": "Article Views I",
+        "url": "https://leetcode.com/problems/article-views-i/",
+        "total_acs": 495272,
+        "total_submitted": 660954,
+        "is_new_question": false
+    },
+    {
+        "title": "Rank Transform of an Array",
+        "url": "https://leetcode.com/problems/rank-transform-of-an-array/",
+        "total_acs": 111136,
+        "total_submitted": 179607,
+        "is_new_question": false
+    },
+    {
+        "title": "User Activity for the Past 30 Days II",
+        "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-ii/",
+        "total_acs": 41537,
+        "total_submitted": 116293,
+        "is_new_question": false
+    },
+    {
+        "title": "User Activity for the Past 30 Days I",
+        "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+        "total_acs": 192725,
+        "total_submitted": 399922,
+        "is_new_question": false
+    },
+    {
+        "title": "Decompress Run-Length Encoded List",
+        "url": "https://leetcode.com/problems/decompress-run-length-encoded-list/",
+        "total_acs": 260269,
+        "total_submitted": 303658,
+        "is_new_question": false
+    },
+    {
+        "title": "N-th Tribonacci Number",
+        "url": "https://leetcode.com/problems/n-th-tribonacci-number/",
+        "total_acs": 623497,
+        "total_submitted": 983299,
+        "is_new_question": false
+    },
+    {
+        "title": "Replace Elements with Greatest Element on Right Side",
+        "url": "https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/",
+        "total_acs": 370601,
+        "total_submitted": 520190,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Equivalent Domino Pairs",
+        "url": "https://leetcode.com/problems/number-of-equivalent-domino-pairs/",
+        "total_acs": 66748,
+        "total_submitted": 138881,
+        "is_new_question": false
+    },
+    {
+        "title": "Element Appearing More Than 25% In Sorted Array",
+        "url": "https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/",
+        "total_acs": 206200,
+        "total_submitted": 337753,
+        "is_new_question": false
+    },
+    {
+        "title": "Relative Sort Array",
+        "url": "https://leetcode.com/problems/relative-sort-array/",
+        "total_acs": 183226,
+        "total_submitted": 265652,
+        "is_new_question": false
+    },
+    {
+        "title": "Reported Posts",
+        "url": "https://leetcode.com/problems/reported-posts/",
+        "total_acs": 45794,
+        "total_submitted": 70628,
+        "is_new_question": false
+    },
+    {
+        "title": "Mean of Array After Removing Some Elements",
+        "url": "https://leetcode.com/problems/mean-of-array-after-removing-some-elements/",
+        "total_acs": 57243,
+        "total_submitted": 84354,
+        "is_new_question": false
+    },
+    {
+        "title": "Defanging an IP Address",
+        "url": "https://leetcode.com/problems/defanging-an-ip-address/",
+        "total_acs": 632221,
+        "total_submitted": 710442,
+        "is_new_question": false
+    },
+    {
+        "title": "Print in Order",
+        "url": "https://leetcode.com/problems/print-in-order/",
+        "total_acs": 152840,
+        "total_submitted": 220606,
+        "is_new_question": false
+    },
+    {
+        "title": "Hexspeak",
+        "url": "https://leetcode.com/problems/hexspeak/",
+        "total_acs": 10733,
+        "total_submitted": 18579,
+        "is_new_question": false
+    },
+    {
+        "title": "Distribute Candies to People",
+        "url": "https://leetcode.com/problems/distribute-candies-to-people/",
+        "total_acs": 85983,
+        "total_submitted": 132228,
+        "is_new_question": false
+    },
+    {
+        "title": "Game Play Analysis II",
+        "url": "https://leetcode.com/problems/game-play-analysis-ii/",
+        "total_acs": 84437,
+        "total_submitted": 160297,
+        "is_new_question": false
+    },
+    {
+        "title": "Game Play Analysis I",
+        "url": "https://leetcode.com/problems/game-play-analysis-i/",
+        "total_acs": 261389,
+        "total_submitted": 350458,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Transformation",
+        "url": "https://leetcode.com/problems/array-transformation/",
+        "total_acs": 13134,
+        "total_submitted": 25239,
+        "is_new_question": false
+    },
+    {
+        "title": "Sales Analysis III",
+        "url": "https://leetcode.com/problems/sales-analysis-iii/",
+        "total_acs": 129040,
+        "total_submitted": 276695,
+        "is_new_question": false
+    },
+    {
+        "title": "Sales Analysis II",
+        "url": "https://leetcode.com/problems/sales-analysis-ii/",
+        "total_acs": 57192,
+        "total_submitted": 115237,
+        "is_new_question": false
+    },
+    {
+        "title": "Sales Analysis I",
+        "url": "https://leetcode.com/problems/sales-analysis-i/",
+        "total_acs": 57342,
+        "total_submitted": 77294,
+        "is_new_question": false
+    },
+    {
+        "title": "Duplicate Zeros",
+        "url": "https://leetcode.com/problems/duplicate-zeros/",
+        "total_acs": 410557,
+        "total_submitted": 791812,
+        "is_new_question": false
+    },
+    {
+        "title": "Missing Number In Arithmetic Progression",
+        "url": "https://leetcode.com/problems/missing-number-in-arithmetic-progression/",
+        "total_acs": 26775,
+        "total_submitted": 51668,
+        "is_new_question": false
+    },
+    {
+        "title": "Project Employees II",
+        "url": "https://leetcode.com/problems/project-employees-ii/",
+        "total_acs": 56314,
+        "total_submitted": 112831,
+        "is_new_question": false
+    },
+    {
+        "title": "Project Employees I",
+        "url": "https://leetcode.com/problems/project-employees-i/",
+        "total_acs": 191279,
+        "total_submitted": 312490,
+        "is_new_question": false
+    },
+    {
+        "title": "Occurrences After Bigram",
+        "url": "https://leetcode.com/problems/occurrences-after-bigram/",
+        "total_acs": 71053,
+        "total_submitted": 112057,
+        "is_new_question": false
+    },
+    {
+        "title": "Product Sales Analysis II",
+        "url": "https://leetcode.com/problems/product-sales-analysis-ii/",
+        "total_acs": 52938,
+        "total_submitted": 64738,
+        "is_new_question": false
+    },
+    {
+        "title": "Product Sales Analysis I",
+        "url": "https://leetcode.com/problems/product-sales-analysis-i/",
+        "total_acs": 369250,
+        "total_submitted": 450824,
+        "is_new_question": false
+    },
+    {
+        "title": "Intersection of Three Sorted Arrays",
+        "url": "https://leetcode.com/problems/intersection-of-three-sorted-arrays/",
+        "total_acs": 85313,
+        "total_submitted": 106919,
+        "is_new_question": false
+    },
+    {
+        "title": "Greatest Common Divisor of Strings",
+        "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
+        "total_acs": 406059,
+        "total_submitted": 789307,
+        "is_new_question": false
+    },
+    {
+        "title": "How Many Apples Can You Put into the Basket",
+        "url": "https://leetcode.com/problems/how-many-apples-can-you-put-into-the-basket/",
+        "total_acs": 33424,
+        "total_submitted": 49916,
+        "is_new_question": false
+    },
+    {
+        "title": "Height Checker",
+        "url": "https://leetcode.com/problems/height-checker/",
+        "total_acs": 333962,
+        "total_submitted": 436913,
+        "is_new_question": false
+    },
+    {
+        "title": "Actors and Directors Who Cooperated At Least Three Times",
+        "url": "https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/",
+        "total_acs": 168320,
+        "total_submitted": 241053,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Substrings with Only One Distinct Letter",
+        "url": "https://leetcode.com/problems/count-substrings-with-only-one-distinct-letter/",
+        "total_acs": 26822,
+        "total_submitted": 33649,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove All Adjacent Duplicates In String",
+        "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+        "total_acs": 550939,
+        "total_submitted": 794008,
+        "is_new_question": false
+    },
+    {
+        "title": "Last Stone Weight",
+        "url": "https://leetcode.com/problems/last-stone-weight/",
+        "total_acs": 595704,
+        "total_submitted": 912289,
+        "is_new_question": false
+    },
+    {
+        "title": "Single-Row Keyboard",
+        "url": "https://leetcode.com/problems/single-row-keyboard/",
+        "total_acs": 84337,
+        "total_submitted": 96412,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Boomerang",
+        "url": "https://leetcode.com/problems/valid-boomerang/",
+        "total_acs": 50711,
+        "total_submitted": 137315,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Words That Can Be Formed by Characters",
+        "url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/",
+        "total_acs": 252725,
+        "total_submitted": 357437,
+        "is_new_question": false
+    },
+    {
+        "title": "Check If a Number Is Majority Element in a Sorted Array",
+        "url": "https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/",
+        "total_acs": 48419,
+        "total_submitted": 82423,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Unique Number",
+        "url": "https://leetcode.com/problems/largest-unique-number/",
+        "total_acs": 58605,
+        "total_submitted": 85160,
+        "is_new_question": false
+    },
+    {
+        "title": "Matrix Cells in Distance Order",
+        "url": "https://leetcode.com/problems/matrix-cells-in-distance-order/",
+        "total_acs": 58040,
+        "total_submitted": 81850,
+        "is_new_question": false
+    },
+    {
+        "title": "Armstrong Number",
+        "url": "https://leetcode.com/problems/armstrong-number/",
+        "total_acs": 35879,
+        "total_submitted": 46090,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Vowels from a String",
+        "url": "https://leetcode.com/problems/remove-vowels-from-a-string/",
+        "total_acs": 108789,
+        "total_submitted": 119421,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Days in a Month",
+        "url": "https://leetcode.com/problems/number-of-days-in-a-month/",
+        "total_acs": 8371,
+        "total_submitted": 14390,
+        "is_new_question": false
+    },
+    {
+        "title": "Divisor Game",
+        "url": "https://leetcode.com/problems/divisor-game/",
+        "total_acs": 248084,
+        "total_submitted": 361729,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum Less Than K",
+        "url": "https://leetcode.com/problems/two-sum-less-than-k/",
+        "total_acs": 132590,
+        "total_submitted": 214588,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Digits in the Minimum Number",
+        "url": "https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/",
+        "total_acs": 23829,
+        "total_submitted": 31164,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Root To Leaf Binary Numbers",
+        "url": "https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/",
+        "total_acs": 207532,
+        "total_submitted": 284034,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Outermost Parentheses",
+        "url": "https://leetcode.com/problems/remove-outermost-parentheses/",
+        "total_acs": 298031,
+        "total_submitted": 361873,
+        "is_new_question": false
+    },
+    {
+        "title": "Index Pairs of a String",
+        "url": "https://leetcode.com/problems/index-pairs-of-a-string/",
+        "total_acs": 27425,
+        "total_submitted": 40794,
+        "is_new_question": false
+    },
+    {
+        "title": "High Five",
+        "url": "https://leetcode.com/problems/high-five/",
+        "total_acs": 100778,
+        "total_submitted": 135132,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Prefix Divisible By 5",
+        "url": "https://leetcode.com/problems/binary-prefix-divisible-by-5/",
+        "total_acs": 53944,
+        "total_submitted": 115422,
+        "is_new_question": false
+    },
+    {
+        "title": "Confusing Number",
+        "url": "https://leetcode.com/problems/confusing-number/",
+        "total_acs": 44355,
+        "total_submitted": 91227,
+        "is_new_question": false
+    },
+    {
+        "title": "Fixed Point",
+        "url": "https://leetcode.com/problems/fixed-point/",
+        "total_acs": 43680,
+        "total_submitted": 68093,
+        "is_new_question": false
+    },
+    {
+        "title": "Partition Array Into Three Parts With Equal Sum",
+        "url": "https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/",
+        "total_acs": 90684,
+        "total_submitted": 216074,
+        "is_new_question": false
+    },
+    {
+        "title": "Complement of Base 10 Integer",
+        "url": "https://leetcode.com/problems/complement-of-base-10-integer/",
+        "total_acs": 232532,
+        "total_submitted": 382575,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximize Sum Of Array After K Negations",
+        "url": "https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/",
+        "total_acs": 87490,
+        "total_submitted": 171468,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Common Characters",
+        "url": "https://leetcode.com/problems/find-common-characters/",
+        "total_acs": 208978,
+        "total_submitted": 303556,
+        "is_new_question": false
+    },
+    {
+        "title": "Available Captures for Rook",
+        "url": "https://leetcode.com/problems/available-captures-for-rook/",
+        "total_acs": 65054,
+        "total_submitted": 94523,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Town Judge",
+        "url": "https://leetcode.com/problems/find-the-town-judge/",
+        "total_acs": 577940,
+        "total_submitted": 1160413,
+        "is_new_question": false
+    },
+    {
+        "title": "Cousins in Binary Tree",
+        "url": "https://leetcode.com/problems/cousins-in-binary-tree/",
+        "total_acs": 270436,
+        "total_submitted": 484098,
+        "is_new_question": false
+    },
+    {
+        "title": "Add to Array-Form of Integer",
+        "url": "https://leetcode.com/problems/add-to-array-form-of-integer/",
+        "total_acs": 254779,
+        "total_submitted": 560399,
+        "is_new_question": false
+    },
+    {
+        "title": "Squares of a Sorted Array",
+        "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+        "total_acs": 1806610,
+        "total_submitted": 2480866,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Perimeter Triangle",
+        "url": "https://leetcode.com/problems/largest-perimeter-triangle/",
+        "total_acs": 232036,
+        "total_submitted": 417825,
+        "is_new_question": false
+    },
+    {
+        "title": "Fibonacci Number",
+        "url": "https://leetcode.com/problems/fibonacci-number/",
+        "total_acs": 1722120,
+        "total_submitted": 2429044,
+        "is_new_question": false
+    },
+    {
+        "title": "Univalued Binary Tree",
+        "url": "https://leetcode.com/problems/univalued-binary-tree/",
+        "total_acs": 215826,
+        "total_submitted": 305315,
+        "is_new_question": false
+    },
+    {
+        "title": "N-Repeated Element in Size 2N Array",
+        "url": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+        "total_acs": 231694,
+        "total_submitted": 302544,
+        "is_new_question": false
+    },
+    {
+        "title": "Verifying an Alien Dictionary",
+        "url": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
+        "total_acs": 497723,
+        "total_submitted": 906502,
+        "is_new_question": false
+    },
+    {
+        "title": "Delete Columns to Make Sorted",
+        "url": "https://leetcode.com/problems/delete-columns-to-make-sorted/",
+        "total_acs": 186514,
+        "total_submitted": 250162,
+        "is_new_question": false
+    },
+    {
+        "title": "DI String Match",
+        "url": "https://leetcode.com/problems/di-string-match/",
+        "total_acs": 151768,
+        "total_submitted": 193491,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Mountain Array",
+        "url": "https://leetcode.com/problems/valid-mountain-array/",
+        "total_acs": 414774,
+        "total_submitted": 1241834,
+        "is_new_question": false
+    },
+    {
+        "title": "Range Sum of BST",
+        "url": "https://leetcode.com/problems/range-sum-of-bst/",
+        "total_acs": 1020252,
+        "total_submitted": 1175683,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Recent Calls",
+        "url": "https://leetcode.com/problems/number-of-recent-calls/",
+        "total_acs": 240708,
+        "total_submitted": 321478,
+        "is_new_question": false
+    },
+    {
+        "title": "Unique Email Addresses",
+        "url": "https://leetcode.com/problems/unique-email-addresses/",
+        "total_acs": 475803,
+        "total_submitted": 708900,
+        "is_new_question": false
+    },
+    {
+        "title": "Long Pressed Name",
+        "url": "https://leetcode.com/problems/long-pressed-name/",
+        "total_acs": 137822,
+        "total_submitted": 425750,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort Array By Parity II",
+        "url": "https://leetcode.com/problems/sort-array-by-parity-ii/",
+        "total_acs": 249099,
+        "total_submitted": 352278,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Only Letters",
+        "url": "https://leetcode.com/problems/reverse-only-letters/",
+        "total_acs": 208877,
+        "total_submitted": 325010,
+        "is_new_question": false
+    },
+    {
+        "title": "X of a Kind in a Deck of Cards",
+        "url": "https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/",
+        "total_acs": 118850,
+        "total_submitted": 395733,
+        "is_new_question": false
+    },
+    {
+        "title": "Smallest Range I",
+        "url": "https://leetcode.com/problems/smallest-range-i/",
+        "total_acs": 87119,
+        "total_submitted": 124726,
+        "is_new_question": false
+    },
+    {
+        "title": "Sort Array By Parity",
+        "url": "https://leetcode.com/problems/sort-array-by-parity/",
+        "total_acs": 785404,
+        "total_submitted": 1030363,
+        "is_new_question": false
+    },
+    {
+        "title": "Increasing Order Search Tree",
+        "url": "https://leetcode.com/problems/increasing-order-search-tree/",
+        "total_acs": 278872,
+        "total_submitted": 356349,
+        "is_new_question": false
+    },
+    {
+        "title": "Monotonic Array",
+        "url": "https://leetcode.com/problems/monotonic-array/",
+        "total_acs": 417986,
+        "total_submitted": 684011,
+        "is_new_question": false
+    },
+    {
+        "title": "Surface Area of 3D Shapes",
+        "url": "https://leetcode.com/problems/surface-area-of-3d-shapes/",
+        "total_acs": 39166,
+        "total_submitted": 59651,
+        "is_new_question": false
+    },
+    {
+        "title": "Fair Candy Swap",
+        "url": "https://leetcode.com/problems/fair-candy-swap/",
+        "total_acs": 118959,
+        "total_submitted": 193237,
+        "is_new_question": false
+    },
+    {
+        "title": "Uncommon Words from Two Sentences",
+        "url": "https://leetcode.com/problems/uncommon-words-from-two-sentences/",
+        "total_acs": 136507,
+        "total_submitted": 203208,
+        "is_new_question": false
+    },
+    {
+        "title": "Projection Area of 3D Shapes",
+        "url": "https://leetcode.com/problems/projection-area-of-3d-shapes/",
+        "total_acs": 54528,
+        "total_submitted": 75344,
+        "is_new_question": false
+    },
+    {
+        "title": "Middle of the Linked List",
+        "url": "https://leetcode.com/problems/middle-of-the-linked-list/",
+        "total_acs": 1850191,
+        "total_submitted": 2362863,
+        "is_new_question": false
+    },
+    {
+        "title": "Leaf-Similar Trees",
+        "url": "https://leetcode.com/problems/leaf-similar-trees/",
+        "total_acs": 452884,
+        "total_submitted": 644882,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Gap",
+        "url": "https://leetcode.com/problems/binary-gap/",
+        "total_acs": 79932,
+        "total_submitted": 126342,
+        "is_new_question": false
+    },
+    {
+        "title": "Transpose Matrix",
+        "url": "https://leetcode.com/problems/transpose-matrix/",
+        "total_acs": 385481,
+        "total_submitted": 541120,
+        "is_new_question": false
+    },
+    {
+        "title": "Lemonade Change",
+        "url": "https://leetcode.com/problems/lemonade-change/",
+        "total_acs": 174280,
+        "total_submitted": 327583,
+        "is_new_question": false
+    },
+    {
+        "title": "Buddy Strings",
+        "url": "https://leetcode.com/problems/buddy-strings/",
+        "total_acs": 238992,
+        "total_submitted": 722923,
+        "is_new_question": false
+    },
+    {
+        "title": "Backspace String Compare",
+        "url": "https://leetcode.com/problems/backspace-string-compare/",
+        "total_acs": 807492,
+        "total_submitted": 1643981,
+        "is_new_question": false
+    },
+    {
+        "title": "Rectangle Overlap",
+        "url": "https://leetcode.com/problems/rectangle-overlap/",
+        "total_acs": 142092,
+        "total_submitted": 317993,
+        "is_new_question": false
+    },
+    {
+        "title": "Flipping an Image",
+        "url": "https://leetcode.com/problems/flipping-an-image/",
+        "total_acs": 419516,
+        "total_submitted": 513152,
+        "is_new_question": false
+    },
+    {
+        "title": "Positions of Large Groups",
+        "url": "https://leetcode.com/problems/positions-of-large-groups/",
+        "total_acs": 93357,
+        "total_submitted": 178923,
+        "is_new_question": false
+    },
+    {
+        "title": "Goat Latin",
+        "url": "https://leetcode.com/problems/goat-latin/",
+        "total_acs": 173132,
+        "total_submitted": 254227,
+        "is_new_question": false
+    },
+    {
+        "title": "Shortest Distance to a Character",
+        "url": "https://leetcode.com/problems/shortest-distance-to-a-character/",
+        "total_acs": 180250,
+        "total_submitted": 252145,
+        "is_new_question": false
+    },
+    {
+        "title": "Most Common Word",
+        "url": "https://leetcode.com/problems/most-common-word/",
+        "total_acs": 351518,
+        "total_submitted": 792363,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Triangle Area",
+        "url": "https://leetcode.com/problems/largest-triangle-area/",
+        "total_acs": 49605,
+        "total_submitted": 82158,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Lines To Write String",
+        "url": "https://leetcode.com/problems/number-of-lines-to-write-string/",
+        "total_acs": 77309,
+        "total_submitted": 113503,
+        "is_new_question": false
+    },
+    {
+        "title": "Unique Morse Code Words",
+        "url": "https://leetcode.com/problems/unique-morse-code-words/",
+        "total_acs": 347024,
+        "total_submitted": 419111,
+        "is_new_question": false
+    },
+    {
+        "title": "Similar RGB Color",
+        "url": "https://leetcode.com/problems/similar-rgb-color/",
+        "total_acs": 17167,
+        "total_submitted": 25486,
+        "is_new_question": false
+    },
+    {
+        "title": "Design HashMap",
+        "url": "https://leetcode.com/problems/design-hashmap/",
+        "total_acs": 570209,
+        "total_submitted": 868243,
+        "is_new_question": false
+    },
+    {
+        "title": "Design HashSet",
+        "url": "https://leetcode.com/problems/design-hashset/",
+        "total_acs": 403187,
+        "total_submitted": 602439,
+        "is_new_question": false
+    },
+    {
+        "title": "Rotate String",
+        "url": "https://leetcode.com/problems/rotate-string/",
+        "total_acs": 296037,
+        "total_submitted": 511433,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Distance Between BST Nodes",
+        "url": "https://leetcode.com/problems/minimum-distance-between-bst-nodes/",
+        "total_acs": 245718,
+        "total_submitted": 412819,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Search",
+        "url": "https://leetcode.com/problems/binary-search/",
+        "total_acs": 2318233,
+        "total_submitted": 4042492,
+        "is_new_question": false
+    },
+    {
+        "title": "Kth Largest Element in a Stream",
+        "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+        "total_acs": 524416,
+        "total_submitted": 924375,
+        "is_new_question": false
+    },
+    {
+        "title": "Search in a Binary Search Tree",
+        "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+        "total_acs": 834088,
+        "total_submitted": 1049052,
+        "is_new_question": false
+    },
+    {
+        "title": "Jewels and Stones",
+        "url": "https://leetcode.com/problems/jewels-and-stones/",
+        "total_acs": 1017513,
+        "total_submitted": 1149515,
+        "is_new_question": false
+    },
+    {
+        "title": "Toeplitz Matrix",
+        "url": "https://leetcode.com/problems/toeplitz-matrix/",
+        "total_acs": 322279,
+        "total_submitted": 467730,
+        "is_new_question": false
+    },
+    {
+        "title": "N-ary Tree Postorder Traversal",
+        "url": "https://leetcode.com/problems/n-ary-tree-postorder-traversal/",
+        "total_acs": 251626,
+        "total_submitted": 323327,
+        "is_new_question": false
+    },
+    {
+        "title": "N-ary Tree Preorder Traversal",
+        "url": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/",
+        "total_acs": 422689,
+        "total_submitted": 560218,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Depth of N-ary Tree",
+        "url": "https://leetcode.com/problems/maximum-depth-of-n-ary-tree/",
+        "total_acs": 277867,
+        "total_submitted": 385413,
+        "is_new_question": false
+    },
+    {
+        "title": "Prime Number of Set Bits in Binary Representation",
+        "url": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
+        "total_acs": 95468,
+        "total_submitted": 137768,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Anagram Mappings",
+        "url": "https://leetcode.com/problems/find-anagram-mappings/",
+        "total_acs": 100338,
+        "total_submitted": 120023,
+        "is_new_question": false
+    },
+    {
+        "title": "Shortest Completing Word",
+        "url": "https://leetcode.com/problems/shortest-completing-word/",
+        "total_acs": 73442,
+        "total_submitted": 122799,
+        "is_new_question": false
+    },
+    {
+        "title": "Largest Number At Least Twice of Others",
+        "url": "https://leetcode.com/problems/largest-number-at-least-twice-of-others/",
+        "total_acs": 239342,
+        "total_submitted": 492038,
+        "is_new_question": false
+    },
+    {
+        "title": "Min Cost Climbing Stairs",
+        "url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+        "total_acs": 1134401,
+        "total_submitted": 1730583,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Smallest Letter Greater Than Target",
+        "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+        "total_acs": 467852,
+        "total_submitted": 901255,
+        "is_new_question": false
+    },
+    {
+        "title": "To Lower Case",
+        "url": "https://leetcode.com/problems/to-lower-case/",
+        "total_acs": 505365,
+        "total_submitted": 607008,
+        "is_new_question": false
+    },
+    {
+        "title": "Sentence Similarity",
+        "url": "https://leetcode.com/problems/sentence-similarity/",
+        "total_acs": 65726,
+        "total_submitted": 148515,
+        "is_new_question": false
+    },
+    {
+        "title": "Flood Fill",
+        "url": "https://leetcode.com/problems/flood-fill/",
+        "total_acs": 874997,
+        "total_submitted": 1372534,
+        "is_new_question": false
+    },
+    {
+        "title": "Self Dividing Numbers",
+        "url": "https://leetcode.com/problems/self-dividing-numbers/",
+        "total_acs": 238412,
+        "total_submitted": 303807,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Pivot Index",
+        "url": "https://leetcode.com/problems/find-pivot-index/",
+        "total_acs": 1055454,
+        "total_submitted": 1841503,
+        "is_new_question": false
+    },
+    {
+        "title": "1-bit and 2-bit Characters",
+        "url": "https://leetcode.com/problems/1-bit-and-2-bit-characters/",
+        "total_acs": 131631,
+        "total_submitted": 290931,
+        "is_new_question": false
+    },
+    {
+        "title": "Degree of an Array",
+        "url": "https://leetcode.com/problems/degree-of-an-array/",
+        "total_acs": 210228,
+        "total_submitted": 372049,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Binary Substrings",
+        "url": "https://leetcode.com/problems/count-binary-substrings/",
+        "total_acs": 205280,
+        "total_submitted": 313217,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Number with Alternating Bits",
+        "url": "https://leetcode.com/problems/binary-number-with-alternating-bits/",
+        "total_acs": 131135,
+        "total_submitted": 210433,
+        "is_new_question": false
+    },
+    {
+        "title": "Baseball Game",
+        "url": "https://leetcode.com/problems/baseball-game/",
+        "total_acs": 336859,
+        "total_submitted": 443267,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Palindrome II",
+        "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+        "total_acs": 721479,
+        "total_submitted": 1780619,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Continuous Increasing Subsequence",
+        "url": "https://leetcode.com/problems/longest-continuous-increasing-subsequence/",
+        "total_acs": 259450,
+        "total_submitted": 517236,
+        "is_new_question": false
+    },
+    {
+        "title": "Second Minimum Node In a Binary Tree",
+        "url": "https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/",
+        "total_acs": 188659,
+        "total_submitted": 424068,
+        "is_new_question": false
+    },
+    {
+        "title": "Image Smoother",
+        "url": "https://leetcode.com/problems/image-smoother/",
+        "total_acs": 162292,
+        "total_submitted": 241452,
+        "is_new_question": false
+    },
+    {
+        "title": "Robot Return to Origin",
+        "url": "https://leetcode.com/problems/robot-return-to-origin/",
+        "total_acs": 420464,
+        "total_submitted": 555665,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum IV - Input is a BST",
+        "url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
+        "total_acs": 525023,
+        "total_submitted": 857801,
+        "is_new_question": false
+    },
+    {
+        "title": "Set Mismatch",
+        "url": "https://leetcode.com/problems/set-mismatch/",
+        "total_acs": 437808,
+        "total_submitted": 982597,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Average Subarray I",
+        "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+        "total_acs": 425002,
+        "total_submitted": 983323,
+        "is_new_question": false
+    },
+    {
+        "title": "Average of Levels in Binary Tree",
+        "url": "https://leetcode.com/problems/average-of-levels-in-binary-tree/",
+        "total_acs": 487520,
+        "total_submitted": 673286,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Product of Three Numbers",
+        "url": "https://leetcode.com/problems/maximum-product-of-three-numbers/",
+        "total_acs": 313627,
+        "total_submitted": 694727,
+        "is_new_question": false
+    },
+    {
+        "title": "Swap Salary",
+        "url": "https://leetcode.com/problems/swap-salary/",
+        "total_acs": 402145,
+        "total_submitted": 483449,
+        "is_new_question": false
+    },
+    {
+        "title": "Not Boring Movies",
+        "url": "https://leetcode.com/problems/not-boring-movies/",
+        "total_acs": 425416,
+        "total_submitted": 579106,
+        "is_new_question": false
+    },
+    {
+        "title": "Biggest Single Number",
+        "url": "https://leetcode.com/problems/biggest-single-number/",
+        "total_acs": 173237,
+        "total_submitted": 281628,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Two Binary Trees",
+        "url": "https://leetcode.com/problems/merge-two-binary-trees/",
+        "total_acs": 757499,
+        "total_submitted": 959903,
+        "is_new_question": false
+    },
+    {
+        "title": "Shortest Distance in a Line",
+        "url": "https://leetcode.com/problems/shortest-distance-in-a-line/",
+        "total_acs": 70338,
+        "total_submitted": 87607,
+        "is_new_question": false
+    },
+    {
+        "title": "Triangle Judgement",
+        "url": "https://leetcode.com/problems/triangle-judgement/",
+        "total_acs": 156338,
+        "total_submitted": 219425,
+        "is_new_question": false
+    },
+    {
+        "title": "Sales Person",
+        "url": "https://leetcode.com/problems/sales-person/",
+        "total_acs": 203519,
+        "total_submitted": 309559,
+        "is_new_question": false
+    },
+    {
+        "title": "Can Place Flowers",
+        "url": "https://leetcode.com/problems/can-place-flowers/",
+        "total_acs": 728562,
+        "total_submitted": 2488325,
+        "is_new_question": false
+    },
+    {
+        "title": "Design Compressed String Iterator",
+        "url": "https://leetcode.com/problems/design-compressed-string-iterator/",
+        "total_acs": 32779,
+        "total_submitted": 82464,
+        "is_new_question": false
+    },
+    {
+        "title": "Consecutive Available Seats",
+        "url": "https://leetcode.com/problems/consecutive-available-seats/",
+        "total_acs": 84827,
+        "total_submitted": 128020,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Index Sum of Two Lists",
+        "url": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/",
+        "total_acs": 223286,
+        "total_submitted": 404296,
+        "is_new_question": false
+    },
+    {
+        "title": "Range Addition II",
+        "url": "https://leetcode.com/problems/range-addition-ii/",
+        "total_acs": 100133,
+        "total_submitted": 178731,
+        "is_new_question": false
+    },
+    {
+        "title": "Friend Requests I: Overall Acceptance Rate",
+        "url": "https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/",
+        "total_acs": 74168,
+        "total_submitted": 176674,
+        "is_new_question": false
+    },
+    {
+        "title": "Classes More Than 5 Students",
+        "url": "https://leetcode.com/problems/classes-more-than-5-students/",
+        "total_acs": 379166,
+        "total_submitted": 700294,
+        "is_new_question": false
+    },
+    {
+        "title": "Big Countries",
+        "url": "https://leetcode.com/problems/big-countries/",
+        "total_acs": 1071859,
+        "total_submitted": 1570408,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Harmonious Subsequence",
+        "url": "https://leetcode.com/problems/longest-harmonious-subsequence/",
+        "total_acs": 154209,
+        "total_submitted": 282565,
+        "is_new_question": false
+    },
+    {
+        "title": "Customer Placing the Largest Number of Orders",
+        "url": "https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/",
+        "total_acs": 246506,
+        "total_submitted": 380402,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Customer Referee",
+        "url": "https://leetcode.com/problems/find-customer-referee/",
+        "total_acs": 754977,
+        "total_submitted": 1084093,
+        "is_new_question": false
+    },
+    {
+        "title": "Employee Bonus",
+        "url": "https://leetcode.com/problems/employee-bonus/",
+        "total_acs": 305229,
+        "total_submitted": 407960,
+        "is_new_question": false
+    },
+    {
+        "title": "Distribute Candies",
+        "url": "https://leetcode.com/problems/distribute-candies/",
+        "total_acs": 276912,
+        "total_submitted": 409933,
+        "is_new_question": false
+    },
+    {
+        "title": "Subtree of Another Tree",
+        "url": "https://leetcode.com/problems/subtree-of-another-tree/",
+        "total_acs": 824813,
+        "total_submitted": 1727737,
+        "is_new_question": false
+    },
+    {
+        "title": "Reshape the Matrix",
+        "url": "https://leetcode.com/problems/reshape-the-matrix/",
+        "total_acs": 373596,
+        "total_submitted": 592295,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Tree Tilt",
+        "url": "https://leetcode.com/problems/binary-tree-tilt/",
+        "total_acs": 209032,
+        "total_submitted": 339003,
+        "is_new_question": false
+    },
+    {
+        "title": "Array Partition",
+        "url": "https://leetcode.com/problems/array-partition/",
+        "total_acs": 465929,
+        "total_submitted": 592829,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Words in a String III",
+        "url": "https://leetcode.com/problems/reverse-words-in-a-string-iii/",
+        "total_acs": 889689,
+        "total_submitted": 1071757,
+        "is_new_question": false
+    },
+    {
+        "title": "Student Attendance Record I",
+        "url": "https://leetcode.com/problems/student-attendance-record-i/",
+        "total_acs": 207937,
+        "total_submitted": 426776,
+        "is_new_question": false
+    },
+    {
+        "title": "Diameter of Binary Tree",
+        "url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+        "total_acs": 1447888,
+        "total_submitted": 2407251,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse String II",
+        "url": "https://leetcode.com/problems/reverse-string-ii/",
+        "total_acs": 238078,
+        "total_submitted": 470408,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Absolute Difference in BST",
+        "url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+        "total_acs": 363164,
+        "total_submitted": 621872,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Uncommon Subsequence I",
+        "url": "https://leetcode.com/problems/longest-uncommon-subsequence-i/",
+        "total_acs": 109455,
+        "total_submitted": 180459,
+        "is_new_question": false
+    },
+    {
+        "title": "Detect Capital",
+        "url": "https://leetcode.com/problems/detect-capital/",
+        "total_acs": 424619,
+        "total_submitted": 751399,
+        "is_new_question": false
+    },
+    {
+        "title": "Perfect Number",
+        "url": "https://leetcode.com/problems/perfect-number/",
+        "total_acs": 179881,
+        "total_submitted": 448740,
+        "is_new_question": false
+    },
+    {
+        "title": "Relative Ranks",
+        "url": "https://leetcode.com/problems/relative-ranks/",
+        "total_acs": 158637,
+        "total_submitted": 249277,
+        "is_new_question": false
+    },
+    {
+        "title": "Base 7",
+        "url": "https://leetcode.com/problems/base-7/",
+        "total_acs": 128766,
+        "total_submitted": 258257,
+        "is_new_question": false
+    },
+    {
+        "title": "Find Mode in Binary Search Tree",
+        "url": "https://leetcode.com/problems/find-mode-in-binary-search-tree/",
+        "total_acs": 300717,
+        "total_submitted": 536917,
+        "is_new_question": false
+    },
+    {
+        "title": "Keyboard Row",
+        "url": "https://leetcode.com/problems/keyboard-row/",
+        "total_acs": 222022,
+        "total_submitted": 314492,
+        "is_new_question": false
+    },
+    {
+        "title": "Next Greater Element I",
+        "url": "https://leetcode.com/problems/next-greater-element-i/",
+        "total_acs": 688892,
+        "total_submitted": 955357,
+        "is_new_question": false
+    },
+    {
+        "title": "Teemo Attacking",
+        "url": "https://leetcode.com/problems/teemo-attacking/",
+        "total_acs": 147541,
+        "total_submitted": 260899,
+        "is_new_question": false
+    },
+    {
+        "title": "Construct the Rectangle",
+        "url": "https://leetcode.com/problems/construct-the-rectangle/",
+        "total_acs": 114141,
+        "total_submitted": 199144,
+        "is_new_question": false
+    },
+    {
+        "title": "Max Consecutive Ones",
+        "url": "https://leetcode.com/problems/max-consecutive-ones/",
+        "total_acs": 1117013,
+        "total_submitted": 1898556,
+        "is_new_question": false
+    },
+    {
+        "title": "License Key Formatting",
+        "url": "https://leetcode.com/problems/license-key-formatting/",
+        "total_acs": 276589,
+        "total_submitted": 632832,
+        "is_new_question": false
+    },
+    {
+        "title": "Number Complement",
+        "url": "https://leetcode.com/problems/number-complement/",
+        "total_acs": 327777,
+        "total_submitted": 484909,
+        "is_new_question": false
+    },
+    {
+        "title": "Island Perimeter",
+        "url": "https://leetcode.com/problems/island-perimeter/",
+        "total_acs": 497497,
+        "total_submitted": 707406,
+        "is_new_question": false
+    },
+    {
+        "title": "Hamming Distance",
+        "url": "https://leetcode.com/problems/hamming-distance/",
+        "total_acs": 566484,
+        "total_submitted": 751747,
+        "is_new_question": false
+    },
+    {
+        "title": "Repeated Substring Pattern",
+        "url": "https://leetcode.com/problems/repeated-substring-pattern/",
+        "total_acs": 438951,
+        "total_submitted": 952897,
+        "is_new_question": false
+    },
+    {
+        "title": "Assign Cookies",
+        "url": "https://leetcode.com/problems/assign-cookies/",
+        "total_acs": 428753,
+        "total_submitted": 814084,
+        "is_new_question": false
+    },
+    {
+        "title": "Find All Numbers Disappeared in an Array",
+        "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+        "total_acs": 865812,
+        "total_submitted": 1421986,
+        "is_new_question": false
+    },
+    {
+        "title": "Arranging Coins",
+        "url": "https://leetcode.com/problems/arranging-coins/",
+        "total_acs": 428436,
+        "total_submitted": 920588,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of Segments in a String",
+        "url": "https://leetcode.com/problems/number-of-segments-in-a-string/",
+        "total_acs": 176645,
+        "total_submitted": 485252,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Word Square",
+        "url": "https://leetcode.com/problems/valid-word-square/",
+        "total_acs": 56046,
+        "total_submitted": 137091,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Strings",
+        "url": "https://leetcode.com/problems/add-strings/",
+        "total_acs": 656292,
+        "total_submitted": 1268975,
+        "is_new_question": false
+    },
+    {
+        "title": "Third Maximum Number",
+        "url": "https://leetcode.com/problems/third-maximum-number/",
+        "total_acs": 521435,
+        "total_submitted": 1503743,
+        "is_new_question": false
+    },
+    {
+        "title": "Fizz Buzz",
+        "url": "https://leetcode.com/problems/fizz-buzz/",
+        "total_acs": 1206451,
+        "total_submitted": 1676720,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Palindrome",
+        "url": "https://leetcode.com/problems/longest-palindrome/",
+        "total_acs": 619952,
+        "total_submitted": 1150430,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Word Abbreviation",
+        "url": "https://leetcode.com/problems/valid-word-abbreviation/",
+        "total_acs": 174569,
+        "total_submitted": 489777,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert a Number to Hexadecimal",
+        "url": "https://leetcode.com/problems/convert-a-number-to-hexadecimal/",
+        "total_acs": 142164,
+        "total_submitted": 294495,
+        "is_new_question": false
+    },
+    {
+        "title": "Sum of Left Leaves",
+        "url": "https://leetcode.com/problems/sum-of-left-leaves/",
+        "total_acs": 499214,
+        "total_submitted": 864144,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Watch",
+        "url": "https://leetcode.com/problems/binary-watch/",
+        "total_acs": 140364,
+        "total_submitted": 259773,
+        "is_new_question": false
+    },
+    {
+        "title": "Is Subsequence",
+        "url": "https://leetcode.com/problems/is-subsequence/",
+        "total_acs": 1353494,
+        "total_submitted": 2824419,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Difference",
+        "url": "https://leetcode.com/problems/find-the-difference/",
+        "total_acs": 715199,
+        "total_submitted": 1196060,
+        "is_new_question": false
+    },
+    {
+        "title": "First Unique Character in a String",
+        "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+        "total_acs": 1691790,
+        "total_submitted": 2725500,
+        "is_new_question": false
+    },
+    {
+        "title": "Ransom Note",
+        "url": "https://leetcode.com/problems/ransom-note/",
+        "total_acs": 1095539,
+        "total_submitted": 1792091,
+        "is_new_question": false
+    },
+    {
+        "title": "Guess Number Higher or Lower",
+        "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+        "total_acs": 627059,
+        "total_submitted": 1175461,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Perfect Square",
+        "url": "https://leetcode.com/problems/valid-perfect-square/",
+        "total_acs": 590650,
+        "total_submitted": 1354513,
+        "is_new_question": false
+    },
+    {
+        "title": "Logger Rate Limiter",
+        "url": "https://leetcode.com/problems/logger-rate-limiter/",
+        "total_acs": 310424,
+        "total_submitted": 409384,
+        "is_new_question": false
+    },
+    {
+        "title": "Intersection of Two Arrays II",
+        "url": "https://leetcode.com/problems/intersection-of-two-arrays-ii/",
+        "total_acs": 1188869,
+        "total_submitted": 2106255,
+        "is_new_question": false
+    },
+    {
+        "title": "Intersection of Two Arrays",
+        "url": "https://leetcode.com/problems/intersection-of-two-arrays/",
+        "total_acs": 1181591,
+        "total_submitted": 1589078,
+        "is_new_question": false
+    },
+    {
+        "title": "Moving Average from Data Stream",
+        "url": "https://leetcode.com/problems/moving-average-from-data-stream/",
+        "total_acs": 370400,
+        "total_submitted": 473631,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Vowels of a String",
+        "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+        "total_acs": 800783,
+        "total_submitted": 1515530,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse String",
+        "url": "https://leetcode.com/problems/reverse-string/",
+        "total_acs": 2457838,
+        "total_submitted": 3161948,
+        "is_new_question": false
+    },
+    {
+        "title": "Power of Four",
+        "url": "https://leetcode.com/problems/power-of-four/",
+        "total_acs": 650699,
+        "total_submitted": 1358055,
+        "is_new_question": false
+    },
+    {
+        "title": "Counting Bits",
+        "url": "https://leetcode.com/problems/counting-bits/",
+        "total_acs": 1073050,
+        "total_submitted": 1372775,
+        "is_new_question": false
+    },
+    {
+        "title": "Power of Three",
+        "url": "https://leetcode.com/problems/power-of-three/",
+        "total_acs": 816390,
+        "total_submitted": 1756750,
+        "is_new_question": false
+    },
+    {
+        "title": "Range Sum Query - Immutable",
+        "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+        "total_acs": 521164,
+        "total_submitted": 826100,
+        "is_new_question": false
+    },
+    {
+        "title": "Flip Game",
+        "url": "https://leetcode.com/problems/flip-game/",
+        "total_acs": 73060,
+        "total_submitted": 113171,
+        "is_new_question": false
+    },
+    {
+        "title": "Nim Game",
+        "url": "https://leetcode.com/problems/nim-game/",
+        "total_acs": 369656,
+        "total_submitted": 651053,
+        "is_new_question": false
+    },
+    {
+        "title": "Word Pattern",
+        "url": "https://leetcode.com/problems/word-pattern/",
+        "total_acs": 685921,
+        "total_submitted": 1633679,
+        "is_new_question": false
+    },
+    {
+        "title": "Move Zeroes",
+        "url": "https://leetcode.com/problems/move-zeroes/",
+        "total_acs": 2870034,
+        "total_submitted": 4652412,
+        "is_new_question": false
+    },
+    {
+        "title": "First Bad Version",
+        "url": "https://leetcode.com/problems/first-bad-version/",
+        "total_acs": 1658573,
+        "total_submitted": 3743279,
+        "is_new_question": false
+    },
+    {
+        "title": "Closest Binary Search Tree Value",
+        "url": "https://leetcode.com/problems/closest-binary-search-tree-value/",
+        "total_acs": 332803,
+        "total_submitted": 641741,
+        "is_new_question": false
+    },
+    {
+        "title": "Missing Number",
+        "url": "https://leetcode.com/problems/missing-number/",
+        "total_acs": 2137597,
+        "total_submitted": 3208680,
+        "is_new_question": false
+    },
+    {
+        "title": "Palindrome Permutation",
+        "url": "https://leetcode.com/problems/palindrome-permutation/",
+        "total_acs": 199667,
+        "total_submitted": 297477,
+        "is_new_question": false
+    },
+    {
+        "title": "Ugly Number",
+        "url": "https://leetcode.com/problems/ugly-number/",
+        "total_acs": 502778,
+        "total_submitted": 1198300,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Digits",
+        "url": "https://leetcode.com/problems/add-digits/",
+        "total_acs": 770062,
+        "total_submitted": 1157830,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Tree Paths",
+        "url": "https://leetcode.com/problems/binary-tree-paths/",
+        "total_acs": 709853,
+        "total_submitted": 1118689,
+        "is_new_question": false
+    },
+    {
+        "title": "Meeting Rooms",
+        "url": "https://leetcode.com/problems/meeting-rooms/",
+        "total_acs": 391993,
+        "total_submitted": 675816,
+        "is_new_question": false
+    },
+    {
+        "title": "Strobogrammatic Number",
+        "url": "https://leetcode.com/problems/strobogrammatic-number/",
+        "total_acs": 172020,
+        "total_submitted": 360780,
+        "is_new_question": false
+    },
+    {
+        "title": "Shortest Word Distance",
+        "url": "https://leetcode.com/problems/shortest-word-distance/",
+        "total_acs": 212132,
+        "total_submitted": 324910,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Anagram",
+        "url": "https://leetcode.com/problems/valid-anagram/",
+        "total_acs": 3349708,
+        "total_submitted": 5201079,
+        "is_new_question": false
+    },
+    {
+        "title": "Palindrome Linked List",
+        "url": "https://leetcode.com/problems/palindrome-linked-list/",
+        "total_acs": 1879742,
+        "total_submitted": 3545756,
+        "is_new_question": false
+    },
+    {
+        "title": "Implement Queue using Stacks",
+        "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
+        "total_acs": 905639,
+        "total_submitted": 1369470,
+        "is_new_question": false
+    },
+    {
+        "title": "Power of Two",
+        "url": "https://leetcode.com/problems/power-of-two/",
+        "total_acs": 1277037,
+        "total_submitted": 2675081,
+        "is_new_question": false
+    },
+    {
+        "title": "Summary Ranges",
+        "url": "https://leetcode.com/problems/summary-ranges/",
+        "total_acs": 539223,
+        "total_submitted": 1068247,
+        "is_new_question": false
+    },
+    {
+        "title": "Invert Binary Tree",
+        "url": "https://leetcode.com/problems/invert-binary-tree/",
+        "total_acs": 1998634,
+        "total_submitted": 2601914,
+        "is_new_question": false
+    },
+    {
+        "title": "Implement Stack using Queues",
+        "url": "https://leetcode.com/problems/implement-stack-using-queues/",
+        "total_acs": 648916,
+        "total_submitted": 1022501,
+        "is_new_question": false
+    },
+    {
+        "title": "Count Complete Tree Nodes",
+        "url": "https://leetcode.com/problems/count-complete-tree-nodes/",
+        "total_acs": 697250,
+        "total_submitted": 1075111,
+        "is_new_question": false
+    },
+    {
+        "title": "Contains Duplicate II",
+        "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+        "total_acs": 900992,
+        "total_submitted": 2007129,
+        "is_new_question": false
+    },
+    {
+        "title": "Contains Duplicate",
+        "url": "https://leetcode.com/problems/contains-duplicate/",
+        "total_acs": 3835108,
+        "total_submitted": 6230068,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Linked List",
+        "url": "https://leetcode.com/problems/reverse-linked-list/",
+        "total_acs": 4019360,
+        "total_submitted": 5263882,
+        "is_new_question": false
+    },
+    {
+        "title": "Isomorphic Strings",
+        "url": "https://leetcode.com/problems/isomorphic-strings/",
+        "total_acs": 1228100,
+        "total_submitted": 2762961,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Linked List Elements",
+        "url": "https://leetcode.com/problems/remove-linked-list-elements/",
+        "total_acs": 1105794,
+        "total_submitted": 2276589,
+        "is_new_question": false
+    },
+    {
+        "title": "Happy Number",
+        "url": "https://leetcode.com/problems/happy-number/",
+        "total_acs": 1419459,
+        "total_submitted": 2534649,
+        "is_new_question": false
+    },
+    {
+        "title": "Rising Temperature",
+        "url": "https://leetcode.com/problems/rising-temperature/",
+        "total_acs": 588906,
+        "total_submitted": 1249087,
+        "is_new_question": false
+    },
+    {
+        "title": "Delete Duplicate Emails",
+        "url": "https://leetcode.com/problems/delete-duplicate-emails/",
+        "total_acs": 508766,
+        "total_submitted": 824111,
+        "is_new_question": false
+    },
+    {
+        "title": "Tenth Line",
+        "url": "https://leetcode.com/problems/tenth-line/",
+        "total_acs": 104207,
+        "total_submitted": 312941,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Phone Numbers",
+        "url": "https://leetcode.com/problems/valid-phone-numbers/",
+        "total_acs": 81106,
+        "total_submitted": 312944,
+        "is_new_question": false
+    },
+    {
+        "title": "Number of 1 Bits",
+        "url": "https://leetcode.com/problems/number-of-1-bits/",
+        "total_acs": 1428386,
+        "total_submitted": 2021441,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Bits",
+        "url": "https://leetcode.com/problems/reverse-bits/",
+        "total_acs": 774661,
+        "total_submitted": 1330873,
+        "is_new_question": false
+    },
+    {
+        "title": "Customers Who Never Order",
+        "url": "https://leetcode.com/problems/customers-who-never-order/",
+        "total_acs": 789523,
+        "total_submitted": 1143846,
+        "is_new_question": false
+    },
+    {
+        "title": "Duplicate Emails",
+        "url": "https://leetcode.com/problems/duplicate-emails/",
+        "total_acs": 645900,
+        "total_submitted": 909610,
+        "is_new_question": false
+    },
+    {
+        "title": "Employees Earning More Than Their Managers",
+        "url": "https://leetcode.com/problems/employees-earning-more-than-their-managers/",
+        "total_acs": 623196,
+        "total_submitted": 898402,
+        "is_new_question": false
+    },
+    {
+        "title": "Combine Two Tables",
+        "url": "https://leetcode.com/problems/combine-two-tables/",
+        "total_acs": 985387,
+        "total_submitted": 1300742,
+        "is_new_question": false
+    },
+    {
+        "title": "Excel Sheet Column Number",
+        "url": "https://leetcode.com/problems/excel-sheet-column-number/",
+        "total_acs": 676094,
+        "total_submitted": 1062560,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum III - Data structure design",
+        "url": "https://leetcode.com/problems/two-sum-iii-data-structure-design/",
+        "total_acs": 153063,
+        "total_submitted": 402913,
+        "is_new_question": false
+    },
+    {
+        "title": "Majority Element",
+        "url": "https://leetcode.com/problems/majority-element/",
+        "total_acs": 2720505,
+        "total_submitted": 4200649,
+        "is_new_question": false
+    },
+    {
+        "title": "Excel Sheet Column Title",
+        "url": "https://leetcode.com/problems/excel-sheet-column-title/",
+        "total_acs": 516131,
+        "total_submitted": 1274557,
+        "is_new_question": false
+    },
+    {
+        "title": "Missing Ranges",
+        "url": "https://leetcode.com/problems/missing-ranges/",
+        "total_acs": 235067,
+        "total_submitted": 701066,
+        "is_new_question": false
+    },
+    {
+        "title": "Intersection of Two Linked Lists",
+        "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+        "total_acs": 1528967,
+        "total_submitted": 2671268,
+        "is_new_question": false
+    },
+    {
+        "title": "Read N Characters Given Read4",
+        "url": "https://leetcode.com/problems/read-n-characters-given-read4/",
+        "total_acs": 189346,
+        "total_submitted": 456790,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Tree Postorder Traversal",
+        "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+        "total_acs": 1159013,
+        "total_submitted": 1638816,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Tree Preorder Traversal",
+        "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+        "total_acs": 1571964,
+        "total_submitted": 2267984,
+        "is_new_question": false
+    },
+    {
+        "title": "Linked List Cycle",
+        "url": "https://leetcode.com/problems/linked-list-cycle/",
+        "total_acs": 2869937,
+        "total_submitted": 5708020,
+        "is_new_question": false
+    },
+    {
+        "title": "Single Number",
+        "url": "https://leetcode.com/problems/single-number/",
+        "total_acs": 2696572,
+        "total_submitted": 3709977,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Palindrome",
+        "url": "https://leetcode.com/problems/valid-palindrome/",
+        "total_acs": 2845579,
+        "total_submitted": 6024746,
+        "is_new_question": false
+    },
+    {
+        "title": "Best Time to Buy and Sell Stock",
+        "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+        "total_acs": 4465775,
+        "total_submitted": 8335672,
+        "is_new_question": false
+    },
+    {
+        "title": "Pascal's Triangle II",
+        "url": "https://leetcode.com/problems/pascals-triangle-ii/",
+        "total_acs": 867185,
+        "total_submitted": 1357681,
+        "is_new_question": false
+    },
+    {
+        "title": "Pascal's Triangle",
+        "url": "https://leetcode.com/problems/pascals-triangle/",
+        "total_acs": 1615939,
+        "total_submitted": 2181618,
+        "is_new_question": false
+    },
+    {
+        "title": "Path Sum",
+        "url": "https://leetcode.com/problems/path-sum/",
+        "total_acs": 1414080,
+        "total_submitted": 2817812,
+        "is_new_question": false
+    },
+    {
+        "title": "Minimum Depth of Binary Tree",
+        "url": "https://leetcode.com/problems/minimum-depth-of-binary-tree/",
+        "total_acs": 1169268,
+        "total_submitted": 2451133,
+        "is_new_question": false
+    },
+    {
+        "title": "Balanced Binary Tree",
+        "url": "https://leetcode.com/problems/balanced-binary-tree/",
+        "total_acs": 1432798,
+        "total_submitted": 2764222,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Sorted Array to Binary Search Tree",
+        "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "total_acs": 1175347,
+        "total_submitted": 1642831,
+        "is_new_question": false
+    },
+    {
+        "title": "Maximum Depth of Binary Tree",
+        "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+        "total_acs": 2984812,
+        "total_submitted": 3967465,
+        "is_new_question": false
+    },
+    {
+        "title": "Symmetric Tree",
+        "url": "https://leetcode.com/problems/symmetric-tree/",
+        "total_acs": 1943298,
+        "total_submitted": 3450174,
+        "is_new_question": false
+    },
+    {
+        "title": "Same Tree",
+        "url": "https://leetcode.com/problems/same-tree/",
+        "total_acs": 2087038,
+        "total_submitted": 3371244,
+        "is_new_question": false
+    },
+    {
+        "title": "Binary Tree Inorder Traversal",
+        "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+        "total_acs": 2463496,
+        "total_submitted": 3242632,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Sorted Array",
+        "url": "https://leetcode.com/problems/merge-sorted-array/",
+        "total_acs": 2992751,
+        "total_submitted": 6055174,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Duplicates from Sorted List",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+        "total_acs": 1475962,
+        "total_submitted": 2818179,
+        "is_new_question": false
+    },
+    {
+        "title": "Climbing Stairs",
+        "url": "https://leetcode.com/problems/climbing-stairs/",
+        "total_acs": 3146169,
+        "total_submitted": 5953041,
+        "is_new_question": false
+    },
+    {
+        "title": "Sqrt(x)",
+        "url": "https://leetcode.com/problems/sqrtx/",
+        "total_acs": 1892903,
+        "total_submitted": 4898590,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Binary",
+        "url": "https://leetcode.com/problems/add-binary/",
+        "total_acs": 1419416,
+        "total_submitted": 2657375,
+        "is_new_question": false
+    },
+    {
+        "title": "Plus One",
+        "url": "https://leetcode.com/problems/plus-one/",
+        "total_acs": 2168872,
+        "total_submitted": 4807335,
+        "is_new_question": false
+    },
+    {
+        "title": "Length of Last Word",
+        "url": "https://leetcode.com/problems/length-of-last-word/",
+        "total_acs": 1865226,
+        "total_submitted": 3656947,
+        "is_new_question": false
+    },
+    {
+        "title": "Search Insert Position",
+        "url": "https://leetcode.com/problems/search-insert-position/",
+        "total_acs": 2783402,
+        "total_submitted": 6090342,
+        "is_new_question": false
+    },
+    {
+        "title": "Find the Index of the First Occurrence in a String",
+        "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+        "total_acs": 2366652,
+        "total_submitted": 5621659,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Element",
+        "url": "https://leetcode.com/problems/remove-element/",
+        "total_acs": 2752742,
+        "total_submitted": 4871456,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Duplicates from Sorted Array",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "total_acs": 4148190,
+        "total_submitted": 7498574,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Two Sorted Lists",
+        "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+        "total_acs": 4047828,
+        "total_submitted": 6311010,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Parentheses",
+        "url": "https://leetcode.com/problems/valid-parentheses/",
+        "total_acs": 4440542,
+        "total_submitted": 10957933,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Common Prefix",
+        "url": "https://leetcode.com/problems/longest-common-prefix/",
+        "total_acs": 3207358,
+        "total_submitted": 7524627,
+        "is_new_question": false
+    },
+    {
+        "title": "Roman to Integer",
+        "url": "https://leetcode.com/problems/roman-to-integer/",
+        "total_acs": 3514041,
+        "total_submitted": 5762244,
+        "is_new_question": false
+    },
+    {
+        "title": "Palindrome Number",
+        "url": "https://leetcode.com/problems/palindrome-number/",
+        "total_acs": 4430654,
+        "total_submitted": 7903625,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum",
+        "url": "https://leetcode.com/problems/two-sum/",
+        "total_acs": 12745787,
+        "total_submitted": 24396598,
+        "is_new_question": false
+    }
+]
