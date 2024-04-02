@@ -1,0 +1,191 @@
+[
+    {
+        "title": "Smallest Missing Integer Greater Than Sequential Prefix Sum",
+        "url": "https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum/",
+        "total_acs": 24691,
+        "total_submitted": 78616,
+        "is_new_question": false
+    },
+    {
+        "title": "A Number After a Double Reversal",
+        "url": "https://leetcode.com/problems/a-number-after-a-double-reversal/",
+        "total_acs": 82098,
+        "total_submitted": 103379,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum IV - Input is a BST",
+        "url": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
+        "total_acs": 525001,
+        "total_submitted": 857777,
+        "is_new_question": false
+    },
+    {
+        "title": "Next Greater Element I",
+        "url": "https://leetcode.com/problems/next-greater-element-i/",
+        "total_acs": 688852,
+        "total_submitted": 955302,
+        "is_new_question": false
+    },
+    {
+        "title": "Guess Number Higher or Lower",
+        "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+        "total_acs": 627030,
+        "total_submitted": 1175403,
+        "is_new_question": false
+    },
+    {
+        "title": "First Bad Version",
+        "url": "https://leetcode.com/problems/first-bad-version/",
+        "total_acs": 1658540,
+        "total_submitted": 3743233,
+        "is_new_question": false
+    },
+    {
+        "title": "Palindrome Linked List",
+        "url": "https://leetcode.com/problems/palindrome-linked-list/",
+        "total_acs": 1879635,
+        "total_submitted": 3545550,
+        "is_new_question": false
+    },
+    {
+        "title": "Implement Queue using Stacks",
+        "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
+        "total_acs": 905611,
+        "total_submitted": 1369428,
+        "is_new_question": false
+    },
+    {
+        "title": "Implement Stack using Queues",
+        "url": "https://leetcode.com/problems/implement-stack-using-queues/",
+        "total_acs": 648886,
+        "total_submitted": 1022467,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Linked List",
+        "url": "https://leetcode.com/problems/reverse-linked-list/",
+        "total_acs": 4019160,
+        "total_submitted": 5263659,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum II - Input Array Is Sorted",
+        "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+        "total_acs": 1946251,
+        "total_submitted": 3184446,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Sorted List to Binary Search Tree",
+        "url": "https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/",
+        "total_acs": 518750,
+        "total_submitted": 840000,
+        "is_new_question": false
+    },
+    {
+        "title": "Convert Sorted Array to Binary Search Tree",
+        "url": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+        "total_acs": 1175298,
+        "total_submitted": 1642776,
+        "is_new_question": false
+    },
+    {
+        "title": "Merge Sorted Array",
+        "url": "https://leetcode.com/problems/merge-sorted-array/",
+        "total_acs": 2992471,
+        "total_submitted": 6054706,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Duplicates from Sorted Array II",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/",
+        "total_acs": 894926,
+        "total_submitted": 1547343,
+        "is_new_question": false
+    },
+    {
+        "title": "Search Insert Position",
+        "url": "https://leetcode.com/problems/search-insert-position/",
+        "total_acs": 2783196,
+        "total_submitted": 6090011,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Element",
+        "url": "https://leetcode.com/problems/remove-element/",
+        "total_acs": 2752485,
+        "total_submitted": 4871073,
+        "is_new_question": false
+    },
+    {
+        "title": "Remove Duplicates from Sorted Array",
+        "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "total_acs": 4147851,
+        "total_submitted": 7498105,
+        "is_new_question": false
+    },
+    {
+        "title": "Valid Parentheses",
+        "url": "https://leetcode.com/problems/valid-parentheses/",
+        "total_acs": 4440295,
+        "total_submitted": 10957314,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Common Prefix",
+        "url": "https://leetcode.com/problems/longest-common-prefix/",
+        "total_acs": 3207142,
+        "total_submitted": 7524127,
+        "is_new_question": false
+    },
+    {
+        "title": "Container With Most Water",
+        "url": "https://leetcode.com/problems/container-with-most-water/",
+        "total_acs": 2841872,
+        "total_submitted": 5159524,
+        "is_new_question": false
+    },
+    {
+        "title": "Palindrome Number",
+        "url": "https://leetcode.com/problems/palindrome-number/",
+        "total_acs": 4430284,
+        "total_submitted": 7903086,
+        "is_new_question": false
+    },
+    {
+        "title": "Reverse Integer",
+        "url": "https://leetcode.com/problems/reverse-integer/",
+        "total_acs": 3131841,
+        "total_submitted": 10991899,
+        "is_new_question": false
+    },
+    {
+        "title": "Median of Two Sorted Arrays",
+        "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+        "total_acs": 2498204,
+        "total_submitted": 6290232,
+        "is_new_question": false
+    },
+    {
+        "title": "Longest Substring Without Repeating Characters",
+        "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+        "total_acs": 5610293,
+        "total_submitted": 16184566,
+        "is_new_question": false
+    },
+    {
+        "title": "Add Two Numbers",
+        "url": "https://leetcode.com/problems/add-two-numbers/",
+        "total_acs": 4441590,
+        "total_submitted": 10426935,
+        "is_new_question": false
+    },
+    {
+        "title": "Two Sum",
+        "url": "https://leetcode.com/problems/two-sum/",
+        "total_acs": 12744865,
+        "total_submitted": 24395149,
+        "is_new_question": false
+    }
+]
