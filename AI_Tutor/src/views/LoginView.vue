@@ -1,50 +1,48 @@
 <template>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form @submit.prevent="login">
-            <div>
-                <label for="username">Username:</label>
-                <input id="username" v-model="credentials.username" type="text" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input id="password" v-model="credentials.password" type="password" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</template>
-
-<script>
-export default {
-name: 'LoginView',
+    <form name="login-form">
+      <div class="mb-3">
+        <label for="username">Username: </label>
+        <input type="text" id="username" v-model="input.username" />
+      </div>
+      <div class="mb-3">
+        <label for="password">Password: </label>
+        <input type="password" id="password" v-model="input.password" />
+      </div>
+      <button class="btn btn-outline-dark" type="submit" v-on:click.prevent="login()">
+        Login
+      </button>
+    </form>
+    <h3>Output: {{ this.output }}</h3>
+  
+  </template>
+  
+  <script>
+  import { SET_AUTHENTICATION, SET_USERNAME } from "../store/storeconstants";
+  export default {
+    name: 'LoginView',
     data() {
-    return {
-        credentials: {
-            username: '',
-            password: '',
+      return {
+        input: {
+          username: "",
+          password: ""
         },
-    };
-},
-methods: {
-        async login() {
-        console.log('Attempting to log in with', this.credentials);
-        // Assuming you have an authentication method to validate credentials
-        const isAuthenticated = await authenticateUser(this.credentials);
-        if (isAuthenticated) {
-            this.$router.push('/home'); // Redirect to HomeView after successful login
+        output: "",
+      }
+    },
+    methods: {
+      login() {
+        //make sure username OR password are not empty
+        if (this.input.username != "" || this.input.password != "") {
+          this.output = "Authentication complete"
+          //stores true to the set_authentication and username to the set_username 
+          this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
+          this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
+          this.output = "Authentication complete."
         } else {
-            // Handle login failure (e.g., display an error message)
+          this.$store.commit(`auth/${SET_AUTHENTICATION}`, false);
+          this.output = "Username and password can not be empty"
         }
-    }
-},
-}
-</script>
-
-<style scoped>
-.login-container {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-}
-</style>
+      },
+    },
+  }
+  </script>
