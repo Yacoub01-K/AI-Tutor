@@ -19,30 +19,29 @@
   <script>
   import { SET_AUTHENTICATION, SET_USERNAME } from "../store/storeconstants";
   export default {
-    name: 'LoginView',
-    data() {
-      return {
-        input: {
-          username: "",
-          password: ""
-        },
-        output: "",
+  name: 'LoginView',
+  data() {
+    return {
+      input: {
+        username: "",
+        password: ""
+      },
+      output: "",
+    };
+  },
+  methods: {
+    login() {
+      // Check that both username and password are not empty
+      if (this.input.username !== "" && this.input.password !== "") {
+        this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
+        this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
+        this.output = "Authentication complete.";
+        this.$router.push({ name: 'AI' });
+      } else {
+        // No need to commit a false authentication here if you handle the output message properly
+        this.output = "Username and password cannot be empty.";
       }
     },
-    methods: {
-      login() {
-        //make sure username OR password are not empty
-        if (this.input.username != "" || this.input.password != "") {
-          this.output = "Authentication complete"
-          //stores true to the set_authentication and username to the set_username 
-          this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
-          this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
-          this.output = "Authentication complete."
-        } else {
-          this.$store.commit(`auth/${SET_AUTHENTICATION}`, false);
-          this.output = "Username and password can not be empty"
-        }
-      },
-    },
-  }
+  },
+}
   </script>

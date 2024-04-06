@@ -10,6 +10,11 @@ const routes = [
         component: LoginView,
     },
     {
+        path: '/ai',
+        name: 'AI',
+        component: AIView,
+    },
+    {
         path: '/home',
         name: 'Home',
         component: HomeView,
