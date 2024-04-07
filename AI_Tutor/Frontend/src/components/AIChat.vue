@@ -21,13 +21,16 @@ export default {
             const payload = {
                 userInput: this.userInput,
             };
-            axios.post('/api/chat', { userInput: this.userInput })
+            axios.post('http://localhost:8080/api/chat', payload)
                 .then(response => {
-                    this.aiResponse = response.data.response;
+                    this.aiResponse = response.data;
                 })
                 .catch(error => {
-                    console.error("Error communicating with the AI:", error);
-                    this.aiResponse = 'Sorry, something went wrong.';
+                    console.error("Full error response:", error.response);
+                    const errorMessage = error.response && error.response.data && error.response.data.error
+                        ? error.response.data.error
+                        : error.message;
+                    this.aiResponse = `Sorry, something went wrong: ${errorMessage}`;
                 });
         },
     },
