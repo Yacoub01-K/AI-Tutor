@@ -14,10 +14,6 @@ if not api_key:
 
 client = OpenAI(api_key=api_key)
 
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
 @app.route('/api/data', methods=['GET'])
 def get_data():
     data = {"message": "Hello from Flask!"}
