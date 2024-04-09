@@ -36,7 +36,7 @@
         this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
         this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
         this.output = "Authentication complete.";
-        this.$router.push({ name: 'AI' });
+        this.$router.push({ name: 'Home' });
       } else {
         // No need to commit a false authentication here if you handle the output message properly
         this.output = "Username and password cannot be empty.";
