@@ -18,6 +18,8 @@
 
 <script>
 import { SET_AUTHENTICATION, SET_USERNAME } from "../store/storeconstants";
+import axios from 'axios';
+
 export default {
   name: 'LoginView',
   data() {
@@ -32,7 +34,7 @@ export default {
   methods: {
     login() {
       if (this.input.username !== "" && this.input.password !== "") {
-        axios.post('/api/login', {
+        axios.post('http://localhost:8080/api/login', {
           username: this.input.username,
           password: this.input.password
         }).then(response => {
@@ -40,12 +42,16 @@ export default {
             this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
             this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
             this.output = "Authentication complete.";
+            console.log("working")
             this.$router.push({ name: 'Home' });
           } else {
             this.output = "Authentication failed.";
           }
         }).catch(error => {
-          this.output = "Login error.";
+          const errorMessage = error.response && error.response.data && error.response.data.error
+                        ? error.response.data.error
+                        : error.message;
+          this.output = `login error: ${errorMessage}`;
           console.error("Login error:", error);
         });
       } else {

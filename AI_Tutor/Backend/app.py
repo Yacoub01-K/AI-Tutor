@@ -50,14 +50,14 @@ def chat():
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'  
 db = SQLAlchemy(app)
 
-
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True, nullable=False)
     password_hash = db.Column(db.String(200), nullable=False)
-
+    print(username)
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
+        print(self.password_hash)
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
@@ -66,13 +66,27 @@ class User(db.Model):
 with app.app_context():
     db.create_all()
     
-    
+@app.route('/add_user', methods=['GET'])
+def add_user():
+    username = 'ali'  # Choose a username
+    password = 'whatsupp' # Choose a password
+
+    if not User.query.filter_by(username=username).first():
+        user = User(username=username)
+        user.set_password(password)  # Assuming you have a set_password method to hash the password
+        db.session.add(user)
+        db.session.commit()
+        print("This"+password)
+        return 'User added successfully!'
+    else:
+        return 'User already exists.'
     
 @app.route('/api/login', methods=['POST'])
 def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
-
+    print("hello")
+    # print("this is the user :" + User.query.filter_by(username=data['username']).first().String())
     if user and user.check_password(data['password']):
         # Here, you'd create a session or return a token. For simplicity, we'll just return success.
         return jsonify({"authenticated": True}), 200
