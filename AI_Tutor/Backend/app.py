@@ -44,7 +44,6 @@ def chat():
         message_content = response.choices[0].message.content
         print(response)
         return jsonify({"response": message_content})
-       
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
@@ -97,7 +96,7 @@ def add_user():
 def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
-    # print("this is the user :" + User.query.filter_by(username=data['username']).first().String())
+    # print("this is the user :" + User.query.filter_by(username=data['username']).first().String())    # print("this is the user :" + User.query.filter_by(username=data['username']).first().String())
     if user and user.check_password(data['password']):
         # Here, you'd create a session or return a token. For simplicity, we'll just return success.
         return jsonify({"authenticated": True}), 200
