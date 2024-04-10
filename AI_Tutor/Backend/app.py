@@ -65,27 +65,33 @@ class User(db.Model):
 
 with app.app_context():
     db.create_all()
-    
-@app.route('/add_user', methods=['GET'])
-def add_user():
-    username = 'ali'  # Choose a username
-    password = 'whatsupp' # Choose a password
 
-    if not User.query.filter_by(username=username).first():
-        user = User(username=username)
-        user.set_password(password)  # Assuming you have a set_password method to hash the password
-        db.session.add(user)
-        db.session.commit()
-        print("This"+password)
-        return 'User added successfully!'
-    else:
-        return 'User already exists.'
+#this is not secure will probably need to be changed. 
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    # Basic input validation
+    if not username or not password:
+        return jsonify({"error": "Username and password are required"}), 400
+
+    if User.query.filter_by(username=username).first():
+        return jsonify({"error": "User already exists"}), 400
+
+    user = User(username=username)
+    user.set_password(password)
+    db.session.add(user)
+    db.session.commit()
+
+    return jsonify({"message": "User added successfully!"}), 201
+
     
 @app.route('/api/login', methods=['POST'])
 def login():
     data = request.get_json()
     user = User.query.filter_by(username=data['username']).first()
-    print("hello")
     # print("this is the user :" + User.query.filter_by(username=data['username']).first().String())
     if user and user.check_password(data['password']):
         # Here, you'd create a session or return a token. For simplicity, we'll just return success.

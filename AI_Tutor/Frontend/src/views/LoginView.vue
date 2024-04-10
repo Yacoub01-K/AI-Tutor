@@ -11,6 +11,9 @@
     <button class="btn btn-outline-dark" type="submit" v-on:click.prevent="login()">
       Login
     </button>
+  
+    <button @click="$router.push('/register')">Register</button>
+
   </form>
   <h3>Output: {{ this.output }}</h3>
 
@@ -42,7 +45,6 @@ export default {
             this.$store.commit(`auth/${SET_AUTHENTICATION}`, true);
             this.$store.commit(`auth/${SET_USERNAME}`, this.input.username);
             this.output = "Authentication complete.";
-            console.log("working")
             this.$router.push({ name: 'Home' });
           } else {
             this.output = "Authentication failed.";
@@ -59,6 +61,7 @@ export default {
       }
     },
 
+  
   },
 }
 </script>
