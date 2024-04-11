@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:20
+FROM node:21.2.0
 
 # Set the working directory to /app
 WORKDIR /app
@@ -8,12 +8,11 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install any needed packages
-RUN npm install
+RUN npm i
 
 # Bundle app source
 COPY . .
 
-# Expose port 3000
 EXPOSE 5173
 
 # Command to run the app

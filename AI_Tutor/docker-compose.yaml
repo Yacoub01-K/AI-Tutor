@@ -3,7 +3,7 @@ services:
   backend:
     build: ./Backend
     ports:
-      - "5000:5000"
+      - "8080:8080"
     volumes:
       - ./Backend:/app
     environment:
@@ -13,8 +13,8 @@ services:
   frontend:
     build: ./Frontend
     ports:
-      - "3000:3000"
+      - "5173:5173"
     volumes:
       - ./Frontend:/app
     environment:
-      - NODE_ENV=dev
+      - NODE_ENV=development
