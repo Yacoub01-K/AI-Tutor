@@ -1,5 +1,8 @@
 <template>
     <div>
+        <h1>AI Tutor</h1>
+    </div>
+    <div>
         <textarea v-model="userInput" placeholder="Ask me anything..."></textarea>
         <button @click="sendToAI">Ask AI</button>
         <div v-if="aiResponse">{{ aiResponse }}</div>
