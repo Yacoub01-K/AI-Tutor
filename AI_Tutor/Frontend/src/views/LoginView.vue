@@ -65,10 +65,7 @@ export default {
         this.output = "Username and password cannot be empty.";
       }
     },
-
-
   },
-}
 </script>
 
 <style scoped>
