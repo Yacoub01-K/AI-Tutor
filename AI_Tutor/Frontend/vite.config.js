@@ -20,6 +20,10 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
-    }
+    },
+    
+  },
+  server:{
+    host: '0.0.0.0',
   }
 })
