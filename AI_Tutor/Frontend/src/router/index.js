@@ -1,10 +1,10 @@
-// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginView from '../views/LoginView.vue';
 import HomeView from '../views/HomeView.vue';
 import AIView from '../views/AIView.vue';
 import RegisterView from '../views/RegisterView.vue';
 import intro from '../views/intro.vue';
+import CodeView from '../views/CodeView.vue';
 
 
 const routes = [
@@ -32,6 +32,11 @@ const routes = [
         path:'/register',
         name:'Register',
         component: RegisterView,
+    },
+    {
+        path: '/problems',
+        name: 'Class',
+        component: CodeView,
     }
 ];
 
