@@ -1,8 +1,8 @@
-// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
 import LoginView from '../views/LoginView.vue';
 import HomeView from '../views/HomeView.vue';
 import AIView from '../views/AIView.vue';
+import CodeView from '../views/CodeView.vue';
 
 
 const routes = [
@@ -20,6 +20,11 @@ const routes = [
         path: '/home',
         name: 'Home',
         component: HomeView,
+    },
+    {
+        path: '/problems',
+        name: 'Class',
+        component: CodeView,
     }
     // Add more routes here
 ];
