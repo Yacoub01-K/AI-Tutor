@@ -18,6 +18,7 @@
   
   <script>
   import { SET_AUTHENTICATION, SET_USERNAME } from "../store/storeconstants";
+
   export default {
   name: 'LoginView',
   data() {

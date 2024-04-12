@@ -21,7 +21,7 @@ export default {
             const payload = {
                 userInput: this.userInput,
             };
-            axios.post('http://localhost:8080/api/chat', payload)
+            axios.post('http://localhost:8000/api/chat', payload)
                 .then(response => {
                     this.aiResponse = response.data;
                 })

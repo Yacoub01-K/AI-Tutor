@@ -3,9 +3,12 @@ from flask_cors import CORS
 from openai import OpenAI
 import os
 
+
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
-print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
+# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
+
+########AI API SECTION###########
 
 api_key = os.getenv('OPENAI_API_KEY')
 
@@ -32,16 +35,15 @@ def chat():
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": userInput}],
         )
-        # Assuming the response object has a 'choices' attribute
-        # and accessing the first choice's 'message' attribute for content
         message_content = response.choices[0].message.content
         print(response)
         return jsonify({"response": message_content})
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
-
+    
+    
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=8000)
 
 

@@ -13,13 +13,16 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
     proxy: {
       // Proxy API endpoints to the Flask backend
       '/api/*': {
-        target: 'http://localhost:8080', // Flask backend address
+        target: 'http://localhost:8000', // Flask backend address
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       },
-    }
-  }
+    },
+    
+  },
+  
 })
