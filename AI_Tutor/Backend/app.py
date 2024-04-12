@@ -162,10 +162,6 @@ def login():
     
     
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(host='0.0.0.0',debug=True, port=8000)
-=======
-    app.run(debug=True, port=8000)
->>>>>>> 65bbf86 (Docker working)
 
 
