@@ -8,6 +8,9 @@ CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
 # print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
 ########AI API SECTION###########
+# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
+
+########AI API SECTION###########
 
 api_key = os.getenv('OPENAI_API_KEY')
 
