@@ -28,7 +28,7 @@
           sendToAI() {
               const payload = { userInput: this.userInput };
               this.messages.push({ content: this.userInput, sender: 'user' });
-              axios.post('http://localhost:8080/api/chat', payload)
+              axios.post('http://localhost:8000/api/chat', payload)
                   .then(response => {
                       this.messages.push({ content: response.data, sender: 'ai' });
                       this.userInput = ''; // Clear input after sending
