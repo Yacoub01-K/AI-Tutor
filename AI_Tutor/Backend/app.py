@@ -34,6 +34,7 @@ def test():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     userInput = request.json.get('userInput').lower()
+    userInput = request.json.get('userInput').lower()
 
     try:
         response = client.chat.completions.create(
@@ -47,7 +48,6 @@ def chat():
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
-    
     
 ######LOGIN SECTION#########    
 
@@ -162,6 +162,6 @@ def login():
     
     
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    app.run(host='0.0.0.0',debug=True, port=8000)
 
 
