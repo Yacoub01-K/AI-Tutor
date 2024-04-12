@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  backend:
+    build: ./Backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Backend:/app
+    environment:
+      - NAME=AI Tutor Backend
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+
+  frontend:
+    build: 
+      context: ./Frontend
+      dockerfile: Dockerfile  # Ensure this is correctly named if not default
+    image: ai_tutor_frontend:latest  # Explicitly tag the image
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./Frontend:/app
+      - /app/node_modules  
+    environment:
+      - NODE_ENV=development
+
