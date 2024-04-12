@@ -13,6 +13,7 @@ export default defineConfig({
     },
   },
   server: {
+    host: '0.0.0.0',
     proxy: {
       // Proxy API endpoints to the Flask backend
       '/api/*': {
@@ -23,7 +24,5 @@ export default defineConfig({
     },
     
   },
-  server:{
-    host: '0.0.0.0',
-  }
+  
 })
