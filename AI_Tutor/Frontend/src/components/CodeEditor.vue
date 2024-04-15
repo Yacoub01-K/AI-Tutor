@@ -1,74 +1,62 @@
 <template>
-    <div class="container">
-      <!-- Left Column for AI and Problem Description -->
-      <div class="left-column">
-        <!-- AI Chat Area -->
-        <div class="ai-chat">
-          <h3>AI Chat</h3>
-          <!-- Placeholder for chat messages -->
-          <div class="chat-messages">
-            <p>Message from AI...</p>
-          </div>
-          <!-- Input area for asking questions -->
-          <input type="text" placeholder="Ask a question...">
-          <button>Send</button>
-        </div>
-        <!-- Problem Description Area -->
-        <div class="problem-description">
-          <h3>Problem Description</h3>
-          <p>This is where the AI-generated coding problem will be displayed.</p>
-        </div>
-      </div>
-  
-      <!-- Right Column for Code Editor and Console -->
-      <div class="right-column">
-        <!-- Code Editor Area -->
-        <div class="code-editor">
-          <h3>Code Editor</h3>
-          <textarea placeholder="Write your code here..."></textarea>
-        </div>
-        <!-- Console Output Area -->
-        <div class="console-output">
-          <h3>Console Output</h3>
-          <div>Output from code execution will appear here.</div>
-        </div>
-      </div>
+  <div class="editor-container">
+    <div ref="editorContainer" style="height: 300px;"></div>
+    <button @click="runCode">Run Code</button>
+    <div v-if="output" class="output-container">
+      Output: <pre>{{ output }}</pre>
     </div>
-  </template>
-  
-  <style scoped>
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .left-column, .right-column {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .ai-chat, .problem-description {
-    margin-bottom: 20px;
-  }
-  
-  .chat-messages, .console-output {
-    height: 150px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 300px;
-  }
-  </style>
-  
-  
+  </div>
+</template>
+
 <script>
- /**
-  * add nav bar here.
-  */
+import * as monaco from 'monaco-editor';
+import axios from 'axios';
+
+export default {
+  name: 'CodeEditor',
+  data() {
+    return {
+      editor: null,
+      output: '',
+    };
+  },
+  mounted() {
+    this.editor = monaco.editor.create(this.$refs.editorContainer, {
+      value: `function hello() {\n  console.log("Hello, world!");\n}`,
+      language: 'javascript',
+      theme: 'vs-dark'
+    });
+  },
+  methods: {
+    runCode() {
+      const code = this.editor.getValue();
+      axios.post('http://localhost:8000/api/execute', { code })
+        .then(response => {
+          this.output = response.data.output;
+        })
+        .catch(error => {
+          console.error('Error executing code:', error);
+          this.output = 'Failed to execute code.';
+        });
+    }
+  },
+  beforeDestroy() {
+    if (this.editor) {
+      this.editor.dispose();
+    }
+  }
+}
 </script>
-  
+
+<style scoped>
+.editor-container {
+  margin: 20px;
+}
+
+.output-container {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+</style>

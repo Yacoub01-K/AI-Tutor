@@ -4,6 +4,8 @@ from openai import OpenAI
 import os
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
+import requests
+import logging
 
 
 app = Flask(__name__)
@@ -80,8 +82,56 @@ def login():
     else:
         return jsonify({"authenticated": False}), 401
     
-
     
+    
+    #### CODE EDITOR #####
+
+# Function to execute code using Judge0
+logging.basicConfig(level=logging.DEBUG)
+
+JUDGE0_ENDPOINT = "https://api.judge0.com/submissions?base64_encoded=false&wait=true"
+
+def execute_code_with_judge0(code, language_id=63):
+    data = {
+        "source_code": code,
+        "language_id": language_id,
+        "stdin": "",
+        "expected_output": "",
+        "memory_limit": 256000,
+        "cpu_time_limit": 5
+    }
+    headers = {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    }
+    try:
+        response = requests.post(JUDGE0_ENDPOINT, json=data, headers=headers, timeout=10)  # Timeout set to 10 seconds
+        return response.json()
+    except requests.Timeout:
+        logging.error("Timeout occurred while trying to execute code.")
+        return None
+    except Exception as e:
+        logging.error(f"An error occurred: {e}")
+        return None
+
+@app.route('/api/execute', methods=['POST'])
+def execute_code():
+    code = request.json.get('code')
+    logging.info("Received code for execution.")
+    result = execute_code_with_judge0(code)
+    if not result:
+        return jsonify({'error': 'Failed to execute code due to timeout or server error'}), 500
+
+    output = result.get('stdout', '')
+    stderr = result.get('stderr', '')
+    compile_error = result.get('compile_output', '')
+
+    full_output = output + (f"\nErrors: {stderr}" if stderr else "") + (f"\nCompilation Errors: {compile_error}" if compile_error else "")
+    
+    logging.info("Code executed successfully.")
+    return jsonify({'output': full_output})
+
+
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True, port=8000)

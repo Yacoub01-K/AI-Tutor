@@ -1,12 +1,22 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path';
+import monacoEditorPlugin from 'vite-plugin-monaco-editor';
+
+
 
 export default defineConfig({
   root: '.', // The root of your source code, "." for project root
   base: '/', // Base public path when served in development or production
   publicDir: 'public',
-  plugins: [vue()],
+  plugins: [vue(),
+    monacoEditorPlugin({
+    languageWorkers: ['typescript', 'javascript', 'css', 'html', 'json'],
+    customDistPath: '/node_modules/monaco-editor/min/vs',
+    globalAPI: true  // This can expose the editor API globally if needed
+  
+    })
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -24,5 +34,7 @@ export default defineConfig({
     },
     
   },
+
+
   
 })
