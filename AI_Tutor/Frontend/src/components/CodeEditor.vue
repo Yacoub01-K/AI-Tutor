@@ -1,74 +1,125 @@
 <template>
-    <div class="container">
-      <!-- Left Column for AI and Problem Description -->
-      <div class="left-column">
-        <!-- AI Chat Area -->
-        <div class="ai-chat">
-          <h3>AI Chat</h3>
-          <!-- Placeholder for chat messages -->
-          <div class="chat-messages">
-            <p>Message from AI...</p>
-          </div>
-          <!-- Input area for asking questions -->
-          <input type="text" placeholder="Ask a question...">
-          <button>Send</button>
-        </div>
-        <!-- Problem Description Area -->
-        <div class="problem-description">
-          <h3>Problem Description</h3>
-          <p>This is where the AI-generated coding problem will be displayed.</p>
-        </div>
+  <div class="container">
+    <div class="left-column">
+      <div class="ai-chat">
+        <h3>AI Chat</h3>
+        <AIChat />
       </div>
-  
-      <!-- Right Column for Code Editor and Console -->
-      <div class="right-column">
-        <!-- Code Editor Area -->
-        <div class="code-editor">
-          <h3>Code Editor</h3>
-          <textarea placeholder="Write your code here..."></textarea>
-        </div>
-        <!-- Console Output Area -->
-        <div class="console-output">
-          <h3>Console Output</h3>
-          <div>Output from code execution will appear here.</div>
-        </div>
+      <div class="problem-description">
+        <h3>Problem Description</h3>
+        <p>This is where the AI-generated coding problem will be displayed.</p>
       </div>
     </div>
-  </template>
-  
-  <style scoped>
-  .container {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .left-column, .right-column {
-    width: 50%;
-    padding: 20px;
-  }
-  
-  .ai-chat, .problem-description {
-    margin-bottom: 20px;
-  }
-  
-  .chat-messages, .console-output {
-    height: 150px;
-    border: 1px solid #ccc;
-    margin-top: 10px;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  
-  textarea {
-    width: 100%;
-    height: 300px;
-  }
-  </style>
-  
-  
+    <div class="right-column">
+      <div class="code-editor">
+        <h3>Code Editor</h3>
+        <!-- Language Selector -->
+        <select v-model="currentLanguage" @change="changeLanguage">
+          <option v-for="lang in languages" :key="lang.value" :value="lang.value">{{ lang.text }}</option>
+        </select>
+        <div id="editor" style="height: 300px;"></div>
+      </div>
+      <button @click="executeCode">Run Code</button>
+      <div class="console-output">
+        <h3>Console Output</h3>
+        <div v-text="output"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script>
- /**
-  * add nav bar here.
-  */
+import loader from '@monaco-editor/loader';
+import AIChat from '@/components/AIChat.vue'
+import axios from 'axios'
+
+export default {
+  name: 'MonacoEditor',
+  components: {
+    AIChat,
+  },
+  data() {
+    return {
+      output: '',
+      isLoading: false,
+      editorInstance: null,
+      currentLanguage: 'python',
+      languages: [
+        { text: 'Python', value: 'python' },
+        { text: 'JavaScript', value: 'javascript' },
+        { text: 'HTML', value: 'html' },
+        { text: 'CSS', value: 'css' },
+        { text: 'TypeScript', value: 'typescript' },
+        { text: 'JSON', value: 'json' },
+      ],
+    };
+  },
+  mounted() {
+    // Initialize the Monaco editor using the loader
+    loader.init().then(monaco => {
+      this.editorInstance = monaco.editor.create(document.getElementById('editor'), {
+        language: this.currentLanguage,
+        theme: 'vs-dark',
+        value: 'type your code here...',
+      });
+    });
+  },
+  methods: {
+    executeCode() {
+      const code = this.editorInstance.getValue();
+      this.isLoading = true;
+      axios.post('http://localhost:8000/api/execute', { code, language: this.currentLanguage })
+        .then(response => {
+          this.output = response.data.output;
+        })
+        .catch(error => {
+          this.output = `Error: ${error.response.data.message || error.message}`;
+        })
+        .finally(() => {
+          this.isLoading = false;
+        });
+    },
+    changeLanguage() {
+      if (this.editorInstance) {
+        const model = this.editorInstance.getModel();
+        loader.init().then(monaco => {
+          monaco.editor.setModelLanguage(model, this.currentLanguage);
+        });
+      }
+    }
+  }
+}
 </script>
-  
+
+
+<style scoped>
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-column,
+.right-column {
+  width: 50%;
+  padding: 20px;
+}
+
+.ai-chat,
+.problem-description {
+  margin-bottom: 20px;
+}
+
+.chat-messages,
+.console-output {
+  height: 150px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+}
+</style>

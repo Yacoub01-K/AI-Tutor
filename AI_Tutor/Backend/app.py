@@ -99,14 +99,38 @@ def login():
     if user and user.check_password(data['password']):
         # Here, you'd typically want to create a session or return a token.
         return jsonify({"authenticated": True}), 200
-    return jsonify({"authenticated": False, "message": "Invalid credentials"}), 401
-
+    else:
+        return jsonify({"authenticated": False, "message": "Invalid credentials"}), 401
     
 
-
+###### code editor #######
+@app.route('/api/execute', methods=['POST'])
+def execute_code():
+    code = request.json.get('code', '')
+    language = request.json.get('language', 'python')  # Default to Python if not specified
     
+    # Mapping of languages to Docker images
+    language_images = {
+        'python': 'python:3.9-slim',
+        'javascript': 'node:14-slim',
+        'ruby': 'ruby:3-slim',
+        # Add other languages and their respective Docker images here
+    }
 
-    
+    image = language_images.get(language, 'python:3.9-slim')  # Fallback to Python image
+
+    try:
+        container = client.containers.run(
+            image,
+            command=["sh", "-c", f"echo '{code}' | {language}"],
+            remove=True,
+            detach=True
+        )
+        output = container.logs()
+        container.wait()  # Ensure the container finishes execution
+        return jsonify({'output': output.decode('utf-8')})
+    except docker.errors.ContainerError as e:
+        return jsonify({'error': 'Error executing code', 'details': str(e)}), 500
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True, port=8000)
