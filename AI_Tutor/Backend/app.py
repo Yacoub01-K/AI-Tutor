@@ -10,6 +10,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
 # print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
+########AI API SECTION###########
 # print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
 ########AI API SECTION###########
@@ -47,7 +48,7 @@ def chat():
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
-        
+    
     
 ######LOGIN SECTION#########    
 
