@@ -31,20 +31,21 @@ def test():
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
-    userInput = request.json.get('userInput')
+    userInput = request.json.get('userInput').lower()
 
     try:
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
-            messages=[{"role": "user", "content": userInput}],
+            messages=[{"role": "system", "content": "You are a coding tutor that answers peoples programming questions and gives them lessons on the coding topics they asked"},
+                {"role": "user", "content": userInput}],
         )
         message_content = response.choices[0].message.content
         print(response)
         return jsonify({"response": message_content})
+       
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
-    
     
 ######LOGIN SECTION#########    
 
