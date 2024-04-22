@@ -41,6 +41,7 @@ def chat():
         message_content = response.choices[0].message.content
         print(response)
         return jsonify({"response": message_content})
+       
     except Exception as e:
         print(f"Error communicating with OpenAI: {e}")
         return jsonify({"error": "Failed to get response from OpenAI"}), 500
