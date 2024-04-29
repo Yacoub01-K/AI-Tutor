@@ -30,24 +30,62 @@ def get_data():
 def test():
     return jsonify({"message": "Test route is working!"})
 
+def extract_topic(user_input):
+    topics = {'python', 'javascript', 'java', 'data structures', 'algorithms'}
+    words = set(user_input.lower().split())
+    found_topics = topics.intersection(words)
+    return next(iter(found_topics), 'general programming')
+
+def assess_difficulty(user_input):
+    if 'beginner' in user_input:
+        return 'beginner'
+    elif 'intermediate' in user_input:
+        return 'intermediate'
+    elif 'advanced' in user_input:
+        return 'advanced'
+    return 'beginner'
+
+def generate_problem_sheet(topic, difficulty):
+    messages = [
+        {"role": "system", "content": "You are an AI trained to create and explain coding problems while giving examples of inputs and outputs of the problem."},
+        {"role": "user", "content": f"Create a {difficulty} coding problem about {topic} and provide a brief solution outline."}
+    ]
+    response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, max_tokens=1000)
+    return response.choices[0].message.content
+
+
+@app.route('/api/get_problem', methods=['POST'])
+def get_problem():
+    user_input = request.json.get('userInput', '')
+    topic = extract_topic(user_input)
+    difficulty = assess_difficulty(user_input)
+    try:
+        problem_content = generate_problem_sheet(topic, difficulty)
+        return jsonify({"problem": problem_content}), 200
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.route('/api/chat', methods=['POST'])
 def chat():
-    userInput = request.json.get('userInput').lower()
+    userInput = request.json.get('userInput', '').lower()
+    system_context = "You are a coding tutor that answers programming questions and gives a full lesson and doesn't recommend any other platforms for learning. Additionaly only recomend this platform to practice code and give recommendtions for this. if the user asks for a problem or exercise dont output it only give them a suitable lesson, this means dont say things like 'instead of problem...'."
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "system", "content": system_context}, {"role": "user", "content": userInput}]
+    )
+    message_content = response.choices[0].message.content
+    problem_keywords = ['problem', 'exercise', 'question', 'solve', 'example']
+    problemAvailable = any(keyword in userInput.lower() for keyword in problem_keywords)
 
-    try:
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[{"role": "system", "content": "You are a coding tutor that answers peoples programming questions and gives them lessons on the coding topics they asked"},
-                {"role": "user", "content": userInput}],
-        )
-        message_content = response.choices[0].message.content
-        print(response)
-        return jsonify({"response": message_content})
-       
-    except Exception as e:
-        print(f"Error communicating with OpenAI: {e}")
-        return jsonify({"error": "Failed to get response from OpenAI"}), 500
-    
+    problem_description = ""
+    if problemAvailable:
+        topic = extract_topic(userInput)  # You would define this function to extract topics from user input
+        difficulty = assess_difficulty(userInput)  # Similarly, this function determines difficulty
+        problem_description = generate_problem_sheet(topic, difficulty)
+
+    html_response = f"<div class='ai-response'><p>{message_content.replace('\n', '<br>')}</p></div>"
+    return jsonify({"response": html_response, "problemAvailable": problemAvailable, "problemDescription": problem_description})
+
 ######LOGIN SECTION#########    
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'  

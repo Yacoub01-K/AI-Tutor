@@ -3,8 +3,18 @@ import auth from './auth/index'
 
 
 export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
+  state: {
+    problemDescription: ''
+  },
+  mutations: {
+    setProblemDescription(state, description) {
+      state.problemDescription = description;
+    }
+  },
+  actions: {
+    updateProblemDescription({ commit }, description) {
+      commit('setProblemDescription', description);
+    }
+  },
   modules: {auth},
 });

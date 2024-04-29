@@ -15,6 +15,7 @@ const routes = [
         path: '/ai',
         name: 'AI',
         component: AIView,
+        props: true,
     },
     {
         path: '/home',
@@ -25,11 +26,14 @@ const routes = [
         path: '/problems',
         name: 'Class',
         component: CodeView,
+       
+
     }
     // Add more routes here
 ];
 
 const router = createRouter({
+    mode: 'history',
     history: createWebHistory(import.meta.env.BASE_URL),
     routes,
 });
