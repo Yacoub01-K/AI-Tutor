@@ -3,11 +3,11 @@
     <div class="left-column">
       <div class="ai-chat">
         <h3>AI Chat</h3>
-        <AIChat />
+        <AIChat @problemDescriptionSend="handleProblemDescription"/>
       </div>
       <div class="problem-description">
         <h3>Problem Description</h3>
-        <p>This is where the AI-generated coding problem will be displayed.</p>
+        <p>{{ problemDescription }}</p>
       </div>
     </div>
     <div class="right-column">
@@ -38,6 +38,7 @@ export default {
   components: {
     AIChat,
   },
+
   data() {
     return {
       output: '',
@@ -54,8 +55,16 @@ export default {
       ],
     };
   },
+  computed: {
+  problemDescription() {
+    return this.$store.state.problemDescription;
+  } 
+},
   mounted() {
-    // Initialize the Monaco editor using the loader
+    if (this.$route.query.problem) {
+    this.problemDescription = this.$route.query.problem;
+  }
+
     loader.init().then(monaco => {
       this.editorInstance = monaco.editor.create(document.getElementById('editor'), {
         language: this.currentLanguage,
@@ -65,6 +74,10 @@ export default {
     });
   },
   methods: {
+    handleProblemDescription(description) {
+      console.log("The dis:"+description);
+      this.problemDescription = description;
+    },
     executeCode() {
       const code = this.editorInstance.getValue();
       this.isLoading = true;
