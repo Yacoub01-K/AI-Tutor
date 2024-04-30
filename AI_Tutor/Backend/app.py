@@ -3,6 +3,8 @@ from flask_cors import CORS
 from openai import OpenAI
 import os
 
+
+
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
 # print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
@@ -46,11 +48,34 @@ def assess_difficulty(user_input):
 def generate_problem_sheet(topic, difficulty):
     messages = [
         {"role": "system", "content": "You are an AI trained to create and explain coding problems while giving examples of inputs and outputs of the problem."},
-        {"role": "user", "content": f"Create a {difficulty} coding problem about {topic} and provide a brief solution outline."}
+        {"role": "user", "content": f"Create a {difficulty} coding problem about {topic}."}
     ]
     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, max_tokens=1000)
     return response.choices[0].message.content
 
+# def extract_current_lesson_context(user_input, messages):
+#      # Predefined sets of topics and difficulties
+#     topics = {'python', 'javascript', 'java', 'data structures', 'algorithms'}
+#     difficulties = {'beginner', 'intermediate', 'advanced'}
+
+#     # Placeholder variables to hold the most recent matches
+#     current_topic = 'general programming'  # Default to a generic topic if none found
+#     current_difficulty = 'beginner'  # Default to beginner if no difficulty level mentioned
+
+#     # Combine all messages into one text for easier searching
+#     combined_text = ' '.join(msg['content'] for msg in messages if msg['role'] == 'user') + ' ' + user_input
+
+#     # Check for the presence of topics and difficulties in the conversation
+#     found_topics = {topic for topic in topics if topic in combined_text.lower()}
+#     found_difficulties = {difficulty for difficulty in difficulties if difficulty in combined_text.lower()}
+
+#     # Update current_topic and current_difficulty if any matches were found
+#     if found_topics:
+#         current_topic = next(iter(found_topics))  # Get the last added (most recent based on user input)
+#     if found_difficulties:
+#         current_difficulty = next(iter(found_difficulties))  # Same as above
+
+    # return current_topic, current_difficulty
 
 @app.route('/api/get_problem', methods=['POST'])
 def get_problem():
@@ -66,7 +91,7 @@ def get_problem():
 @app.route('/api/chat', methods=['POST'])
 def chat():
     userInput = request.json.get('userInput', '').lower()
-    system_context = "You are a coding tutor that answers programming questions and gives a full lesson and doesn't recommend any other platforms for learning. Additionaly only recomend this platform to practice code and give recommendtions for this. if the user asks for a problem or exercise dont output it only give them a suitable lesson, this means dont say things like 'instead of problem...'."
+    system_context = "You are a coding tutor that answers programming questions and gives a full lesson and doesn't recommend any other platforms for learning. Additionaly only recomend this platform to practice code and give recommendtions for this. if the user asks for a problem or exercise dont output it instead say 'sure! please click the bottun below' or something like that."
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "system", "content": system_context}, {"role": "user", "content": userInput}]
@@ -143,34 +168,72 @@ def login():
     
 
 ###### code editor #######
+
+from threading import Thread
+import docker
+
+
+# def run_docker_code(code, language, callback):
+#     client = docker.from_env()
+#     image_map = {
+#         'python': 'python:3.9-slim',
+#         'javascript': 'node:14-slim'
+#     }
+#     image = image_map.get(language, 'python:3.9-slim')
+#     try:
+#         container = client.containers.run(
+#             image=image,
+#             command=f"echo '{code}' | {language}",
+#             detach=True,
+#         )
+#         app.logger.info("Container started")
+#         container.wait()
+#         app.logger.info("Container finished execution")
+#         output = container.logs().decode('utf-8')
+#         app.logger.info("Logs fetched")
+#     except docker.errors.NotFound as e:
+#         callback(f"Container not found: {e}", None)
+#     except Exception as e:
+#         callback(e, None)
+#     else:
+#         callback(None, output)
+
+
+
 @app.route('/api/execute', methods=['POST'])
 def execute_code():
-    code = request.json.get('code', '')
-    language = request.json.get('language', 'python')  # Default to Python if not specified
-    
-    # Mapping of languages to Docker images
-    language_images = {
+    client = docker.from_env()
+    code = request.json.get('code')
+    language = request.json.get('language')
+    print(f"Received code: {code} in language: {language}")  # Debugging output
+
+    image_map = {
         'python': 'python:3.9-slim',
         'javascript': 'node:14-slim',
-        'ruby': 'ruby:3-slim',
-        # Add other languages and their respective Docker images here
+        'ruby': 'ruby:3-slim'
     }
 
-    image = language_images.get(language, 'python:3.9-slim')  # Fallback to Python image
+    image = image_map.get(language)
+
+    if not image:
+        return jsonify({'error': 'Unsupported language'}), 400
 
     try:
         container = client.containers.run(
-            image,
+            image=image,
             command=["sh", "-c", f"echo '{code}' | {language}"],
             remove=True,
             detach=True
         )
         output = container.logs()
-        container.wait()  # Ensure the container finishes execution
+        container.wait()
+        print(output)
         return jsonify({'output': output.decode('utf-8')})
-    except docker.errors.ContainerError as e:
-        return jsonify({'error': 'Error executing code', 'details': str(e)}), 500
-    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',debug=True, port=8000)
 

@@ -6,9 +6,11 @@ services:
       - "8000:8000"
     volumes:
       - ./Backend:/app
+      - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - NAME=AI Tutor Backend
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+
 
   frontend:
     build: 
