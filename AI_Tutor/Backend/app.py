@@ -8,10 +8,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
-# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
-
-########AI API SECTION###########
-# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
 ########AI API SECTION###########
 
@@ -33,7 +29,6 @@ def test():
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
-    userInput = request.json.get('userInput').lower()
     userInput = request.json.get('userInput').lower()
 
     try:
@@ -124,27 +119,6 @@ class User(db.Model):
 
 with app.app_context():
     db.create_all()
-
-#this is not secure will probably need to be changed. 
-@app.route('/add_user', methods=['POST'])
-def add_user():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-
-    # Basic input validation
-    if not username or not password:
-        return jsonify({"error": "Username and password are required"}), 400
-
-    if User.query.filter_by(username=username).first():
-        return jsonify({"error": "User already exists"}), 400
-
-    user = User(username=username)
-    user.set_password(password)
-    db.session.add(user)
-    db.session.commit()
-
-    return jsonify({"message": "User added successfully!"}), 201
 
     
 @app.route('/api/login', methods=['POST'])
