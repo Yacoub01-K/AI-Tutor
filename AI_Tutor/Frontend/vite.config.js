@@ -9,12 +9,18 @@ export default defineConfig({
   base: '/', // Base public path when served in development or production
   publicDir: 'public',
   plugins: [vue()],
+
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      'ace-builds': resolve(__dirname, './node_modules/ace-builds')
     },
   },
   server: {
+    fs: {
+      allow: ['..', '/app/node_modules']
+    },
+
     host: '0.0.0.0',
     proxy: {
       // Proxy API endpoints to the Flask backend
