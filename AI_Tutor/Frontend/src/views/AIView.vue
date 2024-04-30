@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>AI Tutor</h1>
         <AIChat />
     </div>
 </template>
