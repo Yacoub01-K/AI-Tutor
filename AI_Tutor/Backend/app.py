@@ -172,69 +172,59 @@ def login():
 from threading import Thread
 import docker
 
+client = docker.from_env()
+prewarmed_containers = {}
 
-# def run_docker_code(code, language, callback):
-#     client = docker.from_env()
-#     image_map = {
-#         'python': 'python:3.9-slim',
-#         'javascript': 'node:14-slim'
-#     }
-#     image = image_map.get(language, 'python:3.9-slim')
-#     try:
-#         container = client.containers.run(
-#             image=image,
-#             command=f"echo '{code}' | {language}",
-#             detach=True,
-#         )
-#         app.logger.info("Container started")
-#         container.wait()
-#         app.logger.info("Container finished execution")
-#         output = container.logs().decode('utf-8')
-#         app.logger.info("Logs fetched")
-#     except docker.errors.NotFound as e:
-#         callback(f"Container not found: {e}", None)
-#     except Exception as e:
-#         callback(e, None)
-#     else:
-#         callback(None, output)
+def initialize_prewarmed_containers():
+    languages = ['python:3.9-slim', 'node:14-slim']  # Define your language images
+    number_each = 2  # Number of containers to pre-warm per language
+
+    for lang in languages:
+        prewarmed_containers[lang] = []
+        for _ in range(number_each):
+            container = client.containers.run(
+                image=lang,
+                command="tail -f /dev/null",  # Keeps the container alive
+                detach=True
+            )
+            prewarmed_containers[lang].append(container)
+            print(f"Prewarmed container {container.id} for {lang}")
 
 
 
 @app.route('/api/execute', methods=['POST'])
 def execute_code():
-    client = docker.from_env()
     code = request.json.get('code')
     language = request.json.get('language')
-    print(f"Received code: {code} in language: {language}")  # Debugging output
-
+    
     image_map = {
         'python': 'python:3.9-slim',
         'javascript': 'node:14-slim',
-        'ruby': 'ruby:3-slim'
+        # Add more mappings if needed
     }
-
     image = image_map.get(language)
+    
+    if not image or not prewarmed_containers.get(image):
+        return jsonify({'error': 'Unsupported language or no prewarmed container available'}), 400
 
-    if not image:
-        return jsonify({'error': 'Unsupported language'}), 400
-
+    container = prewarmed_containers[image].pop(0)  # Retrieve the first pre-warmed container
     try:
-        container = client.containers.run(
-            image=image,
-            command=["sh", "-c", f"echo '{code}' | {language}"],
-            remove=True,
-            detach=True
+        exec_result = container.exec_run(
+            cmd=["sh", "-c", f"echo '{code}' | {language}"],
+            detach=False
         )
-        output = container.logs()
-        container.wait()
-        print(output)
-        return jsonify({'output': output.decode('utf-8')})
+        output = exec_result.output.decode('utf-8')
+        # Requeue the container for future use
+        prewarmed_containers[image].append(container)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+    
+    return jsonify({'output': output})
 
 
 
 if __name__ == '__main__':
+    initialize_prewarmed_containers()
     app.run(host='0.0.0.0',debug=True, port=8000)
 
 
