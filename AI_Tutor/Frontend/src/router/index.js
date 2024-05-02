@@ -4,11 +4,17 @@ import LoginView from '../views/LoginView.vue';
 import HomeView from '../views/HomeView.vue';
 import AIView from '../views/AIView.vue';
 import RegisterView from '../views/RegisterView.vue';
+import intro from '../views/intro.vue';
 
 
 const routes = [
     {
-        path: '/',
+        path:'/',
+        name:'Intro',
+        component: intro,
+    },
+    {
+        path: '/Login',
         name: 'Login',
         component: LoginView,
     },

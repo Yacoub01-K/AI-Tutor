@@ -1,20 +1,19 @@
 <template>
-    <div>
-      <Navbar />
-      <h1>Home View</h1>
-    </div>
+  <div>
+    <Navbar />
+    <CreateChatbot />
+  </div>
+</template>
 
+<script>
+import Navbar from '@/components/Navbar.vue';
+import CreateChatbot from '@/components/FrontPage.vue'; // Ensure correct file path
 
-  </template>
-  
-  <script>
-  import Navbar from '@/components/Navbar.vue';
-
-  export default {
-    name: 'HomeView',
-    components:{
-      Navbar
-    }
-  };
-  </script>
-  
+export default {
+  name: 'HomeView',
+  components: {
+    Navbar,
+    CreateChatbot
+  }
+};
+</script>

@@ -1,14 +1,19 @@
 <template>
     <div>
-      <h1>Register</h1>
+  
+      <Register></Register>
     </div>
     
     
   </template>
   
   <script>
+  import Register from '@/components/Registry.vue' 
   export default {
     name: 'RegisterView',
+    components:{
+      Register
+    }
   };
   </script>
   
