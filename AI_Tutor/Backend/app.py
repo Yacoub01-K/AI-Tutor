@@ -145,7 +145,6 @@ def get_feedback():
 
     return jsonify({'feedback': json.loads(session.feedback)})
 
-
 @app.route('/api/execute', methods=['POST'])
 def execute_code():
     code = request.json.get('code')
@@ -153,27 +152,28 @@ def execute_code():
     
     image_map = {
         'python': 'python:3.9-slim',
-        'javascript': 'node:14-slim'
+        'javascript': 'node:14-slim',
+        # Add more mappings if needed
     }
     image = image_map.get(language)
     
     if not image or not prewarmed_containers.get(image):
         return jsonify({'error': 'Unsupported language or no prewarmed container available'}), 400
 
-    # Rotate containers to ensure availability
-    container = prewarmed_containers[image].pop(0)
+    container = prewarmed_containers[image].pop(0)  # Retrieve the first pre-warmed container
     try:
-        # Ensure code is properly escaped to prevent injection
-        safe_code = docker.types.ExecConfig(cmd=["sh", "-c", f"echo {code!r} | {language}"])
-        exec_result = container.exec_run(safe_code, detach=False)
+        exec_result = container.exec_run(
+            cmd=["sh", "-c", f"echo '{code}' | {language}"],
+            detach=False
+        )
         output = exec_result.output.decode('utf-8')
-
         # Requeue the container for future use
         prewarmed_containers[image].append(container)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
     
     return jsonify({'output': output})
+
 
 
 
