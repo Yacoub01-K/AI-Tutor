@@ -51,29 +51,6 @@ def generate_problem_sheet(topic, difficulty):
     response = client.chat.completions.create(model="gpt-3.5-turbo", messages=messages, max_tokens=1000)
     return response.choices[0].message.content
 
-# def extract_current_lesson_context(user_input, messages):
-#      # Predefined sets of topics and difficulties
-#     topics = {'python', 'javascript', 'java', 'data structures', 'algorithms'}
-#     difficulties = {'beginner', 'intermediate', 'advanced'}
-
-#     # Placeholder variables to hold the most recent matches
-#     current_topic = 'general programming'  # Default to a generic topic if none found
-#     current_difficulty = 'beginner'  # Default to beginner if no difficulty level mentioned
-
-#     # Combine all messages into one text for easier searching
-#     combined_text = ' '.join(msg['content'] for msg in messages if msg['role'] == 'user') + ' ' + user_input
-
-#     # Check for the presence of topics and difficulties in the conversation
-#     found_topics = {topic for topic in topics if topic in combined_text.lower()}
-#     found_difficulties = {difficulty for difficulty in difficulties if difficulty in combined_text.lower()}
-
-#     # Update current_topic and current_difficulty if any matches were found
-#     if found_topics:
-#         current_topic = next(iter(found_topics))  # Get the last added (most recent based on user input)
-#     if found_difficulties:
-#         current_difficulty = next(iter(found_difficulties))  # Same as above
-
-    # return current_topic, current_difficulty
 
 @app.route('/api/get_problem', methods=['POST'])
 def get_problem():
