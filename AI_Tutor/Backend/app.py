@@ -216,11 +216,6 @@ def execute_code():
     
     return jsonify({'output': output})
 
-
-
-
-
-
 if __name__ == '__main__':
     initialize_prewarmed_containers()
     app.run(host='0.0.0.0',debug=True, port=8000)
