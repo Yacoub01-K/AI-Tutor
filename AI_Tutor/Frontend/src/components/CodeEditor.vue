@@ -2,7 +2,6 @@
   <div class="container">
     <div class="left-column">
       <div class="ai-chat">
-        <h3>AI Chat</h3>
         <AIChat @problemDescriptionSend="handleProblemDescription" />
       </div>
       <div class="problem-description">
@@ -12,11 +11,10 @@
     </div>
     <div class="right-column">
       <div class="code-editor">
-        <h3>Code Editor</h3>
         <select v-model="currentLanguage" @change="changeLanguage">
           <option v-for="lang in languages" :key="lang.value" :value="lang.value">{{ lang.text }}</option>
         </select>
-        <div id="editor" style="height: 300px;"></div>
+        <div id="editor" style="height: 500px;"></div>
         <button @click="executeCode" :disabled="isLoading">Run Code</button>
         <div v-if="isLoading">Running...</div>
       </div>
@@ -107,6 +105,17 @@ export default {
 </script>
 
 <style scoped>
+.ai-chat {
+    width: 90%;  /* Reduce width */
+    height: auto; /* Set a fixed height */
+    padding: 10px; /* Adjust padding to reduce size */
+    margin-bottom: 20px; /* Keeps existing bottom margin */
+    margin: 10px 0;
+}
+.right-column {
+    width: 60%; /* Increase the width of the right column */
+}
+
 .container {
   display: flex;
   height: 100vh;
@@ -127,5 +136,11 @@ export default {
   margin-top: 10px;
   padding: 10px;
   overflow-y: auto;
+}
+.left-column {
+    flex: 1;  /* Takes less space */
+}
+.ai-chat h3, .ai-chat p {
+    font-size: smaller; /* Reduces the font size of headings and paragraphs */
 }
 </style>
