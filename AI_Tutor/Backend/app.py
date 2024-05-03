@@ -2,15 +2,16 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from openai import OpenAI
 import os
-
+import json
+from models import db, User, Session, initialize_db
 
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
-# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
 
-########AI API SECTION###########
-# print("Using OpenAI API Key:", os.getenv('OPENAI_API_KEY'))
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'  
+db.init_app(app)
+
 
 ########AI API SECTION###########
 
@@ -146,7 +147,6 @@ def login():
 
 ###### code editor #######
 
-from threading import Thread
 import docker
 
 client = docker.from_env()
@@ -161,42 +161,63 @@ def initialize_prewarmed_containers():
         for _ in range(number_each):
             container = client.containers.run(
                 image=lang,
-                command="tail -f /dev/null",  # Keeps the container alive
+                command="sleep infinity",  # More clear than 'tail -f /dev/null'
                 detach=True
             )
             prewarmed_containers[lang].append(container)
             print(f"Prewarmed container {container.id} for {lang}")
+            
+            
+def generate_feedback(errors):
+    feedback = []
+    for error in errors:
+        if "SyntaxError" in error["message"]:
+            feedback.append("Syntax error: Check your code for typos or missing symbols.")
+        elif "ReferenceError" in error["message"]:
+            feedback.append("Reference error: You might be using a variable before it is defined.")
+        # Add more rules as needed
+    return feedback
 
+@app.route('/api/get_feedback', methods=['POST'])
+def get_feedback():
+    session_id = request.json.get('sessionId')
+    session = Session.query.get(session_id)
+    if not session:
+        return jsonify({'error': 'Session not found'}), 404
+
+    return jsonify({'feedback': json.loads(session.feedback)})
 
 
 @app.route('/api/execute', methods=['POST'])
 def execute_code():
+    user_id = request.json.get('userId')
     code = request.json.get('code')
     language = request.json.get('language')
-    
-    image_map = {
+
+    image = {
         'python': 'python:3.9-slim',
-        'javascript': 'node:14-slim',
-        # Add more mappings if needed
-    }
-    image = image_map.get(language)
-    
+        'javascript': 'node:14-slim'
+    }.get(language)
+
     if not image or not prewarmed_containers.get(image):
         return jsonify({'error': 'Unsupported language or no prewarmed container available'}), 400
 
-    container = prewarmed_containers[image].pop(0)  # Retrieve the first pre-warmed container
-    try:
-        exec_result = container.exec_run(
-            cmd=["sh", "-c", f"echo '{code}' | {language}"],
-            detach=False
-        )
-        output = exec_result.output.decode('utf-8')
-        # Requeue the container for future use
-        prewarmed_containers[image].append(container)
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
-    
-    return jsonify({'output': output})
+    container = prewarmed_containers[image].pop(0)
+    output, errors = execute_in_container(container, code, language)
+    prewarmed_containers[image].append(container)
+
+    # Analyze errors and generate feedback
+    feedback = generate_feedback(errors)
+
+    # Save session with errors and feedback
+    new_session = Session(user_id=user_id, code=code, output=json.dumps(output),
+                           errors=json.dumps(errors), feedback=json.dumps(feedback))
+    db.session.add(new_session)
+    db.session.commit()
+
+    return jsonify({'output': output, 'errors': errors, 'feedback': feedback, 'sessionId': new_session.id})
+
+
 
 
 
