@@ -97,8 +97,8 @@ export default {
   flex-grow: 1;
   overflow-y: auto;
   margin-bottom: 20px;
-  background: #222; /* Dark background for message area */
-  border: 1px solid #333; /* Matching darker border */
+  background: #222;
+  border: 1px solid #333; 
   border-radius: 4px;
   padding: 10px;
 }
@@ -113,13 +113,13 @@ export default {
 .message.user {
   background-color: #1a8cff; /* Bright blue for user messages */
   align-self: flex-end;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .message.ai {
   background-color: orange; /* Purple for AI messages */
   align-self: flex-start;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .input-container {

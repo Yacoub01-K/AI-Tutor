@@ -107,7 +107,7 @@ def login():
 
 import docker
 
-client = docker.from_env()
+Dockerclient = docker.from_env()
 prewarmed_containers = {}
 
 def initialize_prewarmed_containers():
@@ -117,7 +117,7 @@ def initialize_prewarmed_containers():
     for lang in languages:
         prewarmed_containers[lang] = []
         for _ in range(number_each):
-            container = client.containers.run(
+            container = Dockerclient.containers.run(
                 image=lang,
                 command="sleep infinity",  # More clear than 'tail -f /dev/null'
                 detach=True
