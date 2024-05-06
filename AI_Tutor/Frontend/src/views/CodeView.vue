@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Problem Sheet</h1>
         <Code-Editor />
     </div>
 </template>
