@@ -117,7 +117,7 @@ export default {
     margin: 10px 0;
 }
 .right-column {
-    width: 60%; /
+    width: 60%; 
 }
 
 .container {
