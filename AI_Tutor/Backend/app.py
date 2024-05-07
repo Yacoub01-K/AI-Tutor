@@ -11,7 +11,7 @@ CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'  
 db.init_app(app)
-
+initialize_db(app)
 
 ########AI API SECTION###########
 
@@ -80,8 +80,8 @@ def chat():
 
     problem_description = ""
     if problemAvailable:
-        topic = extract_topic(userInput)  # You would define this function to extract topics from user input
-        difficulty = assess_difficulty(userInput)  # Similarly, this function determines difficulty
+        topic = extract_topic(userInput) 
+        difficulty = assess_difficulty(userInput)  
         problem_description = generate_problem_sheet(topic, difficulty)
 
     html_response = f"<div class='ai-response'><p>{message_content.replace('\n', '<br>')}</p></div>"
@@ -92,6 +92,20 @@ def chat():
 
 with app.app_context():
     db.create_all()
+def get_email(user_id):
+    user = User.query.get(user_id)
+    if user is not None:
+        return user.email
+    else:
+        return None 
+
+@app.route('/get_email/<int:user_id>', methods=['GET'])
+def fetch_email(user_id):
+    email = get_email(user_id)
+    if email:
+        return jsonify({"email": email}), 200
+    else:
+        return jsonify({"error": "User not found"}), 404
 
 #this is not secure will probably need to be changed. 
 @app.route('/api/add_user', methods=['POST'])

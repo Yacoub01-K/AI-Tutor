@@ -3,7 +3,7 @@
         <div v-for="lesson in lessons" :key="lesson.name" class="lesson-button" @click="goToLesson(lesson)">
             {{ lesson.name }} - {{ lesson.topic }}
             <button class="menu-button" @click="toggleMenu(lesson.id)">⋮</button>
-            <div v-if="lesson.showMenu" class="dropdown-menu">
+            <div v-if="lesson.showMenu" class="dropdown-menu" @click.stop>
                 <ul>
                     <li @click="pinLesson(lesson.id)">Pin Lesson</li>
                     <li @click="deleteLesson(lesson.id)">Delete Lesson</li>
@@ -14,7 +14,7 @@
 
         <div v-if="modalVisible" class="modal-overlay">
             <div class="modal-content">
-                <span class="close" @click="closeModal">&times;</span>
+                <span class="close" role="button" aria-label="Close" @click="closeModal">&times;</span>
                 <h2>Create New Lesson</h2>
                 <form @submit.prevent="submitLesson">
                     <div class="form-group">
@@ -89,8 +89,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 125px; /* Adjust this value so that it's slightly more than the navbar height */
-    width: 100%; /* Ensures the container uses the full width */
+    margin-top: 125px;
+    /* Adjust this value so that it's slightly more than the navbar height */
+    width: 100%;
+    /* Ensures the container uses the full width */
 }
 
 .lesson-button {
@@ -108,15 +110,17 @@ export default {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.lesson-button:hover, .plus-button:hover {
+.lesson-button:hover,
+.plus-button:hover {
     opacity: 0.9;
 }
 
 .plus-button {
-    margin-top: auto;  /* Ensures that the button stays at the bottom */
+    margin-top: auto;
+    /* Ensures that the button stays at the bottom */
     background-color: #4CAF50;
     width: 60px;
     height: 60px;
@@ -125,7 +129,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .modal-overlay {
@@ -145,7 +149,7 @@ export default {
     background: #FFF;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 500px;
     transition: transform 0.3s ease-out;
@@ -166,6 +170,7 @@ export default {
 }
 
 .submit-button {
+    margin-top: 15px;
     background-color: #4CAF50;
     padding: 10px 20px;
     border-radius: 5px;
@@ -179,8 +184,10 @@ export default {
 .dropdown-menu {
     position: absolute;
     right: 20px;
-    top: 50px; /* Adjusts dropdown position */
-    z-index: 10; /* Ensures dropdown is above other elements */
+    top: 50px;
+    /* Adjusts dropdown position */
+    z-index: 10;
+    /* Ensures dropdown is above other elements */
 }
 
 .menu-button {
@@ -191,5 +198,12 @@ export default {
 .dropdown-menu li:hover {
     background-color: #E2E4E6;
 }
-</style>
+.lesson-button:focus, .plus-button:focus {
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+}
 
+.close:hover {
+    color: #666; /* Darker shade on hover for visual feedback */
+    cursor:pointer;
+}
+</style>
