@@ -110,14 +110,14 @@ export default {
 
 <style scoped>
 .ai-chat {
-    width: 90%;  /* Reduce width */
-    height: auto; /* Set a fixed height */
-    padding: 10px; /* Adjust padding to reduce size */
-    margin-bottom: 20px; /* Keeps existing bottom margin */
+    width: 90%;  
+    height: auto; 
+    padding: 10px; 
+    margin-bottom: 20px; 
     margin: 10px 0;
 }
 .right-column {
-    width: 60%; /* Increase the width of the right column */
+    width: 60%; /
 }
 
 .container {
