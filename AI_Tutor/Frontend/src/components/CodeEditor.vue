@@ -46,6 +46,7 @@ export default {
   },
   data() {
     return {
+      problemDescription: '',
       output: '',
       error: '',
       isLoading: false,
@@ -67,7 +68,11 @@ export default {
   },
   mounted() {
     this.initializeAce();
+    if (this.$route.query.problem) {
+    this.problemDescription = this.$route.query.problem;
+    }
   },
+  
   methods: {
     handleProblemDescription(description) {
       console.log("The dis:" + description);

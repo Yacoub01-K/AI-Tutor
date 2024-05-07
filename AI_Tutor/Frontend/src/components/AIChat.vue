@@ -71,7 +71,40 @@ export default {
       if (savedMessages) {
         this.messages = JSON.parse(savedMessages);
       }
+    },
+    extractTopic(userInput) {
+      const topics = new Set(['python', 'javascript', 'java', 'data structures', 'algorithms']);
+      const words = new Set(userInput.toLowerCase().split(/\s+/));
+      const foundTopics = [...topics].filter(topic => words.has(topic));
+      return foundTopics.length > 0 ? foundTopics[0] : 'general programming';
+    },
+    assessDifficulty(userInput) {
+      if (userInput.toLowerCase().includes('beginner')) {
+        return 'beginner';
+      } else if (userInput.toLowerCase().includes('intermediate')) {
+        return 'intermediate';
+      } else if (userInput.toLowerCase().includes('advanced')) {
+        return 'advanced';
+      }
+      return 'beginner';
+    },
+    fetchAndEmitProblem() {
+      const topic = this.extractTopic(this.userInput);
+      const difficulty = this.assessDifficulty(this.userInput);
+      console.log(difficulty);
+      console.log(topic);
+      axios.post('http://localhost:8000/api/get_problem', { topic, difficulty })
+        .then(response => {
+          this.problemDescription = response.data.problem;
+          this.$store.dispatch('updateProblemDescription', this.problemDescription);
+          this.$router.push({ name: 'Class' }); // Make sure this route name matches your Vue Router settings
+        })
+        .catch(error => {
+          console.error('Error fetching problem:', error);
+          this.messages.push({ content: "Failed to fetch problem.", sender: 'system' });
+        });
     }
+
   }
 }
 </script>
