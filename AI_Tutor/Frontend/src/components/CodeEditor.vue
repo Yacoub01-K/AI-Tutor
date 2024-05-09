@@ -2,7 +2,7 @@
   <div class="container">
     <div class="left-column">
       <div class="ai-chat">
-        <AIChat @problemDescriptionSend="handleProblemDescription" />
+        <AIChat />
       </div>
       <div class="problem-description">
         <h3>Problem Description</h3>
@@ -68,10 +68,10 @@ export default {
   mounted() {
     this.initializeAce();
     if (this.$route.query.problem) {
-    this.problemDescription = this.$route.query.problem;
+      this.problemDescription = this.$route.query.problem;
     }
   },
-  
+
   methods: {
     handleProblemDescription(description) {
       console.log("The dis:" + description);
@@ -92,17 +92,17 @@ export default {
       axios.post('http://localhost:8000/api/execute', {
         code: code,
         language: this.currentLanguage
-      }, { timeout: 30000})
-      
-      .then(response => {
-        console.log(response.data.output);
-        this.output = response.data.output;
-        this.isLoading = false;
-      })
-      .catch(error => {
-        this.error = error.response?.data?.error || "Execution Error: " + error.message;
-        this.isLoading = false;
-      });
+      }, { timeout: 30000 })
+
+        .then(response => {
+          console.log(response.data.output);
+          this.output = response.data.output;
+          this.isLoading = false;
+        })
+        .catch(error => {
+          this.error = error.response?.data?.error || "Execution Error: " + error.message;
+          this.isLoading = false;
+        });
     }
   }
 }
@@ -110,30 +110,37 @@ export default {
 
 <style scoped>
 .ai-chat {
-    width: 90%;  
-    height: auto; 
-    padding: 10px; 
-    margin-bottom: 20px; 
-    margin: 10px 0;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin: 10px 0;
 }
+
 .right-column {
-    width: 60%; 
+  width: 60%;
 }
 
 .container {
   display: flex;
   height: 100vh;
 }
+
 .error {
   color: red;
 }
-.left-column, .right-column {
+
+.left-column,
+.right-column {
   width: 50%;
   padding: 20px;
 }
-.ai-chat, .problem-description {
+
+.ai-chat,
+.problem-description {
   margin-bottom: 20px;
 }
+
 .console-output {
   height: 150px;
   border: 1px solid #ccc;
@@ -141,10 +148,15 @@ export default {
   padding: 10px;
   overflow-y: auto;
 }
+
 .left-column {
-    flex: 1;  /* Takes less space */
+  flex: 1;
+  /* Takes less space */
 }
-.ai-chat h3, .ai-chat p {
-    font-size: smaller; /* Reduces the font size of headings and paragraphs */
+
+.ai-chat h3,
+.ai-chat p {
+  font-size: smaller;
+  /* Reduces the font size of headings and paragraphs */
 }
 </style>
