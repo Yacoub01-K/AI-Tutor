@@ -11,16 +11,16 @@ export default createStore({
     setProblemDescription(state, description) {
       state.problemDescription = description;
     },
-    setLessonName(state, description) {
-      state.lessonName = description;
+    setLessonName(state, lessonName) {
+      state.lessonName = lessonName;
     }
   },
   actions: {
     updateProblemDescription({ commit }, description) {
       commit('setProblemDescription', description);
     },
-    pushLessonName({commit}, description) {
-      commit('setLessonName', description);
+    updateLessonName({ commit }, lessonName) {
+      commit('setLessonName', lessonName);
     }
   },
   modules: {auth},

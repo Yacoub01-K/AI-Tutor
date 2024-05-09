@@ -90,9 +90,9 @@ export default {
             this.lessons = this.lessons.map(lesson => ({ ...lesson, showMenu: false }));
         },
         goToLesson(lesson) {
-            console.log('Going to lesson:', lesson.name);
-            this.$store.dispatch('pushLessonName', this.lessonName);
-            this.$router.push({name:'AI'})
+            this.$store.dispatch('updateLessonName', lesson.name);
+            // Navigate to the chat component or wherever you need
+            this.$router.push({ name: 'AI' }); // Ensure you have a route named 'AIChat'
         }
     }
 };

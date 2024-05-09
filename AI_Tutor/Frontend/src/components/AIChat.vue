@@ -1,5 +1,7 @@
 <template>
-  <h1>{{lessonName}}</h1>
+  <div>
+    <h1>{{ lessonName }}</h1>
+  </div>
   <div class="chat-container">
     <div class="messages-container">
       <div v-for="(message, index) in messages" :key="index" :class="`message ${message.sender}`">
@@ -28,8 +30,8 @@ export default {
     };
   },
   computed:{
-    lessonName(){
-      return this.$store.state.lessonName;
+    lessonName() {
+    return this.$store.state.lessonName;
     }
   },
 
