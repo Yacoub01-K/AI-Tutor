@@ -91,8 +91,9 @@ export default {
         },
         goToLesson(lesson) {
             console.log('Going to lesson:', lesson.name);
-            // Implementation depends on what you want to do when a lesson is clicked
-        },
+            this.$store.dispatch('pushLessonName', this.lessonName);
+            this.$router.push({name:'AI'})
+        }
     }
 };
 </script>

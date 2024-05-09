@@ -1,4 +1,5 @@
 <template>
+  <h1>{{lessonName}}</h1>
   <div class="chat-container">
     <div class="messages-container">
       <div v-for="(message, index) in messages" :key="index" :class="`message ${message.sender}`">
@@ -26,10 +27,18 @@ export default {
       problemDescription: '',
     };
   },
+  computed:{
+    lessonName(){
+      return this.$store.state.lessonName;
+    }
+  },
 
   mounted() {
     this.loadMessages();
     this.scrollToBottom();
+    if (this.$route.query.lessonName){
+      this.lessonName = this.$route.query.lessonName;
+    }
   },
 
   updated() {
@@ -103,6 +112,10 @@ export default {
           console.error('Error fetching problem:', error);
           this.messages.push({ content: "Failed to fetch problem.", sender: 'system' });
         });
+    },
+    getLessonName(description) {
+      this.lessonName = description;
+
     }
 
   }
