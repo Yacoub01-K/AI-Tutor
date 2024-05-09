@@ -37,21 +37,14 @@ export default {
 
   mounted() {
     this.loadMessages();
-    this.scrollToBottom();
     if (this.$route.query.lessonName){
       this.lessonName = this.$route.query.lessonName;
     }
   },
 
-  updated() {
-    this.scrollToBottom();
-  },
-
+  
   methods: {
-    scrollToBottom() {
-      const container = this.$el.querySelector(".messages-container");
-      container.scrollTop = container.scrollHeight;
-    },
+    
     sendToAI() {
       const payload = { userInput: this.userInput };
       this.messages.push({ content: this.userInput, sender: 'user' });
