@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <div v-for="lesson in lessons" :key="lesson.name" class="lesson-button" @click="goToLesson(lesson)">
+        <div v-for="lesson in lessons" :key="lesson.id" class="lesson-button" @click="goToLesson(lesson)">
             {{ lesson.name }} - {{ lesson.topic }}
-            <button class="menu-button" @click="toggleMenu(lesson.id)">⋮</button>
-            <div v-if="lesson.showMenu" class="dropdown-menu" @click.stop>
+            <button class="menu-button" @click.stop="toggleMenu(lesson.id, $event)">⋮</button>
+            <div v-if="visibleMenuId === lesson.id" class="dropdown-menu">
                 <ul>
                     <li @click="pinLesson(lesson.id)">Pin Lesson</li>
                     <li @click="deleteLesson(lesson.id)">Delete Lesson</li>
@@ -39,6 +39,7 @@ export default {
     name: 'CreateChatbot',
     data() {
         return {
+            visibleMenuId: null,
             modalVisible: false,
             lessonName: '',
             lessonTopic: '',
@@ -54,17 +55,25 @@ export default {
         },
         submitLesson() {
             if (this.lessonName && this.lessonTopic) {
-                this.lessons.push({ name: this.lessonName, topic: this.lessonTopic });
+                this.lessons.push({
+                    id: this.lessons.length + 1,  // Ensure each lesson has a unique ID
+                    name: this.lessonName,
+                    topic: this.lessonTopic,
+                    showMenu: false  // Initialize with the menu closed
+                });
                 this.lessonName = '';
                 this.lessonTopic = '';
                 this.closeModal();
             }
         },
+        toggleMenu(lessonId, event) {
+            event.stopPropagation();
+            if (this.visibleMenuId === lessonId) {
+                this.visibleMenuId = null; // Close menu if it's already open
+            } else {
+                this.visibleMenuId = lessonId; // Open the menu
 
-        toggleMenu(lessonId) {
-            this.lessons = this.lessons.map(lesson =>
-                lesson.id === lessonId ? { ...lesson, showMenu: !lesson.showMenu } : lesson
-            );
+            }
         },
         pinLesson(lessonId) {
             // Implement pinning logic
@@ -79,7 +88,11 @@ export default {
         },
         closeMenus() {
             this.lessons = this.lessons.map(lesson => ({ ...lesson, showMenu: false }));
-        }
+        },
+        goToLesson(lesson) {
+            console.log('Going to lesson:', lesson.name);
+            // Implementation depends on what you want to do when a lesson is clicked
+        },
     }
 };
 </script>
@@ -181,29 +194,57 @@ export default {
     border: none;
 }
 
-.dropdown-menu {
-    position: absolute;
-    right: 20px;
-    top: 50px;
-    /* Adjusts dropdown position */
-    z-index: 10;
-    /* Ensures dropdown is above other elements */
+.menu-button {
+    z-index: 2;
+    /* Higher than any other item */
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 120%;
 }
 
-.menu-button {
-    font-size: 24px;
-    color: #333;
+.menu-button:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    z-index: 2;
+
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    right: 20px;
+    /* Adjust based on actual layout */
+    width: auto;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .dropdown-menu li:hover {
-    background-color: #E2E4E6;
+    background-color: #ececec;
 }
-.lesson-button:focus, .plus-button:focus {
-    box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+
+.lesson-button:focus,
+.plus-button:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
 
 .close:hover {
-    color: #666; /* Darker shade on hover for visual feedback */
-    cursor:pointer;
+    color: #666;
+    /* Darker shade on hover for visual feedback */
+    cursor: pointer;
 }
 </style>
