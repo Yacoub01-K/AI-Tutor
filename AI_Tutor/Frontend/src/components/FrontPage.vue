@@ -199,12 +199,13 @@ export default {
     display: block;
     font-weight: 600;
     color: #333;
-    padding: 8px
+    padding: 8px;
+
 }
 
 .form-group input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
@@ -219,7 +220,7 @@ export default {
     font-size: 16px;
     width: 100%;
     color: white;
-    border: none;
+   border: none;
 }
 
 .menu-button {
