@@ -39,14 +39,16 @@ export default {
     this.loadMessages();
     if (this.$route.query.lessonName){
       this.lessonName = this.$route.query.lessonName;
+      this.sendToAI(`Hi I would like to start a lesson on ${this.$route.params.topic} at ${this.$route.params.difficulty} level.`);
     }
   },
 
   
   methods: {
     
-    sendToAI() {
+    sendToAI(input='') {
       const payload = { userInput: this.userInput };
+      const message = input || this.userInput; 
       this.messages.push({ content: this.userInput, sender: 'user' });
       this.userInput = '';
       axios.post('http://localhost:8000/api/chat', payload)

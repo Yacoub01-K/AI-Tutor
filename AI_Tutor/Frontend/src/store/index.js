@@ -11,8 +11,10 @@ export default createStore({
     setProblemDescription(state, description) {
       state.problemDescription = description;
     },
-    setLessonName(state, lessonName) {
-      state.lessonName = lessonName;
+    setLessonName(state, { name, topic, difficulty }) {
+      state.lessonName = name;
+      state.lessonTopic = topic;
+      state.lessonDifficulty = difficulty;
     }
   },
   actions: {

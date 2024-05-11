@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div v-for="lesson in lessons" :key="lesson.id" class="lesson-button" @click="goToLesson(lesson)">
-            {{ lesson.name }} - {{ lesson.topic }}
+            {{ lesson.name }} - {{ lesson.topic }} - {{ lesson.difficulty }}
             <button class="menu-button" @click.stop="toggleMenu(lesson.id, $event)">⋮</button>
             <div v-if="visibleMenuId === lesson.id" class="dropdown-menu">
                 <ul>
@@ -25,6 +25,15 @@
                         <label for="lessonTopic">Lesson Topic:</label>
                         <input type="text" id="lessonTopic" v-model="lessonTopic" required>
                     </div>
+                    <div class="form-group">
+                        <label for="lessonDifficulty">Difficulty:</label>
+                        <select v-model="lessonDifficulty" id="lessonDifficulty" required>
+                            <option value="">Select Difficulty</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
                     <div class="form-actions">
                         <button type="submit" class="submit-button">Create</button>
                     </div>
@@ -35,6 +44,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     name: 'CreateChatbot',
     data() {
@@ -43,10 +53,24 @@ export default {
             modalVisible: false,
             lessonName: '',
             lessonTopic: '',
+            lessonDifficulty: '',
             lessons: []
         };
     },
+    mounted(){
+        this.fetchLessons();
+
+    },
     methods: {
+        fetchLessons() {
+            axios.get('http://localhost:8000/api/lessons')
+                .then(response => {
+                    this.lessons = response.data;
+                })
+                .catch(error => {
+                    console.error("There was an error fetching the lessons:", error);
+                });
+        },
         showModal() {
             this.modalVisible = true;
         },
@@ -54,15 +78,17 @@ export default {
             this.modalVisible = false;
         },
         submitLesson() {
-            if (this.lessonName && this.lessonTopic) {
+            if (this.lessonName && this.lessonTopic && this.lessonDifficulty) {
                 this.lessons.push({
                     id: this.lessons.length + 1,  // Ensure each lesson has a unique ID
                     name: this.lessonName,
                     topic: this.lessonTopic,
+                    difficulty: this.lessonDifficulty,
                     showMenu: false  // Initialize with the menu closed
                 });
                 this.lessonName = '';
                 this.lessonTopic = '';
+                this.lessonDifficulty = '';
                 this.closeModal();
             }
         },
@@ -92,7 +118,7 @@ export default {
         goToLesson(lesson) {
             this.$store.dispatch('updateLessonName', lesson.name);
             // Navigate to the chat component or wherever you need
-            this.$router.push({ name: 'AI' }); // Ensure you have a route named 'AIChat'
+            this.$router.push({ name: 'AIChat', params: { lessonName: lesson.name, topic: lesson.topic, difficulty: lesson.difficulty } }); // Ensure you have a route named 'AIChat'
         }
     }
 };
@@ -173,6 +199,7 @@ export default {
     display: block;
     font-weight: 600;
     color: #333;
+    padding: 8px
 }
 
 .form-group input {
@@ -248,4 +275,19 @@ export default {
     /* Darker shade on hover for visual feedback */
     cursor: pointer;
 }
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
 </style>

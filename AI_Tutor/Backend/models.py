@@ -25,6 +25,12 @@ class Session(db.Model):
     feedback = db.Column(db.String)
     timestamp = db.Column(db.DateTime, default=datetime.utcnow)
 
+class Lesson(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    topic = db.Column(db.String(255), nullable=False)
+    difficulty = db.Column(db.String(255), nullable=False)
+
 def initialize_db(app):
     with app.app_context():
         db.create_all()

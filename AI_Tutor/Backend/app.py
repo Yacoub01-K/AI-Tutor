@@ -3,7 +3,7 @@ from flask_cors import CORS
 from openai import OpenAI
 import os
 import json
-from models import db, User, Session, initialize_db
+from models import db, User, Session, initialize_db, Lesson
 
 
 app = Flask(__name__)
@@ -86,6 +86,19 @@ def chat():
 
     html_response = f"<div class='ai-response'><p>{message_content.replace('\n', '<br>')}</p></div>"
     return jsonify({"response": html_response, "problemAvailable": problemAvailable, "problemDescription": problem_description})
+
+@app.route('/api/lessons',methods=['GET'])
+def get_lesson():
+    lessons = []
+    for lesson in Lesson.query.all(): #needs changing 
+        lessons.append({
+            'id': lesson.id,
+            'name': lesson.name,
+            'topic': lesson.topic,
+            'difficulty': lesson.difficulty
+        })
+    print(jsonify(lessons))
+    return jsonify(lessons)
 
 ######LOGIN SECTION#########    
 
