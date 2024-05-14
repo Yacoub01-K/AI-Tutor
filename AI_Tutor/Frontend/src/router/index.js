@@ -19,7 +19,7 @@ const routes = [
         component: LoginView,
     },
     {
-        path: '/ai',
+        path: '/chat/:lessonName/:topic/:difficulty',
         name: 'AI',
         component: AIView,
         props: true,

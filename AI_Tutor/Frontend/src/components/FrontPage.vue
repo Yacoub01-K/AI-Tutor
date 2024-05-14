@@ -32,6 +32,7 @@
                             <option value="beginner">Beginner</option>
                             <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
+                            <!-- <option value="pro">Pro</option> Adding the 'Pro' level as requested -->
                         </select>
                     </div>
                     <div class="form-actions">
@@ -57,7 +58,7 @@ export default {
             lessons: []
         };
     },
-    mounted(){
+    mounted() {
         this.fetchLessons();
 
     },
@@ -116,9 +117,12 @@ export default {
             this.lessons = this.lessons.map(lesson => ({ ...lesson, showMenu: false }));
         },
         goToLesson(lesson) {
-            this.$store.dispatch('updateLessonName', lesson.name);
-            // Navigate to the chat component or wherever you need
-            this.$router.push({ name: 'AIChat', params: { lessonName: lesson.name, topic: lesson.topic, difficulty: lesson.difficulty } }); // Ensure you have a route named 'AIChat'
+            this.$store.dispatch('updateLessonDetails', {
+                name: lesson.name,
+                topic: lesson.topic,
+                difficulty: lesson.difficulty
+            }); 
+            this.$router.push({ name: 'AI', params: { lessonName: lesson.name, topic: lesson.topic, difficulty: lesson.difficulty } });
         }
     }
 };
@@ -220,7 +224,7 @@ export default {
     font-size: 16px;
     width: 100%;
     color: white;
-   border: none;
+    border: none;
 }
 
 .menu-button {
@@ -290,5 +294,4 @@ export default {
     outline: none;
     border-color: #4CAF50;
 }
-
 </style>

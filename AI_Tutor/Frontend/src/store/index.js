@@ -5,13 +5,15 @@ import auth from './auth/index'
 export default createStore({
   state: {
     problemDescription: '',
-    lessonName: ''
+    lessonName: '',
+    lessonTopic: '',       // Added to hold the topic
+    lessonDifficulty: '',
   },
   mutations: {
     setProblemDescription(state, description) {
       state.problemDescription = description;
     },
-    setLessonName(state, { name, topic, difficulty }) {
+    setLessonDetails(state, { name, topic, difficulty }) {
       state.lessonName = name;
       state.lessonTopic = topic;
       state.lessonDifficulty = difficulty;
@@ -21,8 +23,8 @@ export default createStore({
     updateProblemDescription({ commit }, description) {
       commit('setProblemDescription', description);
     },
-    updateLessonName({ commit }, lessonName) {
-      commit('setLessonName', lessonName);
+    updateLessonDetails({ commit }, { name, topic, difficulty }) {
+      commit('setLessonDetails', { name, topic, difficulty });
     }
   },
   modules: {auth},

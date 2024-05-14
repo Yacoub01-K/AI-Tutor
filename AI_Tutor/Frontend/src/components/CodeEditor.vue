@@ -6,7 +6,7 @@
       </div>
       <div class="problem-description">
         <h3>Problem Description</h3>
-        <p>{{ problemDescription }}</p>
+        <div v-html="problemDescription"></div>
       </div>
     </div>
     <div class="right-column">
@@ -146,5 +146,9 @@ export default {
 }
 .ai-chat h3, .ai-chat p {
     font-size: smaller; /* Reduces the font size of headings and paragraphs */
+}
+
+.code-editor{
+  padding-top: 130px;
 }
 </style>

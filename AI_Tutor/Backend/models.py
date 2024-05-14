@@ -30,6 +30,8 @@ class Lesson(db.Model):
     name = db.Column(db.String(255), nullable=False)
     topic = db.Column(db.String(255), nullable=False)
     difficulty = db.Column(db.String(255), nullable=False)
+    
+
 
 def initialize_db(app):
     with app.app_context():

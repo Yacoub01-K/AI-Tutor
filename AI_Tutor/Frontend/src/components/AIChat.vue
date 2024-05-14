@@ -1,5 +1,8 @@
 <template>
-  <div>
+  <div class="Navbar-Container">
+    <Navbar />
+  </div>
+  <div class="title">
     <h1>{{ lessonName }}</h1>
   </div>
   <div class="chat-container">
@@ -11,7 +14,7 @@
     </div>
     <div class="input-container">
       <textarea v-model="userInput" placeholder="Ask me anything..." class="input-field"></textarea>
-      <button @click="sendToAI" class="send-button">Send</button>
+      <button @click="sendToAI(userInput)" class="send-button">Send</button>
     </div>
     <button v-if="problemAvailable" @click="fetchAndEmitProblem">Get Problem</button>
   </div>
@@ -19,8 +22,13 @@
 
 <script>
 import axios from 'axios';
+import Navbar from '@/components/Navbar.vue';
 
 export default {
+  props: ['topic', 'difficulty'],
+  components: {
+    Navbar,
+  },
   data() {
     return {
       userInput: '',
@@ -29,27 +37,34 @@ export default {
       problemDescription: '',
     };
   },
-  computed:{
+  computed: {
     lessonName() {
-    return this.$store.state.lessonName;
+      return this.$store.state.lessonName;
+    },
+    lessonTopic() {
+      return this.$store.state.lessonTopic;
+    },
+    lessonDifficulty() {
+      return this.$store.state.lessonDifficulty;
     }
   },
 
   mounted() {
-    this.loadMessages();
-    if (this.$route.query.lessonName){
-      this.lessonName = this.$route.query.lessonName;
-      this.sendToAI(`Hi I would like to start a lesson on ${this.$route.params.topic} at ${this.$route.params.difficulty} level.`);
+    // this.loadMessages();
+    if (this.$route.params.topic && this.$route.params.difficulty) {
+      const initialInput = `Hi I would like to start a lesson on ${this.$route.params.topic} at ${this.$route.params.difficulty} level.`;
+      this.sendToAI(initialInput);
     }
   },
 
-  
+
   methods: {
-    
-    sendToAI(input='') {
-      const payload = { userInput: this.userInput };
-      const message = input || this.userInput; 
-      this.messages.push({ content: this.userInput, sender: 'user' });
+
+    sendToAI(input = '') {
+      console.log("Sending input to AI:", input || this.userInput); 
+      const messageContent = input || this.userInput;
+      const payload = { userInput: messageContent };
+      this.messages.push({ content: messageContent, sender: 'user' });
       this.userInput = '';
       axios.post('http://localhost:8000/api/chat', payload)
         .then(response => {
@@ -60,7 +75,7 @@ export default {
           });
           this.problemAvailable = response.data.problemAvailable;
           this.problemDescription = response.data.problemDescription;
-          this.saveMessages();  // Save messages after response
+          // this.saveMessages();  // Save messages after response
         })
         .catch(error => {
           this.messages.push({
@@ -69,15 +84,15 @@ export default {
           });
         });
     },
-    saveMessages() {
-      localStorage.setItem('chatMessages', JSON.stringify(this.messages));
-    },
-    loadMessages() {
-      const savedMessages = localStorage.getItem('chatMessages');
-      if (savedMessages) {
-        this.messages = JSON.parse(savedMessages);
-      }
-    },
+    // saveMessages() {
+    //   localStorage.setItem('chatMessages', JSON.stringify(this.messages));
+    // },
+    // loadMessages() {
+    //   const savedMessages = localStorage.getItem('chatMessages');
+    //   if (savedMessages) {
+    //     this.messages = JSON.parse(savedMessages);
+    //   }
+    // },
     extractTopic(userInput) {
       const topics = new Set(['python', 'javascript', 'java', 'data structures', 'algorithms']);
       const words = new Set(userInput.toLowerCase().split(/\s+/));
@@ -101,7 +116,7 @@ export default {
       console.log(topic);
       axios.post('http://localhost:8000/api/get_problem', { topic, difficulty })
         .then(response => {
-          this.problemDescription = response.data.problem;
+          this.problemDescription = response.data.problemHTML;
           this.$store.dispatch('updateProblemDescription', this.problemDescription);
           this.$router.push({ name: 'Class' }); // Make sure this route name matches your Vue Router settings
         })
@@ -125,11 +140,11 @@ export default {
   width: 100%;
   max-width: 800px;
   margin: auto;
-  background: #333; /* Darker background */
-  border: 1px solid #444; /* Darker border */
+  background: #333;
+  border: 1px solid #444;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Stronger shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -141,7 +156,7 @@ export default {
   overflow-y: auto;
   margin-bottom: 20px;
   background: #222;
-  border: 1px solid #333; 
+  border: 1px solid #333;
   border-radius: 4px;
   padding: 10px;
 }
@@ -150,17 +165,19 @@ export default {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .message.user {
-  background-color: #1a8cff; /* Bright blue for user messages */
+  background-color: #1a8cff;
+  /* Bright blue for user messages */
   align-self: flex-end;
   max-width: 100%;
 }
 
 .message.ai {
-  background-color: orange; /* Purple for AI messages */
+  background-color: orange;
+  /* Purple for AI messages */
   align-self: flex-start;
   max-width: 100%;
 }
@@ -173,18 +190,22 @@ export default {
 .input-field {
   flex: 1;
   padding: 10px;
-  border: 1px solid #555; /* Darker border for input */
+  border: 1px solid #555;
+  /* Darker border for input */
   border-radius: 4px;
   outline: none;
   font-size: 16px;
-  background: #222; /* Dark input field */
-  color: #ddd; /* Light text color for readability */
+  background: #222;
+  /* Dark input field */
+  color: #ddd;
+  /* Light text color for readability */
 }
 
 .send-button {
   padding: 10px 20px;
   border: none;
-  background-color: #5cb85c; /* Green for send button */
+  background-color: #5cb85c;
+  /* Green for send button */
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -192,8 +213,18 @@ export default {
 }
 
 .send-button:hover {
-  background-color: #4cae4c; /* Darker green on hover */
+  background-color: #4cae4c;
+  /* Darker green on hover */
+}
+
+.Navbar-Container {
+  padding-bottom: 100px;
+}
+
+.title {
+  padding-bottom: 20px;
+  align-self: center;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 </style>
-
-
