@@ -14,6 +14,7 @@
     <button @click="$router.push('/register')" class="btn btn-link btn-block">
       Register
     </button>
+    
   </form>
   <h3 class="output">{{ output }}</h3>
 </template>

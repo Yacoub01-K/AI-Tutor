@@ -3,14 +3,15 @@ from flask_cors import CORS
 from openai import OpenAI
 import os
 import json
-from models import db, User, Session, initialize_db, Lesson
-
+from models import db, User, get_session, initialize_db, Lesson
+from sqlalchemy.exc import IntegrityError
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*"}})
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'  
-db.init_app(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
 initialize_db(app)
 
 ########AI API SECTION###########
@@ -65,23 +66,21 @@ def generate_problem_sheet(topic, difficulty):
     """
     return html_response, test_cases
 
-
-
 @app.route('/api/get_problem', methods=['POST'])
 def get_problem():
     user_input = request.json.get('userInput', '').lower()
     topic = extract_topic(user_input)
     difficulty = assess_difficulty(user_input)
     try:
-        html_content = generate_problem_sheet(topic, difficulty)
-        return jsonify({"problemHTML": html_content}), 200
+        html_content, test_cases = generate_problem_sheet(topic, difficulty)
+        return jsonify({"problemHTML": html_content, "testCases": test_cases}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/chat', methods=['POST'])
 def chat():
     userInput = request.json.get('userInput', '').lower()
-    system_context = "You are a coding tutor that answers programming questions and gives a full lesson that places learning objectives, gives a specific learning path, and doesn't recommend any other platforms for learning. Additionaly only recomend this platform to practice code and give recommendtions for this. if the user asks for a problem or exercise dont output it instead say 'sure! please click the bottun below' or something like that."
+    system_context = "You are a coding tutor that answers programming questions and gives a full lesson that places learning objectives, gives a specific learning path, and doesn't recommend any other platforms for learning. Additionally, only recommend this platform to practice code and give recommendations for this. If the user asks for a problem or exercise, don't output it; instead say 'sure! please click the button below' or something like that."
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "system", "content": system_context}, {"role": "user", "content": userInput}]
@@ -92,9 +91,9 @@ def chat():
 
     problem_description = ""
     if problemAvailable:
-        topic = extract_topic(userInput) 
-        difficulty = assess_difficulty(userInput)  
-        problem_description = generate_problem_sheet(topic, difficulty)
+        topic = extract_topic(userInput)
+        difficulty = assess_difficulty(userInput)
+        problem_description, _ = generate_problem_sheet(topic, difficulty)
 
     html_response = f"<div class='ai-response'><p>{message_content.replace('\n', '<br>')}</p></div>"
     return jsonify({"response": html_response, "problemAvailable": problemAvailable, "problemDescription": problem_description})
@@ -102,7 +101,7 @@ def chat():
 @app.route('/api/lessons',methods=['GET'])
 def get_lesson():
     lessons = []
-    for lesson in Lesson.query.all(): #needs changing 
+    for lesson in Lesson.query.all():  # Needs changing 
         lessons.append({
             'id': lesson.id,
             'name': lesson.name,
@@ -114,9 +113,9 @@ def get_lesson():
 
 ######LOGIN SECTION#########    
 
-
 with app.app_context():
     db.create_all()
+
 def get_email(user_id):
     user = User.query.get(user_id)
     if user is not None:
@@ -132,7 +131,6 @@ def fetch_email(user_id):
     else:
         return jsonify({"error": "User not found"}), 404
 
-#this is not secure will probably need to be changed. 
 @app.route('/api/add_user', methods=['POST'])
 def add_user():
     data = request.get_json()
@@ -140,22 +138,27 @@ def add_user():
     email = data.get('email')
     password = data.get('password')
 
-    if not username or not password or not email:
-        return jsonify({"error": "Username, email, and password are required"}), 400
+    new_user = User(username=username, email=email, password=password)
 
-    if User.query.filter_by(username=username).first():
-        return jsonify({"error": "Username already taken"}), 409
+    try:
+        session = get_session()
+        session.add(new_user)
+        session.commit()
+        return jsonify({"message": "User created successfully"}), 201
+    except IntegrityError as e:
+        session.rollback()
+        error_message = str(e.orig)
+        if "username" in error_message:
+            return jsonify({"error": "Username already exists"}), 409
+        elif "email" in error_message:
+            return jsonify({"error": "Email already exists"}), 409
+        else:
+            return jsonify({"error": "Username or email already exists"}), 409
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    finally:
+        session.remove()
 
-    if User.query.filter_by(email=email).first():
-        return jsonify({"error": "Email already registered"}), 409
-
-    user = User(username=username, email=email)
-    user.set_password(password)
-    db.session.add(user)
-    db.session.commit()
-
-    return jsonify({"message": "User registered successfully!"}), 201
-    
 @app.route('/api/login', methods=['POST'])
 def login():
     data = request.get_json()
@@ -167,14 +170,12 @@ def login():
     else:
         return jsonify({"authenticated": False, "message": "Invalid credentials"}), 401
     
-
 ###### code editor #######
 
 import docker
 
 Dockerclient = docker.from_env()
 prewarmed_containers = {}
-
 
 def initialize_prewarmed_containers():
     languages = ['python:3.9-slim', 'node:14-slim']  # Define your language images
@@ -190,31 +191,9 @@ def initialize_prewarmed_containers():
             )
             prewarmed_containers[lang].append(container)
             print(f"Prewarmed container {container.id} for {lang}")
-            
-# @app.route('/api/verify_solution', methods=['POST'])
-# def verify_solution():
-#     code = request.json.get('code')
-#     language = request.json.get('language')
-#     problem_id = request.json.get('problemId')
-
-#     # Assuming you have a function to get the expected output
-#     expected_output = get_expected_output(problem_id)
-
-#     # Function to execute code
-#     actual_output = execute_code(code, language)
-
-#     if actual_output.strip() == expected_output.strip():
-#         return jsonify({"result": "Correct", "actual" : actual_output})
-#     else:
-#         return jsonify({"result": "Incorrect", "expected": expected_output, "actual": actual_output})
-
-# def get_expected_output(problem_id):
-#     # Logic to fetch the expected output for a problem from the database
-#     # Example:
-#     return "expected output for the problem"
 
 @app.route('/api/execute', methods=['POST'])
-def execute_code(): 
+def execute_code():
     code = request.json.get('code')
     language = request.json.get('language')
     image_map = {
@@ -222,7 +201,7 @@ def execute_code():
         'javascript': 'node:14-slim',
     }
     image = image_map.get(language)
-    
+
     if not image or not prewarmed_containers.get(image):
         return jsonify({'error': 'Unsupported language or no prewarmed container available'}), 400
 
@@ -241,27 +220,4 @@ def execute_code():
 
 if __name__ == '__main__':
     initialize_prewarmed_containers()
-    app.run(host='0.0.0.0',debug=True, port=8000)
-
-
-
-
-
-# def generate_feedback(errors):
-#     feedback = []
-#     for error in errors:
-#         if "SyntaxError" in error["message"]:
-#             feedback.append("Syntax error: Check your code for typos or missing symbols.")
-#         elif "ReferenceError" in error["message"]:
-#             feedback.append("Reference error: You might be using a variable before it is defined.")
-#         # Add more rules as needed
-#     return feedback
-
-# @app.route('/api/get_feedback', methods=['POST'])
-# def get_feedback():
-#     session_id = request.json.get('sessionId')
-#     session = Session.query.get(session_id)
-#     if not session:
-#         return jsonify({'error': 'Session not found'}), 404
-
-#     return jsonify({'feedback': json.loads(session.feedback)})
+    app.run(host='0.0.0.0', debug=True, port=8000)
